@@ -5,10 +5,9 @@ createdAt: 2025-10-29T12:33:00.000Z
 uuid: 34d75906b733
 localizationKey: fe784f9b8041
 name: Accueil
-vars: {}
 ---
 
-{% section type="cover", vars={"minHeight":"","noPadding":false,"gap":""}, blocks=[{"value":"# Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain {.centered .h0}\n\n<a href=\"#sub-title\" class=\"scroll pile\"></a>","type":"markdown"}], advanced={} %}
+{% section type="cover", vars={"minHeight":"","noPadding":false,"gap":""}, blocks=[{"value":"# [Initiative pour une]{style=color:var(--terracotta)} Déclaration Universelle des Droits de l’Esprit Humain {.centered .h0}\n\n<a href=\"#sub-title\" class=\"scroll pile\"></a>","type":"markdown"}], advanced={} %}
 
 Numérique, IA & métatechnologies: quel avenir voulons-pour l’humanité? {.h2 #sub-title}
 
@@ -17,7 +16,7 @@ Sans un nouveau cadre éthique global, toutes nos mesures, réglementations et d
 
 Soutenir la DUDEH, c'est participer à la fondation d'un cadre éthique planétaire pour les générations actuelles et futures.
 
-::: div { #who-section .palette-contrast-terracotta .box .full-bleed}
+::: div { #who-section .palette-contrast-terracotta .full-bleed-before}
 
 ## Qui sommes-nous?
 
@@ -166,7 +165,7 @@ Si vous êtes un utilisateur :
 {% partial "css-scroll-button.md" %}
 
 {% css %}
-body {padding-block-start:0;}
+main {padding-block-start:0;}
 #who-section {
 padding-inline: var(--step--1);
 padding-block: var(--step-4);

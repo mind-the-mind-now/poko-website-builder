@@ -4,19 +4,17 @@
 inline-size: var(--_proportions);
 block-size: var(--_proportions);
 margin-inline: auto;
-border: 2px solid currentColor;
-border-radius: 50%;
+margin-block: calc(var(--_proportions) / 2);
 animation: down 1.5s infinite;
 align-items: center;
 justify-items: center;
 &::before {
 content: '';
-width: calc(var(--_proportions) / 4);
-height: calc(var(--_proportions) / 4);
-border-left: 2px solid currentColor;
-border-bottom: 2px solid currentColor;
+width: var(--_proportions);
+height: var(--_proportions);
+border-left: 2px solid var(--terracotta);
+border-bottom: 2px solid var(--terracotta);
 transform: rotate(-45deg);
-margin-top: calc(var(--_proportions) \* -0.05);
 }
 }
 @keyframes down {
