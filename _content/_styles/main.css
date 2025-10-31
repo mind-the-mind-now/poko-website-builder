@@ -1,0 +1,8 @@
+@import "_ctx.css";
+
+:is(h1, h2, h3, h4, h5, h6, .h-1, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8):not(:first-child) {
+  margin-block-start: 3em;
+  & + :is(h1, h2, h3, h4, h5, h6, .h-1, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8) {
+    margin-block-start: 0.8em;
+  }
+}

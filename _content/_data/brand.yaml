@@ -1,0 +1,90 @@
+ctxCssImport:
+  filename: _ctx.css
+widthsContexts:
+  - name: main
+    max: 80rem
+    prose: 50rem
+fontStacksContexts:
+  - name: main
+    body:
+      native: neo-grotesque
+    heading:
+      native: didone
+    code:
+      native: monospace-code
+typeScales:
+  - name: main
+    minFontSize: 18
+    maxFontSize: 20
+    minTypeScale: 1.2
+    maxTypeScale: 1.25
+colors:
+  - name: white
+    value: '#ddddff'
+  - name: cream
+    value: '#fbead0'
+  - name: blue
+    value: '#002663'
+  - name: blue-light
+    value: '#004cc7'
+  - name: blue-lighter
+    value: '#2e7eff'
+  - name: terracotta
+    value: '#dc7562'
+  - name: gray
+    value: '#e5e5e5'
+palettes:
+  - name: main
+    text: blue
+    bg: cream
+    border: ''
+    outline: ''
+    text-decoration: ''
+    text--marker: ''
+    text-emphasis: ''
+    text--selection: ''
+    bg--selection: ''
+    shadow: ''
+    caret: ''
+    column-rule: ''
+    fill: ''
+    stroke: ''
+    outline--focus: ''
+    advanced: null
+  - name: contrast-blue
+    text: cream
+    bg: blue
+    border: ''
+    outline: ''
+    text-decoration: ''
+    text--marker: ''
+    text-emphasis: ''
+    text--selection: ''
+    bg--selection: ''
+    shadow: ''
+    caret: ''
+    column-rule: ''
+    fill: ''
+    stroke: ''
+    outline--focus: ''
+    advanced: null
+  - name: contrast-terracotta
+    text: cream
+    bg: terracotta
+    border: ''
+    outline: ''
+    text-decoration: ''
+    text--marker: ''
+    text-emphasis: ''
+    text--selection: ''
+    bg--selection: ''
+    shadow: ''
+    caret: ''
+    column-rule: ''
+    fill: ''
+    stroke: ''
+    outline--focus: ''
+    advanced: null
+styleContexts:
+  - name: main
+    value: ctx

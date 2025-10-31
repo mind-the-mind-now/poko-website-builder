@@ -1,0 +1,12 @@
+siteName: Mind the Mind Now
+productionUrl: https://www.mindthemind-now.org/
+languages:
+  - code: fr
+    name: Français
+    customUrlPrefix:
+      prefix: ''
+    status: published
+    isCmsDefault: false
+    isWebsiteDefault: false
+collections:
+  - people
