@@ -6,3 +6,57 @@
     margin-block-start: 0.8em;
   }
 }
+
+details {
+  & > :not(summary) {
+    margin-inline-start: var(--step-1);
+    /* max-inline-size: calc(var(--width-prose) - var(--step-1)); */
+    max-inline-size: calc(100% - var(--step-1));
+  }
+
+  margin-block-start: var(--step-3);
+  
+  & + details {
+    margin-block-start: .8em;
+  }
+}
+summary > h3 {
+  /* border-block-end: solid 1px var(--terracotta);
+  padding-block-end: 0.2em; */
+  text-decoration: underline var(--terracotta);
+}
+
+.chart {
+  max-inline-size: var(--width-prose);
+  margin-inline: auto;
+  padding-block: var(--step-3);
+}
+.chart svg {
+    max-inline-size: 500px;
+
+    & .background {
+      stroke: transparent;
+    } 
+
+    & > rect {
+        fill: transparent;
+    }
+    & .mark-rule.role-axis line,
+    & .mark-rule.role-axis-domain line,
+    & .mark-rule.role-axis-tick line {
+      stroke: currentColor;
+    }
+    & .mark-rule.role-axis-grid line {
+      stroke: hsl(from var(--terracotta) h s l/0.2);
+    }
+    & text {
+      fill: currentColor;
+    }
+}
+
+a.button {
+  color: var(--terracotta);
+  border: 1px solid currentColor;
+  text-decoration: none;
+  padding: .5em 1em;
+}

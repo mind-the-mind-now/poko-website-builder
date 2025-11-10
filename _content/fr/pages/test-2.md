@@ -1,13 +1,12 @@
 ---
-translationKey: index
+translationKey: test-2
 lang: fr
-createdAt: 2025-10-29T12:33:00.000Z
-uuid: 34d75906b733
-localizationKey: fe784f9b8041
-name: Accueil
+createdAt: 2025-11-10T12:58:00.000Z
+uuid: ea4c7c09a4b3
+localizationKey: accfc673922d
+name: Test 2
 ---
-
-{% section type="cover", vars={"minHeight":"","noPadding":false,"gap":""}, blocks=[{"value":"# [Initiative pour une]{style=color:var(--terracotta)} Déclaration Universelle des Droits de l’Esprit Humain {.centered .h0}\n\n[Nous rejoindre](#contact-form){.button} {.center .intrinsic}\n\n<a href=\"#sub-title\" class=\"scroll pile\"></a>","type":"markdown"}], advanced={} %}
+{% section type="cover", vars={"minHeight":"","noPadding":false,"gap":""}, blocks=[{"value":"# [Initiative pour une]{style=color:var(--terracotta)} Déclaration Universelle des Droits de l’Esprit Humain {.centered .h0}\n\n<a href=\"#sub-title\" class=\"scroll pile\"></a>","type":"markdown"}], advanced={} %}
 
 Numérique, IA & métatechnologies: quel avenir voulons-pour l’humanité? {.h2 #sub-title}
 
@@ -28,7 +27,8 @@ Nous sommes un collectif cherchant à promouvoir l’idée d’une DUDEH.
 
 :::
 
-## Une déclaration universelle des droits de l'esprit Humain, pour quoi faire?
+<details>
+<summary><h2>Une déclaration universelle des droits de l'esprit Humain, pour quoi faire?</h2></summary>
 
 L’idée est simple. Face au développement exponentiel du numérique, de l’IA et des métatechnologies, il ne suffit plus de protéger, comme on tente de le faire actuellement, les droits et libertés individuels (RGPD, DMA, DSA, DGA, IA Act,…).
 
@@ -50,7 +50,10 @@ Protéger l’esprit, c’est protéger l’humanité elle-même.
 
 C’est ce que propose la Déclaration universelle des droits de l’esprit humain.
 
-## Un label pour l’esprit
+</details>
+
+<details>
+<summary><h2>Un label pour l'esprit</h2></summary>
 
 Nous voulons commencer par créer un label pour l’esprit. Nous voulons que les utilisateurs sachent, lorsqu’ils utilisent un dispositif connecté, à quoi et à qui ils ont à faire.
 
@@ -60,7 +63,10 @@ A ces questions, le label répond en un clin d’œil. Il prouve l’engagement 
 
 Et cela fait toute la différence.
 
-## Notre démarche
+</details>
+
+<details>
+<summary><h2>Notre démarche</h2></summary>
 
 Le projet DUDEH se présente comme une fusée à trois étages, dont le dernier est celui de la Déclaration universelle des droits de l’esprit humain à l’échelle planétaire – un étage certes idéal et visionnaire mais qui donne le cap à notre démarche d’ensemble. C’est l’étage du long terme, et donne son sens au mot « universelle » de la Déclaration.
 
@@ -113,7 +119,10 @@ La DUDEH, ainsi que la proclamation de l’esprit humain comme patrimoine commun
 
 Ce cadre, nous ne l’avons pas. Créons-le.
 
-## Les deux niveaux de confiance
+</details>
+
+<details>
+<summary><h2>Les deux niveaux de confiance</h2></summary>
 
 ### 1. La confiance dans l’outil numérique
 
@@ -125,18 +134,7 @@ Il faut parler ici d’une confiance de 1er degré, confiance immédiate accord�
 
 Les choses changent dès lors que l’on passe à la confiance de 2e degré, la confiance à long terme. Il s’agit là de la confiance dans l’écosystème numérique en tant que tel, dans le projet de société qui peu à peu, petit à petit, de façon incrémentale, se dégage de l’usage généralisé du numérique. Les utilisateurs expriment une méfiance, encore accrue par la généralisation de l’IA, à l’égard de cette numérisation tendancielle de la société qu’ils voient venir.
 
-```line-chart
----
-temporal: true
-color: var(--terracotta)
-width: 200
-height: 100
----
-Année,Inquiets (%)
-2022-01-01,32
-2024-01-01,45
-2025-01-01,61
-```
+{% image src="/_images/graph-inquietudes-ia.png", alt="Graphique: Croissance de l'inquiétude vis-à-vis de l'intelligence artificielle de 2022 (32%) à 2025 (61%)", wrapper="p" %}
 
 Face à des métatechnologies exponentielles, la méfiance est elle aussi exponentielle.
 
@@ -157,19 +155,29 @@ Or, c’est bien ce niveau-là qui suscite méfiance et inquiétude.
 
 Le défi que nous voulons relever est donc de créer un cadre éthique qui n’existe pas encore. Il est la condition d’un numérique de confiance – de véritable confiance, de confiance à long terme. Les métatechnologies se déploieront de toute façon. Nous voulons œuvrer à ce qu’elles le fassent en préservant l’intégrité de l’esprit humain.
 
-## Métatechnologies
+</details>
+
+<details>
+<summary><h2>Métatechnologies</h2></summary>
 
 Le numérique augmenté de l’IA n’est pas une technologie comme les autres. Il n’est pas seulement une technologie qui nous permet de faire quelque chose dans le monde, comme de consulter la météo à New York. Il est une METATECHNOLOGIE, c'est-à-dire une technologie de toutes les technologies, une technologie qui intègre toutes les technologies antérieures et les impacte toutes. Le numérique augmenté de l’IA a cette particularité par rapport aux technologies traditionnelles qu’il n’a pas de fin déterminée, comme pour le marteau de planter un clou ou pour une voiture d’aller de A à B. Il n’a pas de fin propre, il est au contraire disponible pour toutes les fins; il est en réalité un moyen sans fin.
 
 C’est pourquoi nous parlons de métatechnologies : elles sont capables d’intégrer toutes les technologies anciennes, d’impacter toutes celles qui existent et d’accueillir toutes celles qui vont encore exister, tels les ordinateurs quantiques qu’on nous annonce.
 
-## Comment nous rejoindre?
+</details>
+
+<details>
+<summary><h2>Comment nous rejoindre?</h2></summary>
 
 Le projet de la DUDEH est ambitieux, et visionnaire.
 
 Soutenir la DUDEH, c'est participer à la fondation d'un cadre éthique planétaire pour les générations actuelles et futures.
 
-{% partial "contact-form.njk" %}
+Si vous êtes une entreprise :
+
+Si vous êtes un utilisateur :
+
+</details>
 
 {% partial "css-scroll-button.md" %}
 
@@ -189,4 +197,13 @@ border-radius: 100%;
 background-color: currentColor;
 }
 }
+
+details {
+padding-block: var(--step-0);
+padding-inline: var(--step--2);
+border: 2px solid var(--terracotta);
+border-radius: 1rem;
+}
+summary h2 {font-size: var(--step-2);}
+summary::marker {font-size: var(--step-1);}
 {% endcss %}

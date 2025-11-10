@@ -1,13 +1,12 @@
 ---
-translationKey: index
+translationKey: test
 lang: fr
-createdAt: 2025-10-29T12:33:00.000Z
-uuid: 34d75906b733
-localizationKey: fe784f9b8041
-name: Accueil
+createdAt: 2025-11-10T11:58:00.000Z
+uuid: abd75cd04462
+localizationKey: 0d76b81153e3
+name: Test
 ---
-
-{% section type="cover", vars={"minHeight":"","noPadding":false,"gap":""}, blocks=[{"value":"# [Initiative pour une]{style=color:var(--terracotta)} Déclaration Universelle des Droits de l’Esprit Humain {.centered .h0}\n\n[Nous rejoindre](#contact-form){.button} {.center .intrinsic}\n\n<a href=\"#sub-title\" class=\"scroll pile\"></a>","type":"markdown"}], advanced={} %}
+{% section type="cover", vars={"minHeight":"","noPadding":false,"gap":""}, blocks=[{"value":"# [Initiative pour une]{style=color:var(--terracotta)} Déclaration Universelle des Droits de l’Esprit Humain {.centered .h0}\n\n<a href=\"#sub-title\" class=\"scroll pile\"></a>","type":"markdown"}], advanced={} %}
 
 Numérique, IA & métatechnologies: quel avenir voulons-pour l’humanité? {.h2 #sub-title}
 
@@ -66,7 +65,8 @@ Le projet DUDEH se présente comme une fusée à trois étages, dont le dernier 
 
 Le premier étage est celui de la création d’un label DUDEH, incarnation d’une prise de conscience au niveau de la société civile.
 
-### 1er étage de la fusée DUDEH
+<details>
+<summary><h3>1er étage</h3></summary>
 
 Avec nos partenaires (organisations et entreprises), nous travaillons à l’instauration d’un label, signe de l’engagement en faveur de la DUDEH.
 
@@ -92,7 +92,10 @@ Voici quelques exemples :
 - Veiller à ne pas créer de servitudes inutiles ou injustifiées
 - Veiller aux pertes de savoirs, de compétences, à la déprofessionnalisation
 
-### 2e étage
+</details>
+
+<details>
+<summary><h3>2e étage</h3></summary>
 
 Le deuxième étage est celui des actions qui contribueront à faire des principes de la DUDEH une politique partagée.
 
@@ -103,7 +106,10 @@ Création d’un prix, financé selon diverses modalités possibles (entreprises
 - Recherche d’engagement des politiques
 - Recherche du soutien des grandes institutions internationales
 
-### 3e étage
+</details>
+
+<details>
+<summary><h3>3e étage</h3></summary>
 
 C’est notre étage visionnaire, qui donne le cap à l’ensemble : la Déclaration universelle des droits de l’esprit humain, et la proclamation de l’esprit humain comme patrimoine commun de l’humanité.
 
@@ -113,39 +119,12 @@ La DUDEH, ainsi que la proclamation de l’esprit humain comme patrimoine commun
 
 Ce cadre, nous ne l’avons pas. Créons-le.
 
+</details>
+
 ## Les deux niveaux de confiance
 
-### 1. La confiance dans l’outil numérique
-
-Spontanément, les utilisateurs ont tendance à faire confiance à leurs outils numériques, dans l’usage quotidien qu’ils en font. En 2025, 76% des Françaises et des Français disent avoir confiance dans le payement sans contact, par exemple. De plus en plus rares sont celles et ceux qui se méfient véritablement de leur smartphone, tant son usage c’est généralisé.
-
-Il faut parler ici d’une confiance de 1er degré, confiance immédiate accordée à ces outils utilisés au quotidien. Les avantages sont tellement évidents, immédiatement visibles, l’usage journalier des outils numériques est tellement satisfaisant et pratique que les utilisateurs s’en remettent à eux sans plus y penser. Ils leur accordent spontanément confiance, par défaut.
-
-### 2.La confiance dans l’écosystème numérique
-
-Les choses changent dès lors que l’on passe à la confiance de 2e degré, la confiance à long terme. Il s’agit là de la confiance dans l’écosystème numérique en tant que tel, dans le projet de société qui peu à peu, petit à petit, de façon incrémentale, se dégage de l’usage généralisé du numérique. Les utilisateurs expriment une méfiance, encore accrue par la généralisation de l’IA, à l’égard de cette numérisation tendancielle de la société qu’ils voient venir.
-
-```line-chart
----
-temporal: true
-color: var(--terracotta)
-width: 200
-height: 100
----
-Année,Inquiets (%)
-2022-01-01,32
-2024-01-01,45
-2025-01-01,61
-```
-
-Face à des métatechnologies exponentielles, la méfiance est elle aussi exponentielle.
-
-Le phénomène intéressant est donc cette double évolution, qui n’est pas paradoxale mais relève de deux niveaux de confiance différents :
-
-- Un usage croissant des outils numériques, dont l’utilisation immédiate suppose une confiance de premier degré;
-- Mais une confiance décroissante à l’égard de l’avenir que dessine cette extension de l’usage des outils numériques.
-
-### Une prise en considération inégale des deux niveaux de confiance
+1. La confiance dans l’outil numérique
+2. La confiance dans l’écosystème numérique
 
 Ces deux niveaux de confiance sont adressés de manière très inégale par les acteurs de l’écosystème numérique.
 
@@ -169,7 +148,9 @@ Le projet de la DUDEH est ambitieux, et visionnaire.
 
 Soutenir la DUDEH, c'est participer à la fondation d'un cadre éthique planétaire pour les générations actuelles et futures.
 
-{% partial "contact-form.njk" %}
+Si vous êtes une entreprise :
+
+Si vous êtes un utilisateur :
 
 {% partial "css-scroll-button.md" %}
 

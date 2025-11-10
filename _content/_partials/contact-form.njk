@@ -1,0 +1,12 @@
+<form id="contact-form" class="flow prose" style="--flow-space: var(--step--2)">
+  <input type="text" name="name" id="name" placeholder="Nom" />
+  <input type="email" name="email" id="email" placeholder="Email" />
+  <textarea name="message" id="message" placeholder="Message"></textarea>
+  <button type="submit">Envoyer</button>
+</form>
+
+{% css %}
+#contact-form {
+    margin-block-start: var(--step-3);
+}
+{% endcss %}

@@ -40,7 +40,7 @@ palettes:
     border: ''
     outline: ''
     text-decoration: ''
-    text--marker: ''
+    text--marker: terracotta
     text-emphasis: ''
     text--selection: ''
     bg--selection: ''
@@ -67,7 +67,29 @@ palettes:
     fill: ''
     stroke: ''
     outline--focus: ''
-    advanced: null
+    advanced:
+      text__heading: ''
+      bg__heading: ''
+      text__a: ''
+      bg__a: ''
+      text__a--hover: terracotta
+      bg__a--hover: ''
+      text__button: ''
+      bg__button: ''
+      text__button--hover: ''
+      bg__button--hover: ''
+      text__button--disabled: ''
+      bg__button--disabled: ''
+      icon-fill: ''
+      icon-stroke: ''
+      text__code: ''
+      bg__code: ''
+      border__code: ''
+      text__mark: ''
+      bg__mark: ''
+      border__mark: ''
+      track-color: ''
+      thumb-color: ''
   - name: contrast-terracotta
     text: cream
     bg: terracotta
