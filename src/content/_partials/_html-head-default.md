@@ -54,6 +54,8 @@
 
 {% endif %}
 
+{# TODO: Avoid generating this tag if no content in the bundle #}
+
 <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'external' %}">
 
 <style>

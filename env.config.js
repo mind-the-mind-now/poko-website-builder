@@ -325,7 +325,8 @@ export const brandStyles = [
 // PROD_URL is the full URL of the 'deployed' site
 export const PROD_URL =
   (processEnv.PROD_URL || globalSettings?.productionUrl)?.replace(/\/+$/, "") ||
-  (VERCEL_PROJECT_PRODUCTION_URL && `https://${VERCEL_PROJECT_PRODUCTION_URL}`);
+  (processEnv.VERCEL_PROJECT_PRODUCTION_URL &&
+    `https://${processEnv.VERCEL_PROJECT_PRODUCTION_URL}`);
 // BASE_URL is the full URL of the 'being deployed' site
 // TODO: Try and find the best ways to infer BASE_URL so we can only define a CANONICAL_URL / PROD_URL
 // TODO: If we have a decent way to infer this, we can fall back to PROD_URL
