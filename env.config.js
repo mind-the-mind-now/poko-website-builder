@@ -205,7 +205,7 @@ try {
   const brandConfigYaml = fs.readFileSync(brandConfigPath, "utf-8");
   brandConfig = yaml.load(brandConfigYaml);
 } catch (error) {
-  console.error("Error reading brandConfig.yaml:", error);
+  console.warn("WARN: brandConfig.yaml not found");
   brandConfig = {
     ctxCssImport: { filename: "_ctx.css" },
     widthsContexts: [],

@@ -473,7 +473,7 @@ class CmsConfig {
         "../../../content-static/admin/defaultEditorComponents.js"
       );
     } catch (error) {
-      console.log("Failed to import default Editor Components\n", error);
+      console.error("Failed to import default Editor Components\n", error);
     }
     let userEditorComponents;
     try {
@@ -481,7 +481,9 @@ class CmsConfig {
         `${WORKING_DIR_ABSOLUTE}/_config/editorComponents.js`
       );
     } catch (error) {
-      console.log("Failed to import user's Editor Components\n", error);
+      console.warn(
+        `INFO: No user's Editor Components found at "${WORKING_DIR_ABSOLUTE}/_config/editorComponents.js"`
+      );
     }
     const defaultEditorComponentNames = Object.keys(
       defaultEditorComponents || {}
@@ -882,6 +884,10 @@ class CmsConfig {
                   label: "Name",
                   widget: "string",
                   required: true,
+                  pattern: [
+                    "^[a-zA-Z0-9-]+$",
+                    "Only letters, numbers, and hyphens are allowed",
+                  ],
                 },
                 {
                   name: "value",
@@ -1677,7 +1683,9 @@ export default async function (eleventyConfig, pluginOptions) {
       ...uc,
     };
   } catch (error) {
-    console.error("Could not import user config\n", error);
+    console.warn(
+      `WARN: Could not import user config from "${WORKING_DIR_ABSOLUTE}/_config/index.js"`
+    );
   }
 
   eleventyConfig.addTemplate("admin/config.11ty.js", CmsConfig, { userConfig });
