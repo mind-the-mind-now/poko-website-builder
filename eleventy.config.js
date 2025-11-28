@@ -62,6 +62,7 @@ import {
   defaultLangCode,
   unrenderedLanguages,
   brandConfig,
+  inlineAllStyles,
   brandStyles,
 } from "./env.config.js";
 import eleventyComputed from "./src/data/eleventyComputed.js";
@@ -80,6 +81,9 @@ import {
   first,
   last,
   randomFilter,
+  sortCollection,
+  asc,
+  desc,
   ogImageSrc,
   emailLink,
   htmlAttrs,
@@ -129,7 +133,7 @@ function mRCTOptions(tagName) {
         idx,
         options,
         env,
-        Renderer
+        Renderer,
       );
     },
   };
@@ -200,7 +204,7 @@ export default async function (eleventyConfig) {
         const brandConfigYaml = fs.readFileSync(brandConfigPath, "utf-8");
         brandConfig = yaml.load(brandConfigYaml);
       } catch (error) {
-        console.error("Error reading brandConfig.yaml:", error);
+        console.warn("WARN: brandConfig.yaml not found");
       }
       // 2. If "copy ctx.css" toggle is true, copy the ctx.css file to '_content/styles' directory with the defined name
       const ctxOutputFilename = brandConfig?.ctxCssImport?.filename;
@@ -222,11 +226,11 @@ export default async function (eleventyConfig) {
           fs.unlinkSync(ctxOutputPath);
         } catch (error) {
           console.warn(
-            "Trying to delete ctx.css but it doesn't seem to exist. If you named the file differently, please remove it manually from the CMS or file system."
+            "Trying to delete ctx.css but it doesn't seem to exist. If you named the file differently, please remove it manually from the CMS or file system.",
           );
         }
       }
-    }
+    },
   );
 
   // --------------------- Preprocessors
@@ -277,6 +281,7 @@ export default async function (eleventyConfig) {
         .use(markdownItContainer, "grid-fluid")
         .use(markdownItContainer, "cluster")
         .use(markdownItContainer, "switcher")
+        .use(markdownItContainer, "cover")
 
         // .use(markdownItContainer, {
         //   name: "@",
@@ -328,7 +333,7 @@ export default async function (eleventyConfig) {
         .use(markdownItMark) // https://github.com/markdown-it/markdown-it-mark
         .use(markdownItLinkAttributes) // https://github.com/crookedneighbor/markdown-it-link-attributes
         .use(markdownItAttrs) // https://github.com/arve0/markdown-it-attrs
-        .use(markdownItBracketedSpans) // https://github.com/mb21/markdown-it-bracketed-spans
+        .use(markdownItBracketedSpans), // https://github.com/mb21/markdown-it-bracketed-spans
   );
 
   // --------------------- Bundles
@@ -353,6 +358,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addGlobalData("defaultLanguage", defaultLanguage);
   eleventyConfig.addGlobalData("defaultLangCode", defaultLangCode);
   eleventyConfig.addGlobalData("brandConfig", brandConfig);
+  eleventyConfig.addGlobalData("inlineAllStyles", inlineAllStyles);
   eleventyConfig.addGlobalData("brandStyles", brandStyles);
   // Computed Data
   eleventyConfig.addGlobalData("eleventyComputed", eleventyComputed);
@@ -508,13 +514,17 @@ export default async function (eleventyConfig) {
   await eleventyConfig.addPlugin(pluginUnoCSS);
 
   // --------------------- Populate files and default content
-  // Populate Default Content: Copy `src/content-static/` to `dist`
-  eleventyConfig.addPassthroughCopy({ "src/content-static": "/" });
-  // Copy User's files: `src/content-static/` to `dist`
   eleventyConfig.addPassthroughCopy({
+    // Copy User's editorComponents.js to be used in the CMS
+    [`${WORKING_DIR}/_config/editorComponents.js`]:
+      "admin/userEditorComponents.js",
+    // Populate Default Content: Copy `src/content-static/` to `dist`
+    "src/content-static": "/",
+    // Copy User's files: `src/content-static/` to `dist`
     [`${WORKING_DIR}/_files`]: "/assets/files/",
-  });
-  eleventyConfig.addPassthroughCopy({
+    [`${WORKING_DIR}/_files/_redirects`]: "_redirects",
+    [`${WORKING_DIR}/_files/_headers`]: "_headers",
+    // All CSS files to assets
     [`${WORKING_DIR}/*.css`]: "/assets/styles/",
   });
   // Copy Sveltia CMS if not using CDN
@@ -540,7 +550,7 @@ export default async function (eleventyConfig) {
       "src/content",
     ],
   });
-  // Populate Default Content with virtual templates
+  // Partials expand on the renderFile shortcode
   await eleventyConfig.addPlugin(partialsPlugin, {
     dirs: [
       path.join(WORKING_DIR, PARTIALS_DIR),
@@ -548,6 +558,7 @@ export default async function (eleventyConfig) {
     ],
     shortcodeAliases: [
       "partial",
+      "component",
       // "section"
     ],
   });
@@ -561,7 +572,7 @@ export default async function (eleventyConfig) {
   // --------------------- Filters
   // Slug
   eleventyConfig.addFilter("slugifyPath", (input) =>
-    slugifyPath(input, eleventyConfig)
+    slugifyPath(input, eleventyConfig),
   );
   // I18n
   eleventyConfig.addFilter("locale_url", locale_url);
@@ -578,6 +589,9 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter("first", first);
   eleventyConfig.addFilter("last", last);
   eleventyConfig.addFilter("randomFilter", randomFilter);
+  eleventyConfig.addFilter("sortCollection", sortCollection);
+  eleventyConfig.addFilter("asc", asc);
+  eleventyConfig.addFilter("desc", desc);
   // Images
   eleventyConfig.addAsyncFilter("ogImage", ogImageSrc);
   // Email
@@ -596,7 +610,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addShortcode("n", newLine);
   await eleventyConfig.addNunjucksAsyncShortcode(
     "fetchFile",
-    fetchFileShortcode
+    fetchFileShortcode,
   );
   eleventyConfig.addShortcode("image", image);
   eleventyConfig.addShortcode("gallery", gallery);
@@ -644,7 +658,7 @@ export default async function (eleventyConfig) {
         const partialFileName = args[0];
         const data = args[1] || {};
         console.warn(
-          `DEPRECATED: Section (calling "${partialFileName}") is using the old syntax.`
+          `DEPRECATED: Section (calling "${partialFileName}") is using the old syntax.`,
         );
 
         return await partialShortcodeFn
@@ -656,7 +670,7 @@ export default async function (eleventyConfig) {
       }
       if (args.length !== 1 || typeof args[0] !== "object") {
         console.error(
-          `Section shortcode called with invalid arguments: ${args}`
+          `Section shortcode called with invalid arguments: ${args}`,
         );
         return "";
       }

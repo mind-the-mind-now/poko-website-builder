@@ -205,7 +205,7 @@ try {
   const brandConfigYaml = fs.readFileSync(brandConfigPath, "utf-8");
   brandConfig = yaml.load(brandConfigYaml);
 } catch (error) {
-  console.error("Error reading brandConfig.yaml:", error);
+  console.warn("WARN: brandConfig.yaml not found");
   brandConfig = {
     ctxCssImport: { filename: "_ctx.css" },
     widthsContexts: [],
@@ -232,6 +232,12 @@ export const unrenderedLanguages = allLanguages
   .map((lang) => lang.code);
 
 // ----------- Brand styles computations
+// TODO: REFACTOR HERE
+export const inlineAllStyles =
+  typeof brandConfig?.inlineAllStyles === "boolean"
+    ? brandConfig?.inlineAllStyles
+    : false;
+
 // Widths contexts
 export const brandWidthsContexts = (brandConfig?.widthsContexts || []).map(
   transformWidthsContext
@@ -319,7 +325,8 @@ export const brandStyles = [
 // PROD_URL is the full URL of the 'deployed' site
 export const PROD_URL =
   (processEnv.PROD_URL || globalSettings?.productionUrl)?.replace(/\/+$/, "") ||
-  (VERCEL_PROJECT_PRODUCTION_URL && `https://${VERCEL_PROJECT_PRODUCTION_URL}`);
+  (processEnv.VERCEL_PROJECT_PRODUCTION_URL &&
+    `https://${processEnv.VERCEL_PROJECT_PRODUCTION_URL}`);
 // BASE_URL is the full URL of the 'being deployed' site
 // TODO: Try and find the best ways to infer BASE_URL so we can only define a CANONICAL_URL / PROD_URL
 // TODO: If we have a decent way to infer this, we can fall back to PROD_URL
@@ -334,6 +341,12 @@ export const BASE_URL = (
 // DISPLAY_URL is for the CMS button to the deployed site (prefer current deploy against production)
 export const DISPLAY_URL =
   processEnv.DISPLAY_URL?.replace(/\/+$/, "") || BASE_URL || PROD_URL;
+
+export const SITE_NAME =
+  processEnv.SITE_NAME ||
+  globalSettings?.metadata?.siteName ||
+  globalSettings?.siteName ||
+  "";
 
 if (DEBUG) {
   console.log({ processEnv });
