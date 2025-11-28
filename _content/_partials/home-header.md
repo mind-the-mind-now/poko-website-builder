@@ -1,0 +1,43 @@
+:::: cover
+
+# [{{ preHeading }}]{style=color:var(--terracotta);font-size:var(--step-1-5);}<br>{{ heading }} {.centered style=font-size:var(--step-4-6);}
+
+{{ bottom | safe }}
+
+<!-- <p class="center intrinsic"><a href="{{ 'contact' | locale_url }}" class="button">Nous rejoindre</a></p> -->
+
+<a href="#sub-title" class="scroll pile"></a>
+
+::::
+
+{% css %}
+.scroll {
+--_proportions: var(--step-2);
+inline-size: var(--_proportions);
+block-size: var(--_proportions);
+margin-inline: auto;
+margin-block: calc(var(--_proportions) / 2);
+animation: down 1.5s infinite;
+align-items: center;
+justify-items: center;
+&::before {
+content: '';
+width: var(--_proportions);
+height: var(--_proportions);
+border-left: 2px solid var(--terracotta);
+border-bottom: 2px solid var(--terracotta);
+transform: rotate(-45deg);
+}
+}
+@keyframes down {
+0% {
+transform: translate(0);
+}
+20% {
+transform: translateY(calc(var(--_proportions) / 4));
+}
+40% {
+transform: translate(0);
+}
+}
+{% endcss %}

@@ -1,62 +1,72 @@
 @import "_ctx.css";
 
-:is(h1, h2, h3, h4, h5, h6, .h-1, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8):not(:first-child) {
+a {
+    --deco-thickness: 0.5em;
+    --deco-offset: -0.2em;
+    text-decoration-color: hsl(from var(--color-text-decoration) h s l / 0.5);
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: var(--deco-thickness, auto);
+    text-underline-offset: var(--deco-offset, 0.15em);
+    transition:
+        color 0.2s ease-in-out,
+        text-decoration 0.2s ease-in-out,
+        text-decoration-thickness 0.2s ease-in-out,
+        text-underline-offset 0.2s ease-in-out;
+}
+
+/* prettier-ignore */
+:is(h1, h2, h3, h4, h5, h6, .h-1, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8) {
   margin-block-start: 3em;
-  & + :is(h1, h2, h3, h4, h5, h6, .h-1, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8) {
-    margin-block-start: 0.8em;
-  }
+}
+/* prettier-ignore */
+:is(h1, h2, h3, h4, h5, h6, .h-1, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8) + :is(h1, h2, h3, h4, h5, h6, .h-1, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8),
+.mbs-reset {
+  margin-block-start: 0.8em;
+}
+
+main > h1 {
+    margin-block-start: 3em;
+    margin-block-end: 2em;
 }
 
 details {
-  & > :not(summary) {
-    margin-inline-start: var(--step-1);
-    /* max-inline-size: calc(var(--width-prose) - var(--step-1)); */
-    max-inline-size: calc(100% - var(--step-1));
-  }
+    & > :not(summary) {
+        margin-inline-start: var(--step-1);
+        /* max-inline-size: calc(var(--width-prose) - var(--step-1)); */
+        max-inline-size: calc(100% - var(--step-1));
+    }
 
-  margin-block-start: var(--step-3);
-  
-  & + details {
-    margin-block-start: .8em;
-  }
+    margin-block-start: var(--step-3);
+
+    & + details {
+        margin-block-start: 0.8em;
+    }
 }
 summary > h3 {
-  /* border-block-end: solid 1px var(--terracotta);
+    /* border-block-end: solid 1px var(--terracotta);
   padding-block-end: 0.2em; */
-  text-decoration: underline var(--terracotta);
+    text-decoration: underline var(--terracotta);
 }
 
-.chart {
-  max-inline-size: var(--width-prose);
-  margin-inline: auto;
-  padding-block: var(--step-3);
-}
-.chart svg {
-    max-inline-size: 500px;
-
-    & .background {
-      stroke: transparent;
-    } 
-
-    & > rect {
-        fill: transparent;
-    }
-    & .mark-rule.role-axis line,
-    & .mark-rule.role-axis-domain line,
-    & .mark-rule.role-axis-tick line {
-      stroke: currentColor;
-    }
-    & .mark-rule.role-axis-grid line {
-      stroke: hsl(from var(--terracotta) h s l/0.2);
-    }
-    & text {
-      fill: currentColor;
-    }
+/* Centered Button: Avoid lateral scroll */
+p.center.intrinsic {
+    margin-block-start: var(--step-4);
+    --gutters-center: 0;
 }
 
 a.button {
-  color: var(--terracotta);
-  border: 1px solid currentColor;
-  text-decoration: none;
-  padding: .5em 1em;
+    /*color: var(--terracotta);*/
+    border: 1px solid currentColor;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+.section.full-bleed-before {
+    /*padding-inline: var(--step--1);*/
+    padding-block-start: 1px; /* To prevent margin collapse on the first elem inside */
+    padding-block-end: var(--step-5);
+    margin-block: var(--step-5);
+    & > :first-child {
+        /*margin-block-start: 0;*/
+    }
 }

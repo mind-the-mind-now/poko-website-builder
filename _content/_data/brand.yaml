@@ -1,5 +1,6 @@
 ctxCssImport:
   filename: _ctx.css
+inlineAllStyles: true
 widthsContexts:
   - name: main
     max: 80rem
@@ -18,6 +19,11 @@ typeScales:
     maxFontSize: 20
     minTypeScale: 1.2
     maxTypeScale: 1.25
+    customSteps:
+      - startStep: '1'
+        endStep: '5'
+      - startStep: '4'
+        endStep: '6'
 colors:
   - name: white
     value: '#ddddff'
@@ -39,7 +45,7 @@ palettes:
     bg: cream
     border: ''
     outline: ''
-    text-decoration: ''
+    text-decoration: terracotta
     text--marker: terracotta
     text-emphasis: ''
     text--selection: ''
@@ -50,7 +56,29 @@ palettes:
     fill: ''
     stroke: ''
     outline--focus: ''
-    advanced: null
+    advanced:
+      text__heading: ''
+      bg__heading: ''
+      text__a: ''
+      bg__a: ''
+      text__a--hover: terracotta
+      bg__a--hover: ''
+      text__button: terracotta
+      bg__button: ''
+      text__button--hover: blue
+      bg__button--hover: ''
+      text__button--disabled: blue-lighter
+      bg__button--disabled: ''
+      icon-fill: ''
+      icon-stroke: ''
+      text__code: ''
+      bg__code: ''
+      border__code: ''
+      text__mark: ''
+      bg__mark: ''
+      border__mark: ''
+      track-color: ''
+      thumb-color: ''
   - name: contrast-blue
     text: cream
     bg: blue
@@ -95,8 +123,8 @@ palettes:
     bg: terracotta
     border: ''
     outline: ''
-    text-decoration: ''
-    text--marker: ''
+    text-decoration: blue
+    text--marker: blue
     text-emphasis: ''
     text--selection: ''
     bg--selection: ''
@@ -106,7 +134,29 @@ palettes:
     fill: ''
     stroke: ''
     outline--focus: ''
-    advanced: null
+    advanced:
+      text__heading: ''
+      bg__heading: ''
+      text__a: ''
+      bg__a: ''
+      text__a--hover: blue
+      bg__a--hover: ''
+      text__button: cream
+      bg__button: ''
+      text__button--hover: blue
+      bg__button--hover: ''
+      text__button--disabled: gray
+      bg__button--disabled: ''
+      icon-fill: ''
+      icon-stroke: ''
+      text__code: ''
+      bg__code: ''
+      border__code: ''
+      text__mark: ''
+      bg__mark: ''
+      border__mark: ''
+      track-color: ''
+      thumb-color: ''
 styleContexts:
   - name: main
     value: ctx
