@@ -4,6 +4,7 @@ lang: fr
 createdAt: 2025-11-10T11:58:00.000Z
 uuid: abd75cd04462
 localizationKey: 0d76b81153e3
+status: draft
 name: Test
 ---
 {% section type="cover", vars={"minHeight":"","noPadding":false,"gap":""}, blocks=[{"value":"# [Initiative pour une]{style=color:var(--terracotta)} Déclaration Universelle des Droits de l’Esprit Humain {.centered .h0}\n\n<a href=\"#sub-title\" class=\"scroll pile\"></a>","type":"markdown"}], advanced={} %}

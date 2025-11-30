@@ -12,7 +12,7 @@ eleventyNavigation:
 
 ::: div {.section .palette-contrast-terracotta .full-bleed-before}
 
-## En quelques mots 
+## Promouvoir l'engagement pour l'Esprit
 
 L’objet connecté que vous détenez, le service numérique que vous utilisez sont-ils conformes aux valeurs promues par la Déclaration ? L’entreprise s’est-elle engagée aux côtés de Mind the Mind Now ? Son produit vise-t-il d’abord une utilité humaine avant de servir l’utilité de l’écosystème ? A-t-elle envisagé les effets à long terme ? A-t-elle gardé l’esprit à l’esprit ?
 

@@ -6,7 +6,7 @@
 
 <!-- <p class="center intrinsic"><a href="{{ 'contact' | locale_url }}" class="button">Nous rejoindre</a></p> -->
 
-<a href="#sub-title" class="scroll pile"></a>
+<a href="#une-declaration-pour-quoi-faire" class="scroll pile"></a>
 
 ::::
 

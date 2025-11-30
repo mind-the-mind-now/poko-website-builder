@@ -27,6 +27,7 @@ a {
 main > h1 {
     margin-block-start: 3em;
     margin-block-end: 2em;
+    font-size: var(--step-5);
 }
 
 details {
@@ -61,7 +62,7 @@ a.button {
     padding: 0.5em 1em;
 }
 
-.section.full-bleed-before {
+main > .section {
     /*padding-inline: var(--step--1);*/
     padding-block-start: 1px; /* To prevent margin collapse on the first elem inside */
     padding-block-end: var(--step-5);

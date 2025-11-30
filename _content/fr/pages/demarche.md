@@ -32,7 +32,7 @@ Etage de la Déclaration Universelle des Droits de l’Esprit Humain à l’éch
 
 ## Argument
 
-Mind the Mind Now est une démarche bottom-up, c’est-à-dire qui part des pratiques et usages technologiques d’aujourd’hui pour manifester le souci général des utilisateurs en vue d’une cohabitation harmonieuse des humains et des technologies de l’esprit. Son point d’aboutissement – la Déclaration universelle des droits de l’esprit humain, le troisième étage de la fusée Mind the Mind Now – serait proclamée au nom des peuples de la Terre.
+_Mind the Mind Now_ est une démarche bottom-up, c’est-à-dire qui part des pratiques et usages technologiques d’aujourd’hui pour manifester le souci général des utilisateurs en vue d’une cohabitation harmonieuse des humains et des technologies de l’esprit. Son point d’aboutissement – la Déclaration universelle des droits de l’esprit humain, le troisième étage de la fusée Mind the Mind Now – serait proclamée au nom des peuples de la Terre.
 
 Le premier étage est celui de la prise de conscience. Par l’obtention du label Mind the Mind Now, les parties prenantes se voient reconnaître leur engagement pour les valeurs de Déclaration. De ce fait, comme le label Bio, le label Mind the Mind Now donne une information précieuse à l’utilisateur. Comme lui, le label Mind the Mind Now n’est pas une déclaration de politique générale, mais la marque du positionnement en faveur du bien-être à long terme du consommateur. Il ne s’agit donc en aucun cas de se substituer aux politiques étatiques, ni de préfigurer une gouvernance mondiale du numérique. Il s’agit, plus simplement mais non moins essentiellement, de marquer que producteurs et consommateurs gardent l’esprit à l’esprit. 
 

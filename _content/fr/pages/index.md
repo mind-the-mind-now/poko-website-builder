@@ -9,16 +9,7 @@ name: Accueil
 eleventyNavigation:
   order: 1
 ---
-{# {% section type="cover", vars={"minHeight":"","noPadding":false,"gap":""}, blocks=[{"value":"# [Initiative pour une]{style=color:var(--terracotta);font-size:var(--step-1-5);}<br>Déclaration Universelle des Droits de l’Esprit Humain {.centered style=font-size:var(--step-4-6);}\n\n[Nous rejoindre](#contact-form){.button} {.center .intrinsic}\n\n<a href=\"#sub-title\" class=\"scroll pile\"></a>","type":"markdown"}], advanced={} %} #}
-
-{% component "home-header.md", { preHeading: "Initiative pour une", heading: "Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[Pourquoi?](#une-declaration-pour-quoi-faire) [Notre démarche](#notre-demarche) [Notre objectif](#notre-objectif) [Nous contacter](/contact/) {.cluster style=justify-content:center;}" } %}
-
-Numérique, IA & métatechnologies: quel avenir voulons-pour l’humanité? {.h2 #sub-title}
-
-Nous sommes débordés par les avancées exponentielles des métatechnologies.
-Sans un nouveau cadre éthique global, toutes nos mesures, réglementations et dispositions sont vouées à rester locales, parcellaires et au total inefficaces.
-
-Soutenir la DUDEH, c'est participer à la fondation d'un cadre éthique planétaire pour les générations actuelles et futures.
+{% component "home-header.md", { preHeading: "Initiative pour une", heading: "Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[**Une Déclaration, pour quoi faire?**](#une-declaration-pour-quoi-faire) { style=text-align:center;}\n\n[Notre démarche](#notre-demarche) [Notre objectif](#notre-objectif) [Qui sommes-nous?](#qui-sommes-nous) [Nous contacter](/contact/) {.cluster style=justify-content:center;}" } %}
 
 ## Une Déclaration, pour quoi faire?
 
@@ -62,14 +53,13 @@ Les utilisateurs ont globalement confiance, par défaut, dans les _outils_ numé
 
 Nous sommes un collectif cherchant à promouvoir l’idée d’une DUDEH.
 
-### Les membres fondateurs
+### L'équipe opérationnelle
 
 {% partial "founders.md" %}
 
-[Découvrez les acteurs du projet]({{ "a-propos" | locale_url }}){.button} {.center .intrinsic}
+[Découvrez les acteurs du projet]({{ "a-propos" | locale_url }}#l-equipe-operationnelle){.button} {.center .intrinsic}
 
-
-### Le comité scientifique
+### Le comité éthique et scientifique
 
 {% partial "committee.md" %}
 
