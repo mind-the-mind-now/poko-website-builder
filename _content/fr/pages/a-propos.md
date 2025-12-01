@@ -19,7 +19,7 @@ Le comité éthique et scientifique est l'organe de réflexion interdisciplinair
 
 <ul role="list" class="committee-members grid-fluid">
 {% for member in committeeArray %}
-<li class="committee-member box">
+<li class="committee-member box palette-main">
 <img src="{{member.data.pagePreview.image.src}}" alt="{{member.data.pagePreview.title}}" width="500" />
 <h3 class="h4">{{ member.data.title }}</h3>
 <p>{{ member.data.shortDescription }}</p>
@@ -60,9 +60,10 @@ flex-direction: column;
 align-items: center;
 justify-content: flex-start;
 padding: var(--step--1);
-border: 1px solid #ccc;
 border-radius: 5px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .3);
+background-color: hsl(from var(--cream) h s 93);
 }
 
 .founder img, .committee-member img {

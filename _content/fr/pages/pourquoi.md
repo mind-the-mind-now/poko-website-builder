@@ -10,7 +10,7 @@ eleventyNavigation:
 ---
 # Une Déclaration, pour quoi faire?
 
-::: div {.section .box .palette-contrast-terracotta}
+::: div {.section .box .palette-contrast-terracotta .full-bleed-before}
 
 ## Aller au-delà des libertés individuelles
 

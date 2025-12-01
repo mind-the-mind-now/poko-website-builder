@@ -1,1 +1,4 @@
-{ "tags": ["founders"] }
+{
+  "tags": ["founders"],
+  "generatePage": "previewOnly"
+}

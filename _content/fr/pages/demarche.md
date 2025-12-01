@@ -10,7 +10,7 @@ eleventyNavigation:
 ---
 # Notre démarche
 
-::: div {.section .palette-contrast-terracotta .full-bleed-before}
+::: div {.section .box .palette-contrast-terracotta .full-bleed-before}
 
 ## En quelques mots 
 

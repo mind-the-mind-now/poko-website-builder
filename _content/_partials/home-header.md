@@ -1,6 +1,8 @@
-:::: cover
+::::: cover
 
 # [{{ preHeading }}]{style=color:var(--terracotta);font-size:var(--step-1-5);}<br>{{ heading }} {.centered style=font-size:var(--step-4-6);}
+
+:::: flow
 
 {{ bottom | safe }}
 
@@ -9,6 +11,8 @@
 <a href="#une-declaration-pour-quoi-faire" class="scroll pile"></a>
 
 ::::
+
+:::::
 
 {% css %}
 .scroll {

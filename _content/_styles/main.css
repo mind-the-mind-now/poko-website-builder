@@ -70,4 +70,7 @@ main > .section {
     & > :first-child {
         /*margin-block-start: 0;*/
     }
+    &.box.full-bleed-before {
+        --full-bleed-max-width: var(--width-max);
+    }
 }

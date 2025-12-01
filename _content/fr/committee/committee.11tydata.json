@@ -1,1 +1,4 @@
-{ "tags": ["committee"] }
+{
+  "tags": ["committee"],
+  "generatePage": "previewOnly"
+}

@@ -44,87 +44,34 @@ palettes:
     text: blue
     bg: cream
     border: ''
-    outline: ''
     text-decoration: terracotta
     text--marker: terracotta
-    text-emphasis: ''
-    text--selection: ''
-    bg--selection: ''
-    shadow: ''
-    caret: ''
-    column-rule: ''
-    fill: ''
-    stroke: ''
-    outline--focus: ''
-    advanced:
-      text__heading: ''
-      bg__heading: ''
+    b:
+      text__b: terracotta
+      bg__b: ''
+    a:
       text__a: ''
       bg__a: ''
       text__a--hover: terracotta
       bg__a--hover: ''
+    button:
       text__button: terracotta
       bg__button: ''
       text__button--hover: blue
       bg__button--hover: ''
       text__button--disabled: blue-lighter
-      bg__button--disabled: ''
-      icon-fill: ''
-      icon-stroke: ''
-      text__code: ''
-      bg__code: ''
-      border__code: ''
-      text__mark: ''
-      bg__mark: ''
-      border__mark: ''
-      track-color: ''
-      thumb-color: ''
   - name: contrast-blue
     text: cream
     bg: blue
     border: ''
-    outline: ''
     text-decoration: ''
     text--marker: ''
-    text-emphasis: ''
-    text--selection: ''
-    bg--selection: ''
-    shadow: ''
-    caret: ''
-    column-rule: ''
-    fill: ''
-    stroke: ''
-    outline--focus: ''
-    advanced:
-      text__heading: ''
-      bg__heading: ''
+    a:
       text__a: ''
       bg__a: ''
       text__a--hover: terracotta
       bg__a--hover: ''
-      text__button: ''
-      bg__button: ''
-      text__button--hover: ''
-      bg__button--hover: ''
-      text__button--disabled: ''
-      bg__button--disabled: ''
-      icon-fill: ''
-      icon-stroke: ''
-      text__code: ''
-      bg__code: ''
-      border__code: ''
-      text__mark: ''
-      bg__mark: ''
-      border__mark: ''
-      track-color: ''
-      thumb-color: ''
-  - name: contrast-terracotta
-    text: cream
-    bg: terracotta
-    border: ''
     outline: ''
-    text-decoration: blue
-    text--marker: blue
     text-emphasis: ''
     text--selection: ''
     bg--selection: ''
@@ -134,29 +81,27 @@ palettes:
     fill: ''
     stroke: ''
     outline--focus: ''
-    advanced:
-      text__heading: ''
-      bg__heading: ''
+  - name: contrast-terracotta
+    text: cream
+    bg: terracotta
+    border: ''
+    text-decoration: blue
+    text--marker: blue
+    b:
+      text__b: blue
+      bg__b: ''
+    a:
       text__a: ''
       bg__a: ''
       text__a--hover: blue
       bg__a--hover: ''
+    button:
       text__button: cream
       bg__button: ''
       text__button--hover: blue
       bg__button--hover: ''
       text__button--disabled: gray
       bg__button--disabled: ''
-      icon-fill: ''
-      icon-stroke: ''
-      text__code: ''
-      bg__code: ''
-      border__code: ''
-      text__mark: ''
-      bg__mark: ''
-      border__mark: ''
-      track-color: ''
-      thumb-color: ''
 styleContexts:
   - name: main
     value: ctx

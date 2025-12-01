@@ -6,7 +6,7 @@ localizationKey: ee58e4351581
 name: Francis Jutand
 preview:
   image:
-    src: /_images/person-gray-photo-placeholder-man-shirt-white-background-person-gray-photo-placeholder-man-132818487.webp
+    src: /_images/f-jutand-0535-1024x682.webp
 order: 15
 ---
 Expert du numérique  

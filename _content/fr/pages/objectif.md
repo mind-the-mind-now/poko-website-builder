@@ -10,7 +10,7 @@ eleventyNavigation:
 ---
 # Notre objectif
 
-::: div {.section .palette-contrast-terracotta .full-bleed-before}
+::: div {.section .box .palette-contrast-terracotta .full-bleed-before}
 
 ## Promouvoir l'engagement pour l'Esprit
 

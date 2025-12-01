@@ -13,15 +13,18 @@ eleventyNavigation:
 
 ## Une Déclaration, pour quoi faire?
 
-Une Déclaration universelle donne un nouveau cap pour l’humanité future.
+Une nouvelle <b>Déclaration</b> donne un nouveau cap.
 
-La Déclaration universelle des droits de l’esprit humain garantit à l’humanité future la souveraineté de l’esprit humain sur les technologies avec lesquelles il doit désormais cohabiter.
+Une Déclaration <b>universelle</b> donne un nouveau cap pour l’humanité future.
 
-L’évolution technologique progresse, aussi inévitablement qu’un enfant grandit ; mais face à sa progression désormais exponentielle, veillons à ce que sa trajectoire préserve la souveraineté et l’intégrité de l’esprit humain. Voilà ce que vise à garantir la Déclaration universelle des droits de l’esprit humain.
+La Déclaration universelle <b>des droits de l’esprit humain</b> garantit à l’humanité future la souveraineté de l’esprit humain sur les technologies avec lesquelles il doit désormais cohabiter.
 
-Mind the Mind Now est le nom de la démarche et du collectif qui porte le processus de ce projet ambitieux, visionnaire, et nécessaire.
+L’évolution technologique progresse, aussi inévitablement qu’un enfant grandit ; mais face à sa progression désormais exponentielle, nous devons veiller à ce que sa trajectoire préserve la souveraineté et l’intégrité de l’esprit humain. Voilà ce que vise à garantir la <b>Déclaration universelle des droits de l’esprit humain</b>.
 
-[En savoir plus sur le "pourquoi"]({{ "pourquoi" | locale_url }})
+<b>**_Mind the Mind Now!_**</b> est le nom de la démarche qui porte le processus de ce projet ambitieux, visionnaire, et nécessaire.
+
+
+[En savoir plus sur la Déclaration]({{ "pourquoi" | locale_url }})
 
 ::: div { #demarche .section .palette-contrast-terracotta .full-bleed-before}
 
