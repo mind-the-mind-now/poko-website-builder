@@ -1,5 +1,16 @@
 @import "_ctx.css";
 
+:root {
+    --radius-s: 0.15rem;
+    --radius-m: 0.3rem;
+    --cream-light: hsl(from var(--cream) h s 93);
+}
+
+footer {
+    position: sticky;
+    top: calc(100vh - 1px);
+}
+
 a {
     --deco-thickness: 0.5em;
     --deco-offset: -0.2em;
@@ -12,6 +23,10 @@ a {
         text-decoration 0.2s ease-in-out,
         text-decoration-thickness 0.2s ease-in-out,
         text-underline-offset 0.2s ease-in-out;
+}
+
+hr {
+    border-color: var(--color-text-decoration);
 }
 
 /* prettier-ignore */
@@ -30,10 +45,9 @@ main > h1 {
     font-size: var(--step-5);
 }
 
-details {
+/*details {
     & > :not(summary) {
         margin-inline-start: var(--step-1);
-        /* max-inline-size: calc(var(--width-prose) - var(--step-1)); */
         max-inline-size: calc(100% - var(--step-1));
     }
 
@@ -44,10 +58,8 @@ details {
     }
 }
 summary > h3 {
-    /* border-block-end: solid 1px var(--terracotta);
-  padding-block-end: 0.2em; */
     text-decoration: underline var(--terracotta);
-}
+}*/
 
 /* Centered Button: Avoid lateral scroll */
 p.center.intrinsic {
@@ -55,10 +67,17 @@ p.center.intrinsic {
     --gutters-center: 0;
 }
 
-a.button {
+a.button,
+button,
+input,
+textarea {
     /*color: var(--terracotta);*/
     border: 1px solid currentColor;
+    border-radius: var(--radius-s);
     text-decoration: none;
+}
+
+a.button {
     padding: 0.5em 1em;
 }
 

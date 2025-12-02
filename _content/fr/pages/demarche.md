@@ -12,7 +12,7 @@ eleventyNavigation:
 
 ::: div {.section .box .palette-contrast-terracotta .full-bleed-before}
 
-## En quelques mots 
+## Une fusée à trois étages
 
 ### 1er étage
 
@@ -30,7 +30,7 @@ Etage de la Déclaration Universelle des Droits de l’Esprit Humain à l’éch
 
 :::
 
-## Argument
+## Un engagement à protéger l'esprit humain
 
 _Mind the Mind Now_ est une démarche bottom-up, c’est-à-dire qui part des pratiques et usages technologiques d’aujourd’hui pour manifester le souci général des utilisateurs en vue d’une cohabitation harmonieuse des humains et des technologies de l’esprit. Son point d’aboutissement – la Déclaration universelle des droits de l’esprit humain, le troisième étage de la fusée Mind the Mind Now – serait proclamée au nom des peuples de la Terre.
 

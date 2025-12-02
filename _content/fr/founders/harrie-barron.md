@@ -16,6 +16,9 @@ order: 4
 shortDescription: Facilitateur de transitions | Associé IN PRINCIPO
 ---
 
+<b>Facilitateur de transitions</b>  
+<b>Associé IN PRINCIPO</b>
+
 Il s’appuie sur l’intelligence collective, l’agilité et les technologies pour faire surgir des solutions concrètes et durables. Convaincu que l’IA transformera profondément les entreprises à condition d'être au service de l’utilisateur. 
 
 [Profil LinkedIn de Harrie Baron](https://www.linkedin.com/in/harriebarron/)

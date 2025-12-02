@@ -15,6 +15,11 @@ tags:
 order: 3
 shortDescription: Facilitateur stratégique de la Démarche | Associé IN PRINCIPO
 ---
+
+<b>Facilitateur stratégique de la Démarche</b>  
+<b>Associé IN PRINCIPO</b>
+
+
 Stéphane Demarquette a travaillé pendant plus de 20 ans comme DRH à l’innovation et au développement chez L’Oréal.
 
 Il s’est engagé dans la démarche Mind the Mind Now, persuadé qu’elle le vaut bien. Il est en effet convaincu qu’un nouveau cadre éthique favorisera de nouvelles capacités de coopération entre l’IA et l’intelligence humaine collective.

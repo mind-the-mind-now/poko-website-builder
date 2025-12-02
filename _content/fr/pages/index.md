@@ -9,7 +9,7 @@ name: Accueil
 eleventyNavigation:
   order: 1
 ---
-{% component "home-header.md", { preHeading: "Initiative pour une", heading: "Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[**Une Déclaration, pour quoi faire?**](#une-declaration-pour-quoi-faire) { style=text-align:center;}\n\n[Notre démarche](#notre-demarche) [Notre objectif](#notre-objectif) [Qui sommes-nous?](#qui-sommes-nous) [Nous contacter](/contact/) {.cluster style=justify-content:center;}" } %}
+{% component "home-header.md", { preHeading: "Initiative pour une", heading: "Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[**Une Déclaration, pour quoi faire?**](#une-declaration-pour-quoi-faire) { style=text-align:center;}\n\n[Notre démarche](#notre-demarche) [Notre objectif](#notre-objectif) [Notre équipe](#le-comite-de-pilotage) [Comité éthique et scientifique](#le-comite-ethique-et-scientifique) [Nous contacter](/contact/) {.cluster style=justify-content:center;}" } %}
 
 ## Une Déclaration, pour quoi faire?
 
@@ -22,7 +22,6 @@ La Déclaration universelle <b>des droits de l’esprit humain</b> garantit à l
 L’évolution technologique progresse, aussi inévitablement qu’un enfant grandit ; mais face à sa progression désormais exponentielle, nous devons veiller à ce que sa trajectoire préserve la souveraineté et l’intégrité de l’esprit humain. Voilà ce que vise à garantir la <b>Déclaration universelle des droits de l’esprit humain</b>.
 
 <b>**_Mind the Mind Now!_**</b> est le nom de la démarche qui porte le processus de ce projet ambitieux, visionnaire, et nécessaire.
-
 
 [En savoir plus sur la Déclaration]({{ "pourquoi" | locale_url }})
 
@@ -56,25 +55,25 @@ Les utilisateurs ont globalement confiance, par défaut, dans les _outils_ numé
 
 Nous sommes un collectif cherchant à promouvoir l’idée d’une DUDEH.
 
-### L'équipe opérationnelle
+### Le comité de pilotage
 
 {% partial "founders.md" %}
 
-[Découvrez les acteurs du projet]({{ "a-propos" | locale_url }}#l-equipe-operationnelle){.button} {.center .intrinsic}
+[En savoir plus sur le comité de pilotage]({{ "a-propos" | locale_url }}#le-comite-de-pilotage){.button} {.center .intrinsic}
 
 ### Le comité éthique et scientifique
 
 {% partial "committee.md" %}
 
-[Découvrez les acteurs du projet]({{ "a-propos" | locale_url }}){.button} {.center .intrinsic}
+[En savoir plus sur le comité éthique et scientifique]({{ "a-propos" | locale_url }}#le-comite-ethique-et-scientifique){.button} {.center .intrinsic}
 
 :::
 
 ## Comment nous rejoindre?
 
-Le projet de la DUDEH est ambitieux, et visionnaire.
+Le projet de la Déclaration Universelle des Droits de l’Esprit Humain est ambitieux, et visionnaire.
 
-Soutenir la DUDEH, c'est participer à la fondation d'un cadre éthique planétaire pour les générations actuelles et futures.
+Soutenir le projet, c'est participer à la fondation d'un cadre éthique planétaire pour les générations actuelles et futures.
 
 [Contactez-nous]({{ "contact" | locale_url }}){.button} {.center .intrinsic}
 

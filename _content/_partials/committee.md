@@ -1,10 +1,6 @@
+<ul role="list" class="committee-list-summary grid-fluid" style="max-inline-size:var(--width-max); --columns:8;">
 
-{% set committee = collections.committee | asc('order') %}
-{% set committeeArray = committee.concat(committee).concat(committee) %}
-
-<ul role="list" class="grid-fluid" style="max-inline-size:var(--width-max); --columns:8;">
-
-{% for member in committeeArray %}
+{% for member in collections.committee | asc('order') %}
 
 <li class="flow" style="--flow-space:0.2rem;">
 

@@ -12,8 +12,6 @@ eleventyNavigation:
 
 ::: div {.section .box .palette-contrast-terracotta .full-bleed-before}
 
-## Promouvoir l'engagement pour l'Esprit
-
 L’objet connecté que vous détenez, le service numérique que vous utilisez sont-ils conformes aux valeurs promues par la Déclaration ? L’entreprise s’est-elle engagée aux côtés de Mind the Mind Now ? Son produit vise-t-il d’abord une utilité humaine avant de servir l’utilité de l’écosystème ? A-t-elle envisagé les effets à long terme ? A-t-elle gardé l’esprit à l’esprit ?
 
 A ces questions, le label répond en un clin d’œil. Il prouve l’engagement pour les valeurs promues par la Déclaration, l’engagement pour le projet humain porté par le numérique.
@@ -22,7 +20,7 @@ Et cela fait toute la différence.
 
 :::
 
-## Les deux niveaux de confiance
+## Pour un numérique digne de confiance
 
 Depuis les années 2000, le numérique est devenu le compagnon de route obligé de nos activités quotidiennes, qu’elles soient personnelles, sociales ou professionnelles.
 

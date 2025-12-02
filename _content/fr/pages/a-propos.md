@@ -8,37 +8,39 @@ name: À propos
 eleventyNavigation:
   order: 9
 ---
-# La structure
+# Mind the Mind Now!
+
+::: div { .section .palette-contrast-terracotta .full-bleed-before }
+
+## Le comité de pilotage
+
+Le projet est porté par une équipe pluridisciplinaire composée de [chercheurs et de professionnels de l’industrie].
+
+<ul role="list" class="founders grid-fluid mbs-reset">
+{% for founder in collections.founders | asc('order') %}
+<li class="founder box palette-main">
+<img src="{{founder.data.pagePreview.image.src}}" alt="{{founder.data.pagePreview.title}}" width="500" />
+<h3 class="name h4">{{ founder.data.title }}</h3>
+
+{{ founder.content | md }}
+
+</li>
+{% endfor %}
+</ul>
+
+:::
 
 ## Le comité éthique et scientifique
 
 Le comité éthique et scientifique est l'organe de réflexion interdisciplinaire qui a pour rôle de conseil et de diffusion de l’idée d’une Déclaration Universelle des Droits de l’Esprit Humain.
 
-{% set committee = collections.committee | asc('order') %}
-{% set committeeArray = committee.concat(committee).concat(committee) %}
-
-<ul role="list" class="committee-members grid-fluid">
-{% for member in committeeArray %}
+<ul role="list" class="committee-members grid-fluid mbs-reset">
+{% for member in collections.committee | asc('order') %}
 <li class="committee-member box palette-main">
 <img src="{{member.data.pagePreview.image.src}}" alt="{{member.data.pagePreview.title}}" width="500" />
-<h3 class="h4">{{ member.data.title }}</h3>
-<p>{{ member.data.shortDescription }}</p>
-</li>
-{% endfor %}
-</ul>
+<h3 class="name h4">{{ member.data.title }}</h3>
 
-## L’équipe opérationnelle
-
-Le projet est porté par une équipe pluridisciplinaire composée de [chercheurs et de professionnels de l’industrie].
-
-<ul role="list" class="founders grid-fluid">
-{% for founder in collections.founders | asc('order') %}
-<li class="founder box">
-<img src="{{founder.data.pagePreview.image.src}}" alt="{{founder.data.pagePreview.title}}" width="500" />
-<h3 class="h4">{{ founder.data.title }}</h3>
-<p><strong>{{ founder.data.shortDescription }}</strong></p>
-
-{{ founder.content | md }}
+{{ member.content | md }}
 
 </li>
 {% endfor %}
@@ -50,20 +52,15 @@ max-width: var(--max-width);
 --columns: 2;
 }
 
-.committee-members {
---columns: 5;
-}
-
 .founder, .committee-member {
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: flex-start;
 padding: var(--step--1);
-border-radius: 5px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: var(--radius-m);
 box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .3);
-background-color: hsl(from var(--cream) h s 93);
+background-color: var(--cream-light);
 }
 
 .founder img, .committee-member img {
@@ -71,6 +68,16 @@ aspect-ratio: 1;
 object-position: top;
 border-radius: 100%;
 max-inline-size: 250px;
+}
+
+.founder .flow, .committee-member .flow {
+font-size: var(--step--1);
+--flow-space: calc(1em / 3);
+inline-size: 100%;
+}
+
+.founder .name + *, .committee-member .name + * {
+margin-block-start: 0.5em;
 }
 
 {% endcss %}

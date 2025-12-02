@@ -12,8 +12,6 @@ eleventyNavigation:
 
 ::: div {.section .box .palette-contrast-terracotta .full-bleed-before}
 
-## Aller au-delà des libertés individuelles
-
 L’idée est simple. Face au développement exponentiel du numérique, de l’IA et des métatechnologies, il ne suffit plus de vouloir protéger, comme on tente de le faire actuellement, les droits et libertés individuels, socle des droits de l’homme.
 
 Pourquoi ?
@@ -26,7 +24,7 @@ Si donc nous ne voulons pas d’une existence humaine subordonnée au fonctionne
 
 :::
 
-## Protéger l'Esprit de la dépendance aux machines
+## Si c'est l'esprit qui est menacé, c'est l'esprit qu'il faut protéger
 
 Partons d’une évidence aveuglante : le foisonnement de textes juridiques – particulièrement en Europe mais pas seulement - sur la protection des données ou le respect de la vie privée, l’inflation de comités d’éthique, de chartes ou de guide des bonnes pratiques n’a enrayé en rien l’extension proliférante du numérique augmenté de l’intelligence artificielle (métatechnologies). Ni la vigilance de la FTC (Federal Trade Commission) aux Etats-Unis, ni le RGPD en Europe n’ont infléchi la marche triomphale des stratégies des géants du numérique. Bien au contraire, ce sont ces géants qui, partout, imposent leurs règles et définissent, ce faisant, les contours de l’humanité future.
 

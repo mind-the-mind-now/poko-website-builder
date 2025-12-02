@@ -13,6 +13,10 @@ tags:
 order: 2
 shortDescription: Facilitateur stratégique de la Démarche | Fondateur IN PRINCIPO
 ---
+
+<b>Facilitateur stratégique de la Démarche</b>  
+<b>Fondateur IN PRINCIPO</b>
+
 Avec son équipe, Olivier Réaud propose une approche centrée sur les dynamiques collaboratives – une pratique de facilitation qui engendre l’intelligence collective continue – et l’applique à la transformation, au management, à l’innovation, aux écosystèmes.  
 Conscient de l’urgence d’agir à un niveau global, et alerté par l’emprise croissante des métatechnologies, il s’est engagé de manière proactive dans la démarche Mind the Mind Now.
 
