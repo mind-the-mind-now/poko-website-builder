@@ -7,6 +7,7 @@ localizationKey: 0d76b81153e3
 status: draft
 name: Test
 ---
+
 {% section type="cover", vars={"minHeight":"","noPadding":false,"gap":""}, blocks=[{"value":"# [Initiative pour une]{style=color:var(--terracotta)} Déclaration Universelle des Droits de l’Esprit Humain {.centered .h0}\n\n<a href=\"#sub-title\" class=\"scroll pile\"></a>","type":"markdown"}], advanced={} %}
 
 Numérique, IA & métatechnologies: quel avenir voulons-pour l’humanité? {.h2 #sub-title}
@@ -16,7 +17,7 @@ Sans un nouveau cadre éthique global, toutes nos mesures, réglementations et d
 
 Soutenir la DUDEH, c'est participer à la fondation d'un cadre éthique planétaire pour les générations actuelles et futures.
 
-::: div { #who-section .palette-contrast-terracotta .full-bleed-before}
+::: div { #who-section .palette-contrast-terracotta .full-bleed-bg}
 
 ## Qui sommes-nous?
 

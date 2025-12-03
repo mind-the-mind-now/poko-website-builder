@@ -4,13 +4,14 @@ lang: fr
 createdAt: 2025-11-28T11:44:00.000Z
 uuid: 7c8881546366
 localizationKey: 1f65cb374700
-name: À propos
+name: Nos équipes
 eleventyNavigation:
   order: 9
 ---
-# Mind the Mind Now!
 
-::: div { .section .palette-contrast-terracotta .full-bleed-before }
+# Nos équipes
+
+::: div { .section .palette-contrast-terracotta .full-bleed-bg }
 
 ## Le comité de pilotage
 
@@ -48,7 +49,7 @@ Le comité éthique et scientifique est l'organe de réflexion interdisciplinair
 
 {% css %}
 .founders, .committee-members {
-max-width: var(--max-width);
+max-inline-size: var(--width-max);
 --columns: 2;
 }
 
@@ -61,6 +62,7 @@ padding: var(--step--1);
 border-radius: var(--radius-m);
 box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .3);
 background-color: var(--cream-light);
+min-width: 0;
 }
 
 .founder img, .committee-member img {
@@ -76,7 +78,7 @@ font-size: var(--step--1);
 inline-size: 100%;
 }
 
-.founder .name + *, .committee-member .name + * {
+.founder .name + \*, .committee-member .name + \* {
 margin-block-start: 0.5em;
 }
 

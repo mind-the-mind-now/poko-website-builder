@@ -1,19 +1,28 @@
-<form id="contact-form" class="flow prose" style="--flow-space: var(--step--2)">
-  <input type="text" name="name" id="name" placeholder="Nom" />
-  <input type="email" name="email" id="email" placeholder="Email" />
-  <textarea name="message" id="message" placeholder="Message"></textarea>
-  <button type="submit">Envoyer</button>
+<form id="contact-form" class="flow prose" style="--flow-space: var(--step--2)" action="https://mtm-n-contact.val.run/" method="post">
+  <input type="text" name="name" id="name" placeholder="Nom" required autocomplete="name" />
+  <input type="email" name="email" id="email" placeholder="Email" required autocomplete="email" />
+  <textarea name="message" id="message" placeholder="Message" required></textarea>
+  <input name="username" id="username" placeholder="Username" type="text" tabindex="-1" autocomplete="one-time-code" class="hp">
+  <input id="formname" name="formname" type="text" value="MtM_N-contact" style="display: none;" />
+  <input type="submit" value="Envoyer">
 </form>
 
 {% css %}
+form .hp {
+  position: absolute;
+  left: -99999px;
+}
+
 #contact-form {
     margin-block-start: var(--step-3);
 }
 
 input, textarea {
     background-color: var(--cream-light);
-    &:focus {
-        border-width: 2px inset;
+    border: none;
+    outline: 1px solid currentColor;
+    &:focus-visible {
+        outline: 2px inset currentColor;
     }
 }
 {% endcss %}

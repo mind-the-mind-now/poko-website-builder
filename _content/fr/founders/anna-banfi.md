@@ -17,6 +17,6 @@ shortDescription: Facilitatrice de la Démarche | Coache entrepreneuriale
 <b>Facilitatrice de la Démarche</b>  
 <b>Coache entrepreneuriale</b>
 
-Avec son expérience de terrain et sa solide expertise en accompagnement, elle apporte son point de vue de coach pour faire grandir l’idée d’une Déclaration. Elle est convaincue que les évolutions actuelles des outils à la disposition d’une entreprise (IA et autres technologies) doivent être mises au service des employés, afin de valoriser davantage l’apport humain dans les processus de création de valeur.
+Avec son expérience de terrain et sa solide expertise en accompagnement, elle apporte son point de vue de coach pour faire grandir l’idée d’une Déclaration. Elle est convaincue que les évolutions actuelles des outils à la disposition d’une entreprise (IA et autres technologies) doivent être mises au service des personnes, afin de valoriser davantage l’apport humain dans les processus de création de valeur.
 
 [annamorphose.be](https://www.annamorphose.be)

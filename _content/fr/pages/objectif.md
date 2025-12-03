@@ -8,9 +8,10 @@ name: Objectif
 eleventyNavigation:
   order: 7
 ---
+
 # Notre objectif
 
-::: div {.section .box .palette-contrast-terracotta .full-bleed-before}
+::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
 
 L’objet connecté que vous détenez, le service numérique que vous utilisez sont-ils conformes aux valeurs promues par la Déclaration ? L’entreprise s’est-elle engagée aux côtés de Mind the Mind Now ? Son produit vise-t-il d’abord une utilité humaine avant de servir l’utilité de l’écosystème ? A-t-elle envisagé les effets à long terme ? A-t-elle gardé l’esprit à l’esprit ?
 
@@ -29,7 +30,7 @@ Du point de vue de la confiance, ce compagnonnage obligé suscite deux tendances
 1. Dans leur utilisation quotidienne, les outils numériques ont plutôt tendance à susciter la confiance des utilisateurs, comme le montre la généralisation des moyens de payement électronique, mais aussi, plus généralement, le taux de connexion quotidien des utilisateurs, en hausse permanente. Il y a là une sorte de confiance spontanée qui s’impose par défaut – une confiance de premier degré accordée aux outils numériques quotidiens.
 2. Mais les choses changent dès que l’on change d’échelle, et que l’on interroge les gens sur l’avenir du numérique et de l’IA, donc sur l’avenir de l’écosystème numérique en tant que tel, comme le montre le graphique suivant :
 
-{% partial "vector-graph-inquietudes.md" %}
+{% partial "vega-graph-inquietudes.md" %}
 
 On assite donc à une double évolution, qui n’est pas paradoxale mais qui illustre deux niveaux de confiance bien distincts :
 

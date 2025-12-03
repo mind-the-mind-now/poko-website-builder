@@ -8,9 +8,10 @@ name: Pourquoi
 eleventyNavigation:
   order: 3
 ---
+
 # Une Déclaration, pour quoi faire?
 
-::: div {.section .box .palette-contrast-terracotta .full-bleed-before}
+::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
 
 L’idée est simple. Face au développement exponentiel du numérique, de l’IA et des métatechnologies, il ne suffit plus de vouloir protéger, comme on tente de le faire actuellement, les droits et libertés individuels, socle des droits de l’homme.
 
@@ -34,9 +35,9 @@ Certes, les outils qu’ils mettent à notre disposition rendent des services in
 
 Une telle existence est pourtant compatible avec le respect des droits fondamentaux des individus. Loin de nous en protéger, ces droits, précisément parce qu’ils peuvent être respectés dans un écosystème numérique, favorisent l’avènement de celui-ci. Tel est d’ailleurs le projet de société qu’encourage jour après jour, texte après texte, l’Union européenne dans sa vision de la future société digitale.
 
-Rien dans le droit actuel ne protège donc contre ce type d’existence. Nous ne sommes actuellement pas équipés moralement, juridiquement et politiquement pour faire face à cette évolution qui se renforce jour après jour. Si nous laissons faire, ce mode de vie pourrait donc bien s’installer par défaut, à bas bruit. La vie algorithmée pourrait devenir la norme d’existence. 
+Rien dans le droit actuel ne protège donc contre ce type d’existence. Nous ne sommes actuellement pas équipés moralement, juridiquement et politiquement pour faire face à cette évolution qui se renforce jour après jour. Si nous laissons faire, ce mode de vie pourrait donc bien s’installer par défaut, à bas bruit. La vie algorithmée pourrait devenir la norme d’existence.
 
-Notre conviction est que la dépendance permanente aux dispositifs numériques affecte notre esprit en profondeur, c'est-à-dire notre existence, notre manière d’habiter le monde, nos comportements et notre relation aux autres, aux objets, aux institutions et à soi-même. 
+Notre conviction est que la dépendance permanente aux dispositifs numériques affecte notre esprit en profondeur, c'est-à-dire notre existence, notre manière d’habiter le monde, nos comportements et notre relation aux autres, aux objets, aux institutions et à soi-même.
 
 Aujourd’hui, l’esprit humain est menacé par des tentatives d’extraction, de captation et de manipulation, mais aussi de contrôle et de surveillance, qui, agrégées, finiront par le coloniser. Les problèmes de santé mentale, qui se répandent à la manière d’une épidémie, n’en sont que l’un des symptômes les plus visibles.
 

@@ -1,32 +1,41 @@
 @import "_ctx.css";
 
+.full-bleed-bg {
+  background-color: transparent;
+  border-image: conic-gradient(var(--color-bg) 0 0) fill 0/0/0
+    var(--full-bleed-expand, 100vw);
+  /* TODO: --full-bleed-max-width */
+}
+
 :root {
-    --radius-s: 0.15rem;
-    --radius-m: 0.3rem;
-    --cream-light: hsl(from var(--cream) h s 93);
+  --radius-s: 0.15rem;
+  --radius-m: 0.3rem;
+  --cream-light: hsl(from var(--cream) h s 93);
+}
+
+body {
+  /* overflow-x: hidden; */
 }
 
 footer {
-    position: sticky;
-    top: calc(100vh - 1px);
+  position: sticky;
+  top: calc(100vh - 1px);
 }
 
 a {
-    --deco-thickness: 0.5em;
-    --deco-offset: -0.2em;
-    text-decoration-color: hsl(from var(--color-text-decoration) h s l / 0.5);
-    text-decoration-skip-ink: none;
-    text-decoration-thickness: var(--deco-thickness, auto);
-    text-underline-offset: var(--deco-offset, 0.15em);
-    transition:
-        color 0.2s ease-in-out,
-        text-decoration 0.2s ease-in-out,
-        text-decoration-thickness 0.2s ease-in-out,
-        text-underline-offset 0.2s ease-in-out;
+  --deco-thickness: 0.5em;
+  --deco-offset: -0.2em;
+  text-decoration-color: hsl(from var(--color-text-decoration) h s l / 0.5);
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: var(--deco-thickness, auto);
+  text-underline-offset: var(--deco-offset, 0.15em);
+  transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out,
+    text-decoration-thickness 0.2s ease-in-out,
+    text-underline-offset 0.2s ease-in-out;
 }
 
 hr {
-    border-color: var(--color-text-decoration);
+  border-color: var(--color-text-decoration);
 }
 
 /* prettier-ignore */
@@ -40,9 +49,9 @@ hr {
 }
 
 main > h1 {
-    margin-block-start: 3em;
-    margin-block-end: 2em;
-    font-size: var(--step-5);
+  margin-block-start: 3em;
+  margin-block-end: 2em;
+  font-size: var(--step-5);
 }
 
 /*details {
@@ -63,33 +72,35 @@ summary > h3 {
 
 /* Centered Button: Avoid lateral scroll */
 p.center.intrinsic {
-    margin-block-start: var(--step-4);
-    --gutters-center: 0;
+  margin-block-start: var(--step-4);
+  --gutters-center: 0;
 }
 
 a.button,
 button,
 input,
 textarea {
-    /*color: var(--terracotta);*/
-    border: 1px solid currentColor;
-    border-radius: var(--radius-s);
-    text-decoration: none;
+  /*color: var(--terracotta);*/
+  border: 1px solid currentColor;
+  border-radius: var(--radius-s);
+  text-decoration: none;
 }
 
 a.button {
-    padding: 0.5em 1em;
+  padding: 0.5em 1em;
 }
 
 main > .section {
-    /*padding-inline: var(--step--1);*/
-    padding-block-start: 1px; /* To prevent margin collapse on the first elem inside */
-    padding-block-end: var(--step-5);
-    margin-block: var(--step-5);
-    & > :first-child {
-        /*margin-block-start: 0;*/
-    }
-    &.box.full-bleed-before {
-        --full-bleed-max-width: var(--width-max);
-    }
+  /*padding-inline: var(--step--1);*/
+  padding-block-start: 1px; /* To prevent margin collapse on the first elem inside */
+  padding-block-end: var(--step-5);
+  margin-block: var(--step-5);
+  & > :first-child {
+    /*margin-block-start: 0;*/
+  }
+  &.box.full-bleed-before,
+  &.box.full-bleed-bg {
+    --full-bleed-max-width: var(--width-max);
+    --full-bleed-expand: var(--pi-body, 0.68rem);
+  }
 }

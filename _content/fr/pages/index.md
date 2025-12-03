@@ -9,6 +9,7 @@ name: Accueil
 eleventyNavigation:
   order: 1
 ---
+
 {% component "home-header.md", { preHeading: "Initiative pour une", heading: "Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[**Une Déclaration, pour quoi faire?**](#une-declaration-pour-quoi-faire) { style=text-align:center;}\n\n[Notre démarche](#notre-demarche) [Notre objectif](#notre-objectif) [Notre équipe](#le-comite-de-pilotage) [Comité éthique et scientifique](#le-comite-ethique-et-scientifique) [Nous contacter](/contact/) {.cluster style=justify-content:center;}" } %}
 
 ## Une Déclaration, pour quoi faire?
@@ -25,7 +26,7 @@ L’évolution technologique progresse, aussi inévitablement qu’un enfant gra
 
 [En savoir plus sur la Déclaration]({{ "pourquoi" | locale_url }})
 
-::: div { #demarche .section .palette-contrast-terracotta .full-bleed-before}
+::: div { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
 
 ## Notre démarche
 
@@ -49,7 +50,7 @@ Les utilisateurs ont globalement confiance, par défaut, dans les _outils_ numé
 
 [En savoir plus sur notre objectif]({{ "objectif" | locale_url }})
 
-::: div { #who-section .section .palette-contrast-terracotta .full-bleed-before}
+::: div { #who-section .section .palette-contrast-terracotta .full-bleed-bg}
 
 ## Qui sommes-nous?
 

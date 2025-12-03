@@ -8,15 +8,16 @@ name: Démarche
 eleventyNavigation:
   order: 5
 ---
+
 # Notre démarche
 
-::: div {.section .box .palette-contrast-terracotta .full-bleed-before}
+::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
 
 ## Une fusée à trois étages
 
 ### 1er étage
 
-Avec divers partenaires, et sous la supervision de notre Comité scientifique, nous travaillons à l’instauration d’un label, signe de l’engagement en faveur des principes de la Déclaration. 
+Avec divers partenaires, et sous la supervision de notre Comité scientifique, nous travaillons à l’instauration d’un label, signe de l’engagement en faveur des principes de la Déclaration.
 
 Son but est de marquer l’adhésion au principe de la protection de l’esprit, de sorte que les utilisateurs sachent que l’objet ou le service qu’ils utilisent portent la marque d’un engagement pour les valeurs promues par la Déclaration.
 
@@ -34,7 +35,7 @@ Etage de la Déclaration Universelle des Droits de l’Esprit Humain à l’éch
 
 _Mind the Mind Now_ est une démarche bottom-up, c’est-à-dire qui part des pratiques et usages technologiques d’aujourd’hui pour manifester le souci général des utilisateurs en vue d’une cohabitation harmonieuse des humains et des technologies de l’esprit. Son point d’aboutissement – la Déclaration universelle des droits de l’esprit humain, le troisième étage de la fusée Mind the Mind Now – serait proclamée au nom des peuples de la Terre.
 
-Le premier étage est celui de la prise de conscience. Par l’obtention du label Mind the Mind Now, les parties prenantes se voient reconnaître leur engagement pour les valeurs de Déclaration. De ce fait, comme le label Bio, le label Mind the Mind Now donne une information précieuse à l’utilisateur. Comme lui, le label Mind the Mind Now n’est pas une déclaration de politique générale, mais la marque du positionnement en faveur du bien-être à long terme du consommateur. Il ne s’agit donc en aucun cas de se substituer aux politiques étatiques, ni de préfigurer une gouvernance mondiale du numérique. Il s’agit, plus simplement mais non moins essentiellement, de marquer que producteurs et consommateurs gardent l’esprit à l’esprit. 
+Le premier étage est celui de la prise de conscience. Par l’obtention du label Mind the Mind Now, les parties prenantes se voient reconnaître leur engagement pour les valeurs de Déclaration. De ce fait, comme le label Bio, le label Mind the Mind Now donne une information précieuse à l’utilisateur. Comme lui, le label Mind the Mind Now n’est pas une déclaration de politique générale, mais la marque du positionnement en faveur du bien-être à long terme du consommateur. Il ne s’agit donc en aucun cas de se substituer aux politiques étatiques, ni de préfigurer une gouvernance mondiale du numérique. Il s’agit, plus simplement mais non moins essentiellement, de marquer que producteurs et consommateurs gardent l’esprit à l’esprit.
 
 Son principe général : que l’esprit ne soit jamais considéré comme un simple moyen en vue de fins qui ne servent pas ultimement son bien. Pour nous, la légitime recherche de performance économique et technique ne doit pas se faire au détriment du bien-être de l’esprit.
 
