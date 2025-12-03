@@ -1,5 +1,5 @@
 
-<div class="pseudo-logo"><span><b>Mind</b> the mind</span><span><b>now!</b></span></div>
+<div class="pseudo-logo"><span><b>Mind</b> the mind</span><b>now!</b></div>
 
 {% css %}
 .pseudo-logo {
@@ -11,8 +11,14 @@ padding: var(--step--2);
 display: flex;
 flex-direction: column;
 align-items: end;
-text-align: end;
 line-height: 1;
+
+& :nth-child(2) {
+/* display:inline-block;
+transform:scaleX(1.7) translateX(-18%); */
+/* letter-spacing: 0.1em; */
+}
+
 }
 
 

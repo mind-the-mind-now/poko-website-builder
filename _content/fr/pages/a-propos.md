@@ -15,8 +15,6 @@ eleventyNavigation:
 
 ## Le comité de pilotage
 
-Le projet est porté par une équipe pluridisciplinaire composée de [chercheurs et de professionnels de l’industrie].
-
 <ul role="list" class="founders grid-fluid mbs-reset">
 {% for founder in collections.founders | asc('order') %}
 <li class="founder box palette-main">
