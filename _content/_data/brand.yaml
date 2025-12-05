@@ -4,7 +4,7 @@ inlineAllStyles: true
 widthsContexts:
   - name: main
     max: 80rem
-    prose: 50rem
+    prose: 53rem
 fontStacksContexts:
   - name: main
     body:
@@ -24,6 +24,8 @@ typeScales:
         endStep: '5'
       - startStep: '4'
         endStep: '6'
+      - startStep: '-1'
+        endStep: '0'
 colors:
   - name: white
     value: '#ddddff'

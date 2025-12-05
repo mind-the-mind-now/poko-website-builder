@@ -16,18 +16,18 @@
 
 {% css %}
 .scroll {
---_proportions: var(--step-2);
-inline-size: var(--_proportions);
-block-size: var(--_proportions);
+--scroll-proportions: var(--step-2);
+inline-size: var(--scroll-proportions);
+block-size: var(--scroll-proportions);
 margin-inline: auto;
-margin-block: calc(var(--_proportions) / 2);
+margin-block: calc(var(--scroll-proportions) / 2);
 animation: down 1.5s infinite;
 align-items: center;
 justify-items: center;
 &::before {
 content: '';
-width: var(--_proportions);
-height: var(--_proportions);
+width: var(--scroll-proportions);
+height: var(--scroll-proportions);
 border-left: 2px solid var(--terracotta);
 border-bottom: 2px solid var(--terracotta);
 transform: rotate(-45deg);
@@ -38,7 +38,7 @@ transform: rotate(-45deg);
 transform: translate(0);
 }
 20% {
-transform: translateY(calc(var(--_proportions) / 4));
+transform: translateY(calc(var(--scroll-proportions) / 4));
 }
 40% {
 transform: translate(0);

@@ -7,6 +7,8 @@ localizationKey: f9a70152aad2
 name: Objectif
 eleventyNavigation:
   order: 7
+metadata:
+  description: "Notre objectif: rétablir la confiance dans le numérique grâce au label Mind the mind Now et garantir un avenir respectueux de l'esprit humain."
 ---
 
 # Notre objectif

@@ -7,6 +7,8 @@ localizationKey: 902307f30f07
 name: Contact
 eleventyNavigation:
   order: 10
+metadata:
+  description: Prenez contact avec Mind the mind now. Rejoignez-nous pour soutenir la création d'un cadre éthique protégeant l'esprit humain à l'ère du numérique.
 ---
 # Nous contacter
 

@@ -7,6 +7,8 @@ localizationKey: 1f65cb374700
 name: Nos équipes
 eleventyNavigation:
   order: 9
+metadata:
+  description: Découvrez le comité de pilotage et le comité scientifique de Mind the mind now, unis pour promouvoir la Déclaration Universelle des Droits de l'Esprit Humain.
 ---
 
 # Nos équipes

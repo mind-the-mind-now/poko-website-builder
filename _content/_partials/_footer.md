@@ -1,5 +1,5 @@
 <footer class="palette-contrast-blue full-bleed-bg flow center text" style="--flow-space: 1em">
-{% partial "pseudo-logo.md" %}
+{% component "pseudo-logo.md" %}
 <p>
 &copy; 2025 <em>Mind the mind now!</em> - Tous droits réservés<br>
 {{ "contact@mindthemind-now.org" | emailLink }}
