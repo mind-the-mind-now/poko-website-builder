@@ -1,5 +1,6 @@
 siteName: Mind the mind now!
 productionUrl: https://www.mindthemind-now.org/
+htmlHead: <link rel="icon" href="/assets/files/icons/favicon-adapt.svg" type="image/svg+xml">
 languages:
   - code: fr
     name: Français
