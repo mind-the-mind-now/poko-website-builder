@@ -1,13 +1,19 @@
 import path from "node:path";
 import fs from "node:fs";
 import yaml from "js-yaml";
+import fglob from "fast-glob";
 // import { fileURLToPath } from "node:url";
 // import Nunjucks from "nunjucks";
 import { transform as lightningTransform } from "lightningcss";
 
 // -------- Plugins External
 import directoryOutputPlugin from "@11ty/eleventy-plugin-directory-output";
-import { RenderPlugin, IdAttributePlugin, I18nPlugin } from "@11ty/eleventy";
+import {
+  RenderPlugin,
+  IdAttributePlugin,
+  I18nPlugin,
+  HtmlBasePlugin,
+} from "@11ty/eleventy";
 import Fetch from "@11ty/eleventy-fetch";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import pluginWebc from "@11ty/eleventy-plugin-webc";
@@ -26,7 +32,9 @@ import autoCollections from "./src/config-11ty/plugins/auto-collections/index.js
 import htmlClassesTransform from "./src/config-11ty/plugins/html-classes-transform/index.js";
 import populateInputDir from "./src/config-11ty/plugins/populateInputDir/index.js";
 import partialsPlugin from "./src/config-11ty/plugins/partials/index.js";
+import partialShortcodesPlugin from "./src/config-11ty/plugins/partialShortcodes/index.js";
 import buildExternalCSS from "./src/config-11ty/plugins/buildExternalCSS/index.js";
+import ctxCss from "./src/config-11ty/plugins/ctxCss/index.js";
 import pluginUnoCSS from "./src/config-11ty/plugins/plugin-eleventy-unocss/index.js";
 import customRenderersPlugin from "./src/config-11ty/plugins/customRenderers/index.js";
 // import keystaticPassthroughFiles from './src/config-11ty/plugins/keystaticPassthroughFiles/index.js';
@@ -55,6 +63,8 @@ import {
   FILES_OUTPUT_DIR,
   BASE_URL,
   PROD_URL,
+  WEBSITE_PATH_PREFIX,
+  POKO_THEME,
   statusesToUnrender,
   allLanguages,
   languages,
@@ -64,11 +74,15 @@ import {
   brandConfig,
   inlineAllStyles,
   brandStyles,
+  fontPreloadTags,
+  userCmsConfig,
 } from "./env.config.js";
+import { getSelectedCollections } from "./src/config-11ty/plugins/cms-config/index.js";
 import eleventyComputed from "./src/data/eleventyComputed.js";
 
 // Eleventy Config
 import {
+  glob as globFilter,
   toISOString,
   formatDate,
   dateToSlug,
@@ -85,13 +99,17 @@ import {
   asc,
   desc,
   ogImageSrc,
+  image as imageFilter,
   emailLink,
+  email,
   htmlAttrs,
   htmlImgAttrs,
 } from "./src/config-11ty/filters/index.js";
 import {
   newLine,
   fetchFile as fetchFileShortcode,
+  link as linkShortcode,
+  button as buttonShortcode,
   image,
   gallery,
   wrapper,
@@ -139,6 +157,46 @@ function mRCTOptions(tagName) {
   };
 }
 
+const iconSources = [
+  {
+    name: "simple",
+    path: "node_modules/simple-icons/icons",
+    default: true,
+  },
+  {
+    name: "tabler",
+    path: "node_modules/@tabler/icons/icons/outline",
+  },
+  {
+    name: "tablerOutline",
+    path: "node_modules/@tabler/icons/icons/outline",
+  },
+  {
+    name: "tablerFilled",
+    path: "node_modules/@tabler/icons/icons/filled",
+  },
+];
+
+const simple = fglob.globSync("node_modules/simple-icons/icons/*.svg");
+const tablerOutline = fglob.globSync(
+  "node_modules/@tabler/icons/icons/outline/*.svg",
+);
+const tablerFilled = fglob.globSync(
+  "node_modules/@tabler/icons/icons/filled/*.svg",
+);
+
+const iconLists = {
+  simple: simple.map((filePath) =>
+    filePath.split("/").pop().replace(".svg", ""),
+  ),
+  tablerOutline: tablerOutline.map((filePath) =>
+    filePath.split("/").pop().replace(".svg", ""),
+  ),
+  tablerFilled: tablerFilled.map((filePath) =>
+    filePath.split("/").pop().replace(".svg", ""),
+  ),
+};
+
 /**
  * @typedef { import("@11ty/eleventy").UserConfig } UserConfig
  */
@@ -160,19 +218,27 @@ export const config = {
   markdownTemplateEngine: "njk",
   htmlTemplateEngine: "njk",
   // htmlTemplateEngine: "mdoc",
+  pathPrefix: WEBSITE_PATH_PREFIX,
 };
 
 export default async function (eleventyConfig) {
   // --------------------- Base Config
   eleventyConfig.setQuietMode(true);
 
-  // eleventyConfig.setWatchThrottleWaitTime(500); // in milliseconds
+  eleventyConfig.setWatchThrottleWaitTime(500); // in milliseconds
 
   eleventyConfig.addWatchTarget("./src/config-11ty/**/*", {
     resetConfig: true,
   });
+  eleventyConfig.addWatchTarget("./src/styles/**/*.css", {
+    resetConfig: true,
+  });
   // eleventyConfig.addWatchTarget("./src/**/*");
-  // eleventyConfig.addWatchTarget("./env.config.js", { resetConfig: true });
+  eleventyConfig.addWatchTarget("./env.config.js", { resetConfig: true });
+  eleventyConfig.addWatchTarget("./eleventy.config.js", { resetConfig: true });
+  eleventyConfig.addWatchTarget(`${WORKING_DIR}/**/*.css`, {
+    resetConfig: true,
+  });
   // eleventyConfig.addWatchTarget(`${WORKING_DIR}/**/*`, { resetConfig: true });
   // eleventyConfig.watchIgnores.add(`${WORKING_DIR}/_styles/_ctx.css`);
   // eleventyConfig.setUseGitIgnore(false);
@@ -194,44 +260,44 @@ export default async function (eleventyConfig) {
   // eleventyConfig.setLibrary("njk", nunjucksEnvironment);
 
   // --------------------- Eleventy Events
-  eleventyConfig.on(
-    "eleventy.before",
-    async (/*{ directories, runMode, outputMode, dir, ...arg }*/) => {
-      // 1. Read data in '_content/_data/brand.yaml'
-      let brandConfig = {};
-      const brandConfigPath = `${WORKING_DIR_ABSOLUTE}/_data/brand.yaml`;
-      try {
-        const brandConfigYaml = fs.readFileSync(brandConfigPath, "utf-8");
-        brandConfig = yaml.load(brandConfigYaml);
-      } catch (error) {
-        console.warn("WARN: brandConfig.yaml not found");
-      }
-      // 2. If "copy ctx.css" toggle is true, copy the ctx.css file to '_content/styles' directory with the defined name
-      const ctxOutputFilename = brandConfig?.ctxCssImport?.filename;
-      const toggleCopyCtxCss = typeof ctxOutputFilename === "string";
-      const ctxOutputPath = `${WORKING_DIR_ABSOLUTE}/_styles/${
-        ctxOutputFilename || "ctx.css"
-      }`;
-      const ctxInputPath = `src/styles/ctx.css`;
-      if (toggleCopyCtxCss) {
-        // Make sure the destination folder exists
-        const destDir = path.dirname(ctxOutputPath);
-        if (!fs.existsSync(destDir)) {
-          fs.mkdirSync(destDir, { recursive: true });
-        }
-        fs.copyFileSync(ctxInputPath, ctxOutputPath);
-      } else {
-        // 3. If "copy ctx.css" toggle is false, delete the ctx.css file from '_content/styles' directory
-        try {
-          fs.unlinkSync(ctxOutputPath);
-        } catch (error) {
-          console.warn(
-            "Trying to delete ctx.css but it doesn't seem to exist. If you named the file differently, please remove it manually from the CMS or file system.",
-          );
-        }
-      }
-    },
-  );
+  // eleventyConfig.on(
+  //   "eleventy.before",
+  //   async (/*{ directories,`src/styles/ctx/index.css` runMode, outputMode, dir, ...arg }*/) => {
+  //     // 1. Read data in '_content/_data/brand.yaml'
+  //     let brandConfig = {};
+  //     const brandConfigPath = `${WORKING_DIR_ABSOLUTE}/_data/brand.yaml`;
+  //     try {
+  //       const brandConfigYaml = fs.readFileSync(brandConfigPath, "utf-8");
+  //       brandConfig = yaml.load(brandConfigYaml);
+  //     } catch (error) {
+  //       console.warn("WARN: brandConfig.yaml not found");
+  //     }
+  //     // 2. If "copy ctx.css" toggle is true, copy the ctx.css file to '_content/styles' directory with the defined name
+  //     const ctxOutputFilename = brandConfig?.ctxCssImport?.filename;
+  //     const toggleCopyCtxCss = typeof ctxOutputFilename === "string";
+  //     const ctxOutputPath = `${WORKING_DIR_ABSOLUTE}/_styles/${
+  //       ctxOutputFilename || "ctx.css"
+  //     }`;
+  //     const ctxInputPath = `src/styles/ctx.css`;
+  //     if (toggleCopyCtxCss) {
+  //       // Make sure the destination folder exists
+  //       const destDir = path.dirname(ctxOutputPath);
+  //       if (!fs.existsSync(destDir)) {
+  //         fs.mkdirSync(destDir, { recursive: true });
+  //       }
+  //       fs.copyFileSync(ctxInputPath, ctxOutputPath);
+  //     } else {
+  //       // 3. If "copy ctx.css" toggle is false, delete the ctx.css file from '_content/styles' directory
+  //       try {
+  //         fs.unlinkSync(ctxOutputPath);
+  //       } catch (error) {
+  //         console.warn(
+  //           "Trying to delete ctx.css but it doesn't seem to exist. If you named the file differently, please remove it manually from the CMS or file system.",
+  //         );
+  //       }
+  //     }
+  //   },
+  // );
 
   // --------------------- Preprocessors
   eleventyConfig.addPreprocessor("Publication Status", "*", (data, content) => {
@@ -276,12 +342,22 @@ export default async function (eleventyConfig) {
         .use(markdownItContainer, "ul", mRCTOptions("ul"))
         .use(markdownItContainer, "ol", mRCTOptions("ol"))
         .use(markdownItContainer, "div", mRCTOptions("div"))
-        .use(markdownItContainer, "block")
+        .use(markdownItContainer, "p", mRCTOptions("p"))
+        .use(markdownItContainer, "hgroup", mRCTOptions("hgroup"))
+        .use(markdownItContainer, "h1", mRCTOptions("h1"))
+        .use(markdownItContainer, "h2", mRCTOptions("h2"))
+        .use(markdownItContainer, "h3", mRCTOptions("h3"))
+        .use(markdownItContainer, "h4", mRCTOptions("h4"))
+        .use(markdownItContainer, "h5", mRCTOptions("h5"))
+        .use(markdownItContainer, "h6", mRCTOptions("h6"))
+        .use(markdownItContainer, "box")
         .use(markdownItContainer, "flow")
         .use(markdownItContainer, "grid-fluid")
         .use(markdownItContainer, "cluster")
         .use(markdownItContainer, "switcher")
         .use(markdownItContainer, "cover")
+        .use(markdownItContainer, "fixed-fluid")
+        .use(markdownItContainer, "prose")
 
         // .use(markdownItContainer, {
         //   name: "@",
@@ -350,9 +426,11 @@ export default async function (eleventyConfig) {
       fontsource: { fonts: fontsource },
     };
   });
+  eleventyConfig.addGlobalData("iconLists", iconLists);
   eleventyConfig.addGlobalData("baseUrl", BASE_URL);
   eleventyConfig.addGlobalData("prodUrl", PROD_URL);
   eleventyConfig.addGlobalData("layout", "base");
+  eleventyConfig.addGlobalData("year", new Date().getFullYear());
   // eleventyConfig.addGlobalData("globalSettings", globalSettings);
   eleventyConfig.addGlobalData("languages", languages);
   eleventyConfig.addGlobalData("defaultLanguage", defaultLanguage);
@@ -360,6 +438,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addGlobalData("brandConfig", brandConfig);
   eleventyConfig.addGlobalData("inlineAllStyles", inlineAllStyles);
   eleventyConfig.addGlobalData("brandStyles", brandStyles);
+  eleventyConfig.addGlobalData("fontPreloadTags", fontPreloadTags);
   // Computed Data
   eleventyConfig.addGlobalData("eleventyComputed", eleventyComputed);
 
@@ -402,6 +481,7 @@ export default async function (eleventyConfig) {
 
   // --------------------- Plugins Early
   eleventyConfig.addPlugin(directoryOutputPlugin);
+  eleventyConfig.addPlugin(HtmlBasePlugin);
   eleventyConfig.addPlugin(RenderPlugin);
   eleventyConfig.addPlugin(IdAttributePlugin, {
     selector: "h1,h2,h3,h4,h5,h6,.id", // default: "h1,h2,h3,h4,h5,h6"
@@ -476,25 +556,7 @@ export default async function (eleventyConfig) {
     },
   });
   eleventyConfig.addPlugin(pluginIcons, {
-    sources: [
-      {
-        name: "simple",
-        path: "node_modules/simple-icons/icons",
-        default: true,
-      },
-      {
-        name: "tabler",
-        path: "node_modules/@tabler/icons/icons/outline",
-      },
-      {
-        name: "tablerOutline",
-        path: "node_modules/@tabler/icons/icons/outline",
-      },
-      {
-        name: "tablerFilled",
-        path: "node_modules/@tabler/icons/icons/filled",
-      },
-    ],
+    sources: iconSources,
     icon: {
       class: (name, source) => `icon icon-${source} icon-${name}`,
     },
@@ -502,7 +564,9 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginCodeblocks([pluginCodeBlocksCharts]));
 
+  // await eleventyConfig.addPlugin(ctxCss);
   await eleventyConfig.addPlugin(buildExternalCSS);
+  await eleventyConfig.addPlugin(pluginUnoCSS);
   // TODO: import those classes from a data file
   eleventyConfig.addPlugin(htmlClassesTransform, {
     classes: {
@@ -511,7 +575,6 @@ export default async function (eleventyConfig) {
       // body: "imported-body-class",
     },
   });
-  await eleventyConfig.addPlugin(pluginUnoCSS);
 
   // --------------------- Populate files and default content
   eleventyConfig.addPassthroughCopy({
@@ -535,33 +598,78 @@ export default async function (eleventyConfig) {
       "node_modules/@sveltia/cms/dist/sveltia-cms.mjs":
         "assets/js/sveltia-cms.mjs",
     });
-  } else if (CMS_IMPORT !== "cdn") {
+  } else if (CMS_IMPORT.startsWith("../../")) {
     eleventyConfig.addPassthroughCopy({
       [CMS_IMPORT + "sveltia-cms.js"]: "assets/js/sveltia-cms.js",
       [CMS_IMPORT + "sveltia-cms.mjs"]: "assets/js/sveltia-cms.mjs",
     });
+  } else if (CMS_IMPORT === "local") {
+    eleventyConfig.addPassthroughCopy({
+      "assets/js/sveltia-cms.js": "assets/js/sveltia-cms.js",
+      "assets/js/sveltia-cms.mjs": "assets/js/sveltia-cms.mjs",
+    });
   }
+
+  eleventyConfig.addTemplate(
+    "env.11ty.js",
+    async function (data) {
+      const userCmsConfigImport = await userCmsConfig();
+      const allSelectedCollections = getSelectedCollections();
+      const allCollections = [
+        ...allSelectedCollections,
+        ...(userCmsConfigImport?.collections || []),
+      ];
+      const allCollectionNames = allCollections?.collections?.map(
+        ({ name }) => name,
+      );
+
+      const envVars = { CONTENT_DIR };
+
+      return `
+export const env = ${JSON.stringify(envVars)};
+export const allCollections = ${JSON.stringify(allCollections)};
+export const allCollectionNames = ${JSON.stringify(allCollectionNames)};
+export const iconLists = ${JSON.stringify(iconLists)};
+`;
+    },
+    {
+      permalink: "/admin/env.js",
+      eleventyExcludeFromCollections: true,
+      layout: null,
+    },
+  );
+
   // Populate Default Content with virtual templates
   await eleventyConfig.addPlugin(populateInputDir, {
     // logLevel: 'debug',
     sources: [
       // TODO: Make this selectable from the CMS
-      "src/themes/default",
+      `src/themes/${POKO_THEME}`,
       "src/content",
     ],
   });
   // Partials expand on the renderFile shortcode
   await eleventyConfig.addPlugin(partialsPlugin, {
+    defaultExt: ["11ty.js", "njk", "md"],
     dirs: [
       path.join(WORKING_DIR, PARTIALS_DIR),
+      path.join(`src/themes/${POKO_THEME}/_partials`),
       path.join("src/content/_partials"),
     ],
     shortcodeAliases: [
       "partial",
+      "htmlPartial",
       "component",
       // "section"
     ],
+    pairedShortcodeAliases: [
+      "partialWrapper",
+      "htmlPartialWrapper",
+      "componentWrapper",
+    ],
   });
+  await eleventyConfig.addPlugin(partialShortcodesPlugin);
+
   // Copy files (Keystatic)
   // Retrieve public files from the _files directory
   // eleventyConfig.addPlugin(keystaticPassthroughFiles)
@@ -574,6 +682,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter("slugifyPath", (input) =>
     slugifyPath(input, eleventyConfig),
   );
+  // Files
+  eleventyConfig.addAsyncFilter("glob", globFilter);
   // I18n
   eleventyConfig.addFilter("locale_url", locale_url);
   eleventyConfig.addFilter("link", locale_url); // Alias for locale_url
@@ -594,8 +704,10 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter("desc", desc);
   // Images
   eleventyConfig.addAsyncFilter("ogImage", ogImageSrc);
+  eleventyConfig.addAsyncFilter("image", imageFilter);
   // Email
   eleventyConfig.addFilter("emailLink", emailLink);
+  eleventyConfig.addFilter("email", email);
   // HTML helpers
   eleventyConfig.addFilter("htmlAttrs", htmlAttrs);
   eleventyConfig.addFilter("htmlImgAttrs", htmlImgAttrs);
@@ -612,6 +724,8 @@ export default async function (eleventyConfig) {
     "fetchFile",
     fetchFileShortcode,
   );
+  eleventyConfig.addShortcode("link", linkShortcode);
+  eleventyConfig.addShortcode("button", buttonShortcode);
   eleventyConfig.addShortcode("image", image);
   eleventyConfig.addShortcode("gallery", gallery);
   eleventyConfig.addPairedShortcode("wrapper", wrapper);
@@ -644,6 +758,7 @@ export default async function (eleventyConfig) {
 
   // Deferred Config
   await eleventyConfig.addPlugin(customRenderersPlugin);
+  await eleventyConfig.addPlugin(partialShortcodesPlugin);
 
   await eleventyConfig.addPlugin(async function (eleventyConf) {
     eleventyConf.versionCheck(">=3.0.0-alpha.1");
