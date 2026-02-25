@@ -1,13 +1,18 @@
 siteName: Mind the mind now!
 productionUrl: https://www.mindthemind-now.org/
 htmlHead: <link rel="icon" href="/assets/files/icons/favicon-adapt.svg" type="image/svg+xml">
+cssHead: ''
 languages:
   - code: fr
+    status: published
     name: Français
     customUrlPrefix:
       prefix: ''
-    status: published
     isCmsDefault: false
     isWebsiteDefault: false
+  - code: en
+    status: draft
+    keepUrlPrefix: false
 collections:
   - people
+  - articles

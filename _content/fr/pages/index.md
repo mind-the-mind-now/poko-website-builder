@@ -4,13 +4,15 @@ lang: fr
 createdAt: 2025-10-29T12:33:00.000Z
 uuid: 34d75906b733
 localizationKey: fe784f9b8041
-pageLayout: menuless
 name: Accueil
 eleventyNavigation:
   order: 1
 metadata:
   description: Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain
+pageLayout: menuless
+vars: null
 ---
+
 {% component "home-header.md", { preHeading: "Initiative pour une", heading: "Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[**Une Déclaration, pour quoi faire?**](#une-declaration-pour-quoi-faire) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Notre démarche](#notre-demarche) [Notre objectif](#notre-objectif) [Notre équipe](#le-comite-de-pilotage) [Comité éthique et scientifique](#le-comite-ethique-et-scientifique) [Nous contacter](/contact/) {.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}" } %}
 
 ## Une Déclaration, pour quoi faire?

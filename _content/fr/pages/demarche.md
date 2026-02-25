@@ -9,6 +9,7 @@ eleventyNavigation:
   order: 5
 metadata:
   description: "Notre démarche en 3 étapes pour protéger l'esprit humain: un label éthique, des actions de sensibilisation et une Déclaration Universelle."
+vars: null
 ---
 
 # Notre démarche
