@@ -8,7 +8,8 @@ name: Nos équipes
 eleventyNavigation:
   order: 9
 metadata:
-  description: Découvrez le comité de pilotage et le comité scientifique de Mind the mind now, unis pour promouvoir la Déclaration Universelle des Droits de l'Esprit Humain.
+  title: ''
+  description: Découvrez le comité de pilotage et le comité scientifique de Human Mind Rights Now, unis pour promouvoir la Déclaration Universelle des Droits de l'Esprit Humain.
 vars: null
 ---
 
