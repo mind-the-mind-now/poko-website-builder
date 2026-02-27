@@ -8,7 +8,7 @@ name: La tribune
 eleventyNavigation:
   title: ''
   parent: ''
-  order: 0
+  order: 11
 metadata: null
 preview: null
 tags: []
