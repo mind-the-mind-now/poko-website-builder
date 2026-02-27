@@ -8,11 +8,12 @@ name: Goal
 eleventyNavigation:
   order: 7
 metadata:
-  description: "Our goal: restore trust in digital technology through the Mind the Mind Now label and ensure a future that respects the human mind."
+  title: ''
+  description: 'Our goal: restore trust in digital technology through the Human Mind Rights Now label and ensure a future that respects the human mind.'
 tags: []
-status: ""
-pageLayout: ""
-generatePage: ""
+status: ''
+pageLayout: ''
+generatePage: ''
 vars: null
 dataList: []
 ---

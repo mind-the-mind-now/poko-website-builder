@@ -8,7 +8,8 @@ name: Objectif
 eleventyNavigation:
   order: 7
 metadata:
-  description: "Notre objectif: rétablir la confiance dans le numérique grâce au label Mind the mind Now et garantir un avenir respectueux de l'esprit humain."
+  title: ''
+  description: "Notre objectif: rétablir la confiance dans le numérique grâce au label Human Mind Rights Now et garantir un avenir respectueux de l'esprit humain."
 vars: null
 ---
 
@@ -16,7 +17,7 @@ vars: null
 
 ::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
 
-L’objet connecté que vous détenez, le service numérique que vous utilisez sont-ils conformes aux valeurs promues par la Déclaration ? L’entreprise s’est-elle engagée aux côtés de Mind the Mind Now ? Son produit vise-t-il d’abord une utilité humaine avant de servir l’utilité de l’écosystème ? A-t-elle envisagé les effets à long terme ? A-t-elle gardé l’esprit à l’esprit ?
+L’objet connecté que vous détenez, le service numérique que vous utilisez sont-ils conformes aux valeurs promues par la Déclaration ? L’entreprise s’est-elle engagée aux côtés de Human Mind Rights Now ? Son produit vise-t-il d’abord une utilité humaine avant de servir l’utilité de l’écosystème ? A-t-elle envisagé les effets à long terme ? A-t-elle gardé l’esprit à l’esprit ?
 
 A ces questions, le label répond en un clin d’œil. Il prouve l’engagement pour les valeurs promues par la Déclaration, l’engagement pour le projet humain porté par le numérique.
 
