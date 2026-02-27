@@ -8,11 +8,11 @@ name: Approach
 eleventyNavigation:
   order: 5
 metadata:
-  description: "Our 3-step approach to protect the human mind: an ethical label, awareness-raising actions, and a Universal Declaration."
+  description: 'Our 3-step approach to protect the human mind: an ethical label, awareness-raising actions, and a Universal Declaration.'
 tags: []
-status: ""
-pageLayout: ""
-generatePage: ""
+status: ''
+pageLayout: ''
+generatePage: ''
 vars: null
 dataList: []
 ---
