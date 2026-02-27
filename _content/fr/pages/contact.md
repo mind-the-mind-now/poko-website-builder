@@ -8,7 +8,8 @@ name: Contact
 eleventyNavigation:
   order: 10
 metadata:
-  description: Prenez contact avec Mind the mind now. Rejoignez-nous pour soutenir la création d'un cadre éthique protégeant l'esprit humain à l'ère du numérique.
+  title: ''
+  description: Prenez contact avec Human Mind Rights Now. Rejoignez-nous pour soutenir la création d'un cadre éthique protégeant l'esprit humain à l'ère du numérique.
 vars: null
 ---
 

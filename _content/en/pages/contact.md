@@ -8,11 +8,12 @@ name: Contact
 eleventyNavigation:
   order: 10
 metadata:
+  title: ''
   description: Get in touch with Mind the Mind Now. Join us to support the creation of an ethical framework protecting the human mind in the digital age.
 tags: []
-status: ""
-pageLayout: ""
-generatePage: ""
+status: ''
+pageLayout: ''
+generatePage: ''
 vars: null
 dataList: []
 ---
