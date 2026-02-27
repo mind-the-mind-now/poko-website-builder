@@ -10,9 +10,9 @@ eleventyNavigation:
 metadata:
   description: Initiative for a Universal Declaration of the Rights of the Human Mind
 tags: []
-status: ""
+status: ''
 pageLayout: menuless
-generatePage: ""
+generatePage: ''
 vars: null
 dataList: []
 ---
@@ -29,7 +29,7 @@ The Universal Declaration <b>of the Rights of the Human Mind</b> guarantees futu
 
 Technological evolution progresses as inevitably as a child grows; but faced with its now exponential progression, we must ensure that its trajectory preserves the sovereignty and integrity of the human mind. This is what the <b>Universal Declaration of the Rights of the Human Mind</b> aims to guarantee.
 
-<b>**_Mind the Mind Now!_**</b> is the name of the approach that drives the process of this ambitious, visionary, and necessary project.
+<b>**_Human Mind Rights Now!_**</b> is the name of the approach that drives the process of this ambitious, visionary, and necessary project.
 
 [Learn more about the Declaration]({{ "pourquoi" | locale_url }})
 
@@ -49,7 +49,7 @@ A 3-stage rocket {.h3}
 
 ## Our Goal
 
-Concretely, we first want to create a _Mind the Mind Now_ label. We want users to know, when they use a connected device, what and who they are dealing with.
+Concretely, we first want to create a _Human Mind Rights Now_ label. We want users to know, when they use a connected device, what and who they are dealing with.
 
 Users generally have confidence, by default, in the digital _tools_ they use. But they have much less confidence in the future shaped by technology's grip on life and society, in other words, in the future digital ecosystem as a whole.
 

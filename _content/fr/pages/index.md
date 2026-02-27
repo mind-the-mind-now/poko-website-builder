@@ -25,7 +25,7 @@ La Déclaration universelle <b>des droits de l’esprit humain</b> garantit à l
 
 L’évolution technologique progresse, aussi inévitablement qu’un enfant grandit ; mais face à sa progression désormais exponentielle, nous devons veiller à ce que sa trajectoire préserve la souveraineté et l’intégrité de l’esprit humain. Voilà ce que vise à garantir la <b>Déclaration universelle des droits de l’esprit humain</b>.
 
-<b>**_Mind the Mind Now!_**</b> est le nom de la démarche qui porte le processus de ce projet ambitieux, visionnaire, et nécessaire.
+<b>**_Human Mind Rights Now !_**</b> est le nom de la démarche qui porte le processus de ce projet ambitieux, visionnaire, et nécessaire.
 
 [En savoir plus sur la Déclaration]({{ "pourquoi" | locale_url }})
 
@@ -45,7 +45,7 @@ Une fusée à 3 étages {.h3}
 
 ## Notre objectif
 
-Concrètement, nous voulons d’abord créer un label _Mind the Mind Now_. Nous voulons que les utilisateurs sachent, lorsqu’ils utilisent un dispositif connecté, à quoi et à qui ils ont à faire.
+Concrètement, nous voulons d’abord créer un label _Human Mind Rights Now_. Nous voulons que les utilisateurs sachent, lorsqu’ils utilisent un dispositif connecté, à quoi et à qui ils ont à faire.
 
 Les utilisateurs ont globalement confiance, par défaut, dans les _outils_ numériques qu’ils utilisent. Mais ils ont beaucoup moins confiance dans l’avenir que dessine l’emprise des technologies sur la vie et la société, autrement dit dans l’écosystème numérique futur pris dans son ensemble.
 
