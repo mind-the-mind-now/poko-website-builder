@@ -8,6 +8,7 @@ name: Home
 eleventyNavigation:
   order: 1
 metadata:
+  title: ''
   description: Initiative for a Universal Declaration of the Rights of the Human Mind
 tags: []
 status: ''

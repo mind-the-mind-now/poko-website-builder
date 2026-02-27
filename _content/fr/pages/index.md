@@ -8,6 +8,7 @@ name: Accueil
 eleventyNavigation:
   order: 1
 metadata:
+  title: ''
   description: Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain
 pageLayout: menuless
 vars: null
