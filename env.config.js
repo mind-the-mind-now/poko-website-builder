@@ -1,6 +1,6 @@
 import assert from "node:assert";
 import "dotenv/config";
-import { resolve, join, relative } from "path";
+import { resolve, join, relative } from "node:path";
 import fs from "node:fs";
 import { $ } from "bun";
 import yaml from "js-yaml";
@@ -31,6 +31,8 @@ export const OUTPUT_DIR_ABSOLUTE =
   processEnv.OUTPUT_DIR_ABSOLUTE || resolve(".", OUTPUT_DIR);
 // Files output directory
 export const FILES_OUTPUT_DIR = processEnv.FILES_OUTPUT_DIR || "assets/files";
+export const IMAGES_OUTPUT_DIR = join(OUTPUT_DIR, `assets/images`);
+
 export const FILES_LIBRARY_OUTPUT_DIR =
   processEnv.FILES_LIBRARY_OUTPUT_DIR || `${FILES_OUTPUT_DIR}/library`;
 
@@ -78,8 +80,9 @@ export const LOCAL_BUILD = Boolean(
 // Cache directory
 export const CACHE_DIR =
   processEnv.CACHE_DIR ||
-  (CLOUDFLARE_BUILD && ".bun/install/cache") ||
+  // (CLOUDFLARE_BUILD && ".bun/install/cache") ||
   ".cache";
+export const IMAGE_CACHE_DIR = join(CACHE_DIR, `@11ty/img`); // .cache/@11ty/img/
 
 // GITHUB Pages REPO inferrence
 export const GITHUB_GIT_REPO_OWNER = processEnv.GITHUB_REPOSITORY_OWNER;

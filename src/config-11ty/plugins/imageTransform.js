@@ -1,9 +1,15 @@
+import path from "node:path";
+import fs from "node:fs";
 import {
   OUTPUT_DIR,
   WORKING_DIR,
   brandWidthsContexts,
   brandTypeScales,
+  IMAGES_OUTPUT_DIR,
+  IMAGE_CACHE_DIR,
 } from "../../../env.config.js";
+
+const outputDir = `${IMAGES_OUTPUT_DIR}`;
 
 // Utility to parse a CSS dimension string into value and unit
 function parseCssDimension(cssValue) {
@@ -56,7 +62,8 @@ export const imageOptionsDefaults = {
 
   // Project-relative path to the output image directory
   // outputDir: "./img/", // (default)
-  outputDir: `./${OUTPUT_DIR}/assets/images/`, // (default)
+  // outputDir: IMAGES_OUTPUT_DIR, // This is where we would actually want to output images
+  outputDir: IMAGE_CACHE_DIR,
   // A path-prefix-esque directory for the <img src> attribute.
   // Not recommended with Image HTML Transform
   urlPath: "/assets/images/",
@@ -81,6 +88,8 @@ export const imageOptionsDefaults = {
   // 	decoding: "async",
   // 	sizes: "100vw",
   // },
+
+  failOnError: false,
 
   // optional, attributes assigned on <img> nodes override these values
   htmlOptions: {
