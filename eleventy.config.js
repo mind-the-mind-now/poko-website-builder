@@ -57,6 +57,8 @@ import {
   WORKING_DIR_ABSOLUTE,
   CONTENT_DIR,
   // SRC_DIR_FROM_WORKING_DIR,
+  IMAGE_CACHE_DIR,
+  IMAGES_OUTPUT_DIR,
   PARTIALS_DIR,
   LAYOUTS_DIR,
   OUTPUT_DIR,
@@ -260,6 +262,11 @@ export default async function (eleventyConfig) {
   // eleventyConfig.setLibrary("njk", nunjucksEnvironment);
 
   // --------------------- Eleventy Events
+  eleventyConfig.on("eleventy.after", () => {
+    fs.cpSync(IMAGE_CACHE_DIR, IMAGES_OUTPUT_DIR, {
+      recursive: true,
+    });
+  });
   // eleventyConfig.on(
   //   "eleventy.before",
   //   async (/*{ directories,`src/styles/ctx/index.css` runMode, outputMode, dir, ...arg }*/) => {
