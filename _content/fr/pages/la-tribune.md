@@ -39,7 +39,7 @@ Face à cette mutation, les dispositifs juridiques existants — si nécessaires
 
 Nous pensons qu’il est temps d’ouvrir un nouveau chapitre.
 
-De même que la Déclaration des droits de l’homme a marqué une étape historique en instituant un nouveau standard de dignité humaine, nous avons aujourd’hui besoin d’un **marqueur historique d’ampleur comparable **pour consacrer la valeur inaliénable de la souveraineté de l’esprit.
+De même que la Déclaration des droits de l’homme a marqué une étape historique en instituant un nouveau standard de dignité humaine, nous avons aujourd’hui besoin d’un \*\*marqueur historique d’ampleur comparable \*\*pour consacrer la valeur inaliénable de la souveraineté de l’esprit.
 
 C’est pourquoi nous appelons à l’élaboration et à l’adoption d’une **Déclaration universelle de la souveraineté de l’esprit humain.**
 
