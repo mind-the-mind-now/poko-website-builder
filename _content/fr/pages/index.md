@@ -37,7 +37,7 @@ L’évolution technologique progresse, aussi inévitablement qu’un enfant gra
 
 Concrètement, nous souhaitons d'abord créer un mouvement d'opinion pour recentrer le débat des innovations technologiques sur les questions anthropologiques essentielles, la perspective finale étant d'aboutir à une reconnaissance universelle du principe de la souveraineté de l'esprit. Nous pensons que les évolutions actuelles appellent un marqueur historique d'ampleur égale à celle que furent les droits de l'homme à l'aube de la révolution industrielle.
 
-Il faut mettre notre éthique commune à la hauteur des enjeux que nous imposent notre époque.
+Il faut mettre notre éthique commune à la hauteur des enjeux que nous impose notre époque.
 
 [En savoir plus sur notre objectif]({{ "objectif" | locale_url }})
 
