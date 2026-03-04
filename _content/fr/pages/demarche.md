@@ -5,10 +5,10 @@ createdAt: 2025-11-27T13:16:00.000Z
 uuid: 48d4db461d7f
 localizationKey: adb996d693a0
 name: Démarche
-eleventyNavigation:
-  order: 5
+eleventyNavigation: null
 metadata:
   description: "Notre démarche en 3 étapes pour protéger l'esprit humain: un label éthique, des actions de sensibilisation et une Déclaration Universelle."
+status: draft
 vars: null
 ---
 
