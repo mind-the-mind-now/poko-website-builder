@@ -57,7 +57,7 @@ Join this initiative.
 Let us make the sovereignty of the mind a shared horizon.
 
 Mark Hunyadi
-For Rise for the Mind
+Rise for the Mind
 
 The signatories of the Ethics and Scientific Committee of Rise for the Mind :
 

@@ -57,13 +57,15 @@ Rejoignez cette initiative.
 Faisons de la souveraineté de l’esprit un horizon commun.
 
 Mark Hunyadi
-Pour Rise for the Mind
+Rise for the Mind
 
-Les signataires du comité éthique et scientifique de _Rise for the Mind_ :
+Signatures du Comité éthique et scientifique de _Rise for the Mind_ :
 
-Giuliano da Empoli,
-Nathalie Sonnac,
-Nicolas van Zeebroeck,
-Ioan Roxin,
-Hugues Bersini,
-Francis Jutand.
+**Giuliano da Empoli** écrivain, conseiller et professeur
+
+**Nathalie Sonnac:**
+
+**Nicolas van Zeebroeck:**
+**Ioan Roxin**:
+Hugues Bersini:
+Francis Jutand:
