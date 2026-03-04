@@ -30,7 +30,7 @@ AI-enhanced digital technology constitutes a meta-technology: one capable of int
 
 We do not dispute the immense real and potential benefits of these innovations. Yet their power demands a new requirement: **safeguarding the sovereignty of the human mind.**
 
-What is at stake is not simply how technologies are used, nor only the immediate risks associated with them. It is **the very shape of our existence **— and above all that of future generations. The constant optimisation of behaviour, the continuous capture of data, and the algorithmic structuring of our social environment are gradually transforming not only how we perceive and think, but how we act and inhabit the world.
+What is at stake is not simply how technologies are used, nor only the immediate risks associated with them. It is \*\*the very shape of our existence \*\*— and above all that of future generations. The constant optimisation of behaviour, the continuous capture of data, and the algorithmic structuring of our social environment are gradually transforming not only how we perceive and think, but how we act and inhabit the world.
 
 Faced with this transformation, existing legal frameworks — necessary though they are — are no longer sufficient. Current regulations, including those adopted by the European Union, protect users’ data. But they do not protect users **from the effects of the technological ecosystem itself.**
 
@@ -61,9 +61,9 @@ For Rise for the Mind
 
 The signatories of the Ethics and Scientific Committee of Rise for the Mind :
 
-Giuliano da Empoli, 
+Giuliano da Empoli,
 Nathalie Sonnac,
-Nicolas van Zeebroeck, 
-Ioan Roxin, 
-Hugues Bersini, 
+Nicolas van Zeebroeck,
+Ioan Roxin,
+Hugues Bersini,
 Francis Jutand.
