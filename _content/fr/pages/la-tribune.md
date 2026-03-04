@@ -67,5 +67,5 @@ Signatures du Comité éthique et scientifique de _Rise for the Mind_ :
 
 **Nicolas van Zeebroeck:**
 **Ioan Roxin**:
-Hugues Bersini:
-Francis Jutand:
+**Hugues Bersini**:
+**Francis Jutand**:
