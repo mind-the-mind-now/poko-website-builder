@@ -35,11 +35,9 @@ L’évolution technologique progresse, aussi inévitablement qu’un enfant gra
 
 ## Notre objectif
 
-Concrètement, nous voulons d’abord créer un label _Human Mind Rights Now_. Nous voulons que les utilisateurs sachent, lorsqu’ils utilisent un dispositif connecté, à quoi et à qui ils ont à faire.
+Concrètement, nous souhaitons d'abord créer un mouvement d'opinion pour recentrer les débats autours des métatechnologies sur les questions anthropologiques essentielles, la perspectives finales étant d'aboutir à une reconnaissance universelle du principe de la souveraineté de l'esprit. Nous pensons que les évolutions actuels appellent un marqueur historique d'ampleur égale à celle des droits de l'homme à l'aube de la révolution industrielle.
 
-Les utilisateurs ont globalement confiance, par défaut, dans les _outils_ numériques qu’ils utilisent. Mais ils ont beaucoup moins confiance dans l’avenir que dessine l’emprise des technologies sur la vie et la société, autrement dit dans l’écosystème numérique futur pris dans son ensemble.
-
-**Notre label est une petite contribution à ce grand dessein: orienter l’innovation vers un avenir qui mérite notre confiance de long terme.**
+Il faut mettre notre éthique commune à la hauteur des enjeux de notre époque.
 
 [En savoir plus sur notre objectif]({{ "objectif" | locale_url }})
 
@@ -67,7 +65,7 @@ Nous sommes un collectif cherchant à promouvoir l’idée d’une _Déclaration
 
 :::
 
-## Comment nous rejoindre?
+## Comment nous joindre ?
 
 Le projet de la Déclaration Universelle des Droits de l’Esprit Humain est ambitieux, et visionnaire.
 
