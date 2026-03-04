@@ -1,3 +1,5 @@
+## La Tribune
+
 "Il ne s’agit pas de rejeter le progrès, mais de l’orienter.
 
 Il ne s’agit pas de freiner l’innovation, mais de lui donner un cap.
