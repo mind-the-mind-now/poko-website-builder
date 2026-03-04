@@ -19,8 +19,9 @@ vars: null
 dataList: []
 ---
 
-**IA : levons nous pour protéger l’esprit humain. L’initiative « Rise For The Mind »**
-Tribune ouverte à signature
+# IA : levons-nous pour protéger l’esprit humain. L’initiative « Rise For The Mind »
+
+Appel ouvert à signature
 
 Nous vivons un moment décisif de l’histoire humaine.
 
@@ -38,25 +39,30 @@ Face à cette mutation, les dispositifs juridiques existants — si nécessaires
 
 Nous pensons qu’il est temps d’ouvrir un nouveau chapitre.
 
-De même que la Déclaration des droits de l’homme a marqué une étape historique en instituant un nouveau standard de dignité humaine, nous avons aujourd’hui besoin d’un marqueur historique d’ampleur comparable pour consacrer solennellement la valeur inaliénable de la souveraineté de l’esprit.
+De même que la Déclaration des droits de l’homme a marqué une étape historique en instituant un nouveau standard de dignité humaine, nous avons aujourd’hui besoin d’un marqueur historique d’ampleur comparable pour consacrer la valeur inaliénable de la souveraineté de l’esprit.
 
 C’est pourquoi nous appelons à l’élaboration et à l’adoption d’une Déclaration universelle de la souveraineté de l’esprit humain.
 
 Il ne s’agit pas de rejeter le progrès, mais de l’orienter.
+
 Il ne s’agit pas de freiner l’innovation, mais de lui donner un cap.
+
 Il ne s’agit pas de nourrir la peur, mais d’affirmer une ambition : celle d’une cohabitation harmonieuse entre l’intelligence humaine et les technologies qu’elle a créées.
 
 Nous croyons qu’une telle Déclaration constituerait un repère commun et un cap capable de fédérer les initiatives éducatives, juridiques, scientifiques et civiques, aujourd’hui dispersées. Elle serait un signal clair adressé aux institutions, aux entreprises technologiques et aux citoyens du monde : la souveraineté de l’esprit est un principe non négociable.
 
-Nous lançons un appel à toutes celles et ceux — chercheurs, enseignants, juristes, responsables publics, créateurs, citoyens — qui souhaitent affirmer fièrement la beauté et l’inaliénabilité de l’esprit, source de toute richesse humaine. 
+Nous lançons un appel à toutes celles et ceux — chercheurs, enseignants, juristes, responsables publics, créateurs, citoyens — qui souhaitent affirmer la beauté et l’inaliénabilité de l’esprit humain. 
 
-C’est pourquoi nous lançons aujourd’hui l’initiative Rise for the Mind. Il nous revient d’inscrire dès maintenant la souveraineté de l’esprit dans l’histoire en train de s’écrire, en la portant au cœur du débat public. Alors pourra venir le temps de sa consécration universelle. 
+C’est pourquoi nous lançons aujourd’hui l’initiative Rise for the Mind. Il nous revient d’inscrire dès maintenant la souveraineté de l’esprit dans l’histoire en train de s’écrire, en la portant au cœur du débat public. 
 
 Rejoignez cette initiative.
 
 Faisons de la souveraineté de l’esprit un horizon commun.
 
-L’urgence n’est pas technique, elle est anthropologique : parlons-en, parlez-en.
+						Pour Rise for the Mind
 
-Pour Rise for the Mind
-Mark Hunyadi
+						Mark Hunyadi
+
+Le comité éthique et scientifique de Rise for the Mind :
+
+Giuliano da Empoli, Nathalie Sonnac, Nicolas van Zeebroeck, Ioan Roxin, Hugues Bersini, Francis Jutand.
