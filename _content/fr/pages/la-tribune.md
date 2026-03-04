@@ -56,16 +56,25 @@ Rejoignez cette initiative.
 
 Faisons de la souveraineté de l’esprit un horizon commun.
 
-Mark Hunyadi
-Rise for the Mind
+**Mark Hunyadi**
+
 
 Signatures du Comité éthique et scientifique de _Rise for the Mind_ :
 
-**Giuliano da Empoli** écrivain, conseiller et professeur
+**Giuliano da Empoli** - écrivain, conseiller et professeur (Italie, Suisse, France)
 
-**Nathalie Sonnac:**
+**Nathalie Sonnac - **
 
-**Nicolas van Zeebroeck:**
-**Ioan Roxin**:
+**Nicolas van Zeebroeck - **
+
+**Ioan Roxin** - 
+
 **Hugues Bersini**:
+
 **Francis Jutand**:
+
+Early supporters :
+
+**Paul Nemitz**
+
+**Pierre Cassou-Noguès**
