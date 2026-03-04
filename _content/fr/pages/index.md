@@ -33,15 +33,15 @@ L’évolution technologique progresse, aussi inévitablement qu’un enfant gra
 
 ::: div { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
 
-## Notre démarche
+## Notre objectif
 
-Une fusée à 3 étages {.h3}
+Concrètement, nous voulons d’abord créer un label _Human Mind Rights Now_. Nous voulons que les utilisateurs sachent, lorsqu’ils utilisent un dispositif connecté, à quoi et à qui ils ont à faire.
 
-1. Création d’un label marquant l’adhésion aux valeurs de la Déclaration
-2. Actions qui contribueront à faire des principes de la Déclaration une politique partagée
-3. Déclaration universelle des droits de l’esprit humain: Etage idéal et visionnaire, mais urgent et nécessaire, qui donne le cap à l’ensemble de la démarche
+Les utilisateurs ont globalement confiance, par défaut, dans les _outils_ numériques qu’ils utilisent. Mais ils ont beaucoup moins confiance dans l’avenir que dessine l’emprise des technologies sur la vie et la société, autrement dit dans l’écosystème numérique futur pris dans son ensemble.
 
-[En savoir plus sur notre démarche]({{ "demarche" | locale_url }})
+**Notre label est une petite contribution à ce grand dessein: orienter l’innovation vers un avenir qui mérite notre confiance de long terme.**
+
+[En savoir plus sur notre objectif]({{ "objectif" | locale_url }})
 
 :::
 
@@ -55,7 +55,7 @@ Les utilisateurs ont globalement confiance, par défaut, dans les _outils_ numé
 
 [En savoir plus sur notre objectif]({{ "objectif" | locale_url }})
 
-::: div { #who-section .section .palette-contrast-terracotta .full-bleed-bg}
+::: div { #who-section .section .palette-contrast-blue.full-bleed-bg}
 
 ## Qui sommes-nous?
 
