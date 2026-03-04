@@ -68,25 +68,14 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 {% wrapper tag="section" %}
 **Comité éthique et scientifique de _Rise for the Mind_ :**
 
-**Giuliano da Empoli** - écrivain, conseiller et professeur (Italie, Suisse, France)
-
-** Nathalie Sonnac**  - Médias, professeure et autrice (France)
-
-** Nicolas van Zeebroeck**  - Professeur d’économie (Belgique)
-
-**Ioan Roxin** - Professeur émerite, chercheur (Roumanie, France)
-
-**Hugues Bersini** - Professeur informatique robotique (Belgique)
-
-**Francis Jutand**- Expert dy numérique (France)
+**Giuliano da Empoli** - écrivain, conseiller et professeur (Italie, Suisse, France) / **Nathalie Sonnac**  - Médias, professeure et autrice (France) /**Nicolas van Zeebroeck**  - Professeur d’économie (Belgique) / **Ioan Roxin** - Professeur émerite, chercheur (Roumanie, France) / **Hugues Bersini** - Professeur informatique robotique (Belgique) / **Francis Jutand**- Expert du numérique (France)
 {% endwrapper %}
 
 :::
 
-## **Early supporters **
+## Early supporters
 
 {% wrapper tag="section" %}
-
 **Paul Nemitz**
 
 **Pierre Cassou-Noguès**
