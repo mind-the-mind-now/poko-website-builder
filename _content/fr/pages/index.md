@@ -14,9 +14,13 @@ pageLayout: menuless
 vars: null
 ---
 
-{% component "home-header.md", { preHeading: "Rise for the Mind !", heading: "Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[**Une Déclaration, pour quoi faire?**](#une-declaration-pour-quoi-faire) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Notre démarche](#notre-demarche) [Notre objectif](#notre-objectif) [Notre équipe](#le-comite-de-pilotage) [Comité éthique et scientifique](#le-comite-ethique-et-scientifique) [Nous contacter](/contact/) {% link url=\"la-tribune\", text=\"Signez notre Tribune!\", linkType=\"internal\", collection=\"pages\" %}\n\n{.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}" } %}
+{% component "home-header.md", { preHeading: "Rise for the Mind !", heading: "Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[**Une Déclaration, pour quoi faire?**](#une-declaration-pour-quoi-faire) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Notre démarche](#notre-demarche) [Notre objectif](#notre-objectif) [Notre équipe](#le-comite-de-pilotage) [Comité éthique et scientifique](#le-comite-ethique-et-scientifique) [Nous contacter](/contact/) [Signez notre Tribune](https://preview.mindthemind-now.pages.dev/la-tribune/)\n\n{.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}" } %}
 
-##Une Déclaration, pour quoi faire?
+{% partial "tribune-cta.md" %}
+
+##
+
+Une Déclaration, pour quoi faire?
 
 Une nouvelle <b>Déclaration</b> donne un nouveau cap.
 
