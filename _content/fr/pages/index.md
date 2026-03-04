@@ -18,7 +18,7 @@ vars: null
 
 {% partial "tribune-cta.md" %}
 
-Une Déclaration, pour quoi faire?
+## Une Déclaration, pour quoi faire?
 
 Une nouvelle <b>Déclaration</b> donne un nouveau cap.
 
