@@ -60,6 +60,6 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 
 						Mark Hunyadi
 
-Le comité éthique et scientifique de Rise for the Mind :
+Les signataires du comité éthique et scientifique de Rise for the Mind :
 
 Giuliano da Empoli, Nathalie Sonnac, Nicolas van Zeebroeck, Ioan Roxin, Hugues Bersini, Francis Jutand.

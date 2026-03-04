@@ -63,6 +63,6 @@ For Rise for the Mind
 
 Mark Hunyadi
 
-The Ethics and Scientific Committee of Rise for the Mind! :
+The signatories of the Ethics and Scientific Committee of Rise for the Mind! :
 
 Giuliano da Empoli, Nathalie Sonnac, Nicolas van Zeebroeck, Ioan Roxin, Hugues Bersini, Francis Jutand.
