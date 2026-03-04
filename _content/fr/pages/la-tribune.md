@@ -61,6 +61,8 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 
 **Mark Hunyadi**
 
+::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
+
 {% wrapper tag="section" %}
 **Signatures du Comité éthique et scientifique de _Rise for the Mind_ :**
 
