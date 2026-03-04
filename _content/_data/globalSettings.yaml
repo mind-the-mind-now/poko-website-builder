@@ -1,6 +1,6 @@
 siteName: Mind the mind now!
 productionUrl: https://www.mindthemind-now.org/
-logo: /_images/humanmindrightsnow-sansfondnettoye.webp
+logo: ''
 htmlHead: <link rel="icon" href="/assets/files/icons/favicon-adapt.svg" type="image/svg+xml">
 cssHead: ''
 languages:
