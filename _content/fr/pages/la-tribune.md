@@ -5,7 +5,10 @@ createdAt: 2026-02-27T09:42:00.000Z
 uuid: 91bb6c452c53
 localizationKey: 7fdc9a5483a9
 name: La tribune
-eleventyNavigation: null
+eleventyNavigation:
+  title: ''
+  parent: ''
+  order: 0
 metadata: null
 preview: null
 tags: []
@@ -58,23 +61,26 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 
 **Mark Hunyadi**
 
-
-Signatures du Comité éthique et scientifique de _Rise for the Mind_ :
+{% wrapper tag="section" %}
+**Signatures du Comité éthique et scientifique de _Rise for the Mind_ :**
 
 **Giuliano da Empoli** - écrivain, conseiller et professeur (Italie, Suisse, France)
 
-**Nathalie Sonnac - **
+** Nathalie Sonnac**  -
 
-**Nicolas van Zeebroeck - **
+** Nicolas van Zeebroeck**  -
 
-**Ioan Roxin** - 
+**Ioan Roxin** -
 
 **Hugues Bersini**:
 
 **Francis Jutand**:
+{% endwrapper %}
 
-Early supporters :
+{% wrapper tag="section" %}
+**Early supporters :**
 
 **Paul Nemitz**
 
 **Pierre Cassou-Noguès**
+{% endwrapper %}
