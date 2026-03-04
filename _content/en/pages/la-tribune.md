@@ -59,7 +59,9 @@ Let us make the sovereignty of the mind a shared horizon.
 Mark Hunyadi
 Rise for the Mind
 
-The signatories of the Ethics and Scientific Committee of Rise for the Mind :
+**The signatories**
+
+The Ethics and Scientific Committee of Rise for the Mind :
 
 Giuliano da Empoli,
 Nathalie Sonnac,

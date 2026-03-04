@@ -63,24 +63,29 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 
 ::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
 
+## Les signataires
+
 {% wrapper tag="section" %}
-**Signatures du Comité éthique et scientifique de _Rise for the Mind_ :**
+**Comité éthique et scientifique de _Rise for the Mind_ :**
 
 **Giuliano da Empoli** - écrivain, conseiller et professeur (Italie, Suisse, France)
 
-** Nathalie Sonnac**  -
+** Nathalie Sonnac**  - Médias, professeure et autrice (France)
 
-** Nicolas van Zeebroeck**  -
+** Nicolas van Zeebroeck**  - Professeur d’économie (Belgique)
 
-**Ioan Roxin** -
+**Ioan Roxin** - Professeur émerite, chercheur (Roumanie, France)
 
-**Hugues Bersini**:
+**Hugues Bersini** - Professeur informatique robotique (Belgique)
 
-**Francis Jutand**:
+**Francis Jutand**- Expert dy numérique (France)
 {% endwrapper %}
 
+:::
+
+## **Early supporters **
+
 {% wrapper tag="section" %}
-**Early supporters :**
 
 **Paul Nemitz**
 
