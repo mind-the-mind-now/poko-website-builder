@@ -14,10 +14,9 @@ pageLayout: menuless
 vars: null
 ---
 
-{% component "home-header.md", { preHeading: "Rise for the Mind !", heading: "Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[**Une Déclaration, pour quoi faire?**](#une-declaration-pour-quoi-faire) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Notre démarche](#notre-demarche) [Notre objectif](#notre-objectif) [Notre équipe](#le-comite-de-pilotage) [Comité éthique et scientifique](#le-comite-ethique-et-scientifique) [Nous contacter](/contact/) {.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}{% link url=\"undefined\", text=\"\", linkType=\"internal\", collection=\"undefined\" %}" } %}
+{% component "home-header.md", { preHeading: "Rise for the Mind !", heading: "Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[**Une Déclaration, pour quoi faire?**](#une-declaration-pour-quoi-faire) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Notre démarche](#notre-demarche) [Notre objectif](#notre-objectif) [Notre équipe](#le-comite-de-pilotage) [Comité éthique et scientifique](#le-comite-ethique-et-scientifique) [Nous contacter](/contact/) \n\n{.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}{% link url=\"undefined\", text=\"\", linkType=\"internal\", collection=\"undefined\" %}" } %}
 
-##
-Une Déclaration, pour quoi faire?
+##Une Déclaration, pour quoi faire?
 
 Une nouvelle <b>Déclaration</b> donne un nouveau cap.
 
@@ -35,7 +34,7 @@ L’évolution technologique progresse, aussi inévitablement qu’un enfant gra
 
 ## Notre objectif
 
-Concrètement, nous souhaitons d'abord créer un mouvement d'opinion pour recentrer le débat des innovations technologiques sur les questions anthropologiques essentielles, la perspective finale étant d'aboutir à une reconnaissance universelle du principe de la souveraineté de l'esprit. Nous pensons que les évolutions actuelles appellent un marqueur historique d'ampleur égale à celle que furent les droits de l'homme à l'aube de la révolution industrielle.
+Concrètement, nous souhaitons d'abord créer un mouvement d'opinion pour recentrer le débat des innovations technologiques sur les questions anthropologiques essentielles. La perspective finale est d'aboutir à une reconnaissance universelle du principe de la souveraineté de l'esprit. Nous pensons que les évolutions actuelles appellent un marqueur historique d'ampleur équivalente à celle que furent les droits de l'homme à l'aube de la révolution industrielle.
 
 Il faut mettre notre éthique commune à la hauteur des enjeux que nous impose notre époque.
 
