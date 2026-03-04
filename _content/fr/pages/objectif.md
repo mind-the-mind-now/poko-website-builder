@@ -17,15 +17,11 @@ vars: null
 
 ::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
 
-L’objet connecté que vous détenez, le service numérique que vous utilisez sont-ils conformes aux valeurs promues par la Déclaration ? L’entreprise s’est-elle engagée aux côtés de Human Mind Rights Now ? Son produit vise-t-il d’abord une utilité humaine avant de servir l’utilité de l’écosystème ? A-t-elle envisagé les effets à long terme ? A-t-elle gardé l’esprit à l’esprit ?
-
-A ces questions, le label répond en un clin d’œil. Il prouve l’engagement pour les valeurs promues par la Déclaration, l’engagement pour le projet humain porté par le numérique.
-
-Et cela fait toute la différence.
+"C’est une urgence. Nous croyons que toutes les initiatives qui peuvent être prises aujourd’hui, toute méritoires qu’elles soient, sont vouées à rester locales, isolées et finalement inefficaces, si elles ne prennent pas place dans un cadre éthique général qui seul peut les ancrer dans une perspective globale, universelle, humaine."
 
 :::
 
-## Pour un numérique digne de confiance
+## Pour un numérique _vraiment _digne de confiance
 
 Depuis les années 2000, le numérique est devenu le compagnon de route obligé de nos activités quotidiennes, qu’elles soient personnelles, sociales ou professionnelles.
 
@@ -52,5 +48,3 @@ Nous ne sommes actuellement pas équipés pour assurer cette confiance-là. Le d
 Tel est le but de la _Déclaration_ qui, comme naguère les Droits de l’homme, nous hisserait à la hauteur des enjeux de long terme dont sont porteuses les technologies qui se déploient aujourd’hui sous nos yeux, mais par-dessus nos têtes – suscitant de ce fait la méfiance des utilisateurs.
 
 C’est une urgence. Nous croyons que toutes les initiatives qui peuvent être prises aujourd’hui, toute méritoires qu’elles soient, sont vouées à rester locales, isolées et finalement inefficaces, si elles ne prennent pas place dans un cadre éthique général qui seul peut les ancrer dans une perspective globale, universelle, humaine.
-
-**Notre label est une petite contribution à ce grand dessein**: orienter l’innovation vers un avenir qui _mérite_ notre confiance, qui soit _digne_ de cette confiance de deuxième degré qui permette à chacune et chacun d’envisager l’avenir technologique de l’humanité non seulement avec sérénité, mais avec fierté.
