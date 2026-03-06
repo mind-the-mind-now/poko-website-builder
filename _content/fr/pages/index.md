@@ -58,6 +58,22 @@ Mettons notre éthique commune à la hauteur des enjeux que nous impose notre é
 
 Nous sommes un collectif cherchant à promouvoir l’idée d’une _Déclaration Universelle des Droits de l’Esprit Humain_.
 
+{% sectionTwoColumns %}
+{% sectionHeader %}
+L'initiative est basé sur les travaux de Mark Hunyadi philosophe et auteur. 
+{% endsectionHeader %}
+{% twoColumns  %}
+{% twoColumnsItem %}
+[![](/_images/declaration.webp "Mark Hunyadi, Déclaration universelle des droits de l'esprit humai")](https://markhunyadi.be/)
+
+{% endtwoColumnsItem %}
+{% twoColumnsItem %}
+Le numérique et les métatechnologies sont en train de coloniser la part la plus humaine de l’homme : son esprit, lequel englobe bien davantage que ses seules fonctions cognitives. Or, si c’est l’esprit qui est attaqué, c’est l’esprit qu’il faut protéger. Tel est le sens de cette proposition (parution: mai 2024.) [Lire l’entretien de présentation dans Philosophie Magazine (mai 2024)](https://markhunyadi.wordpress.com/wp-content/uploads/2024/04/mai_philosophie-magazine_declaration-universelle-des-droits-de-lesprit-humain-1.pdf)
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
+
+{% endsectionTwoColumns %}
+
 ### Le comité de pilotage
 
 {% partial "founders.md" %}
