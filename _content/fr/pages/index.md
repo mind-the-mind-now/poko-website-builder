@@ -14,7 +14,7 @@ pageLayout: menuless
 vars: null
 ---
 
-{% component "home-header.md", { preHeading: "Rise for the Mind !", heading: "Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[**Une Déclaration, pour quoi faire?**](#une-declaration-pour-quoi-faire) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Notre objectif](#notre-objectif) [Notre équipe](#le-comite-de-pilotage) [Comité éthique et scientifique](#le-comite-ethique-et-scientifique) [Nous contacter](/contact/) [La Tribune à signer !](https://preview.mindthemind-now.pages.dev/la-tribune/) {.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}" } %}
+{% component "home-header.md", { preHeading: "Rise for the Mind !", heading: "Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[**Une Déclaration, pour quoi faire?**](#une-declaration-pour-quoi-faire) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Notre objectif](#notre-objectif) [Notre équipe](#le-comite-de-pilotage) [Comité éthique et scientifique](#le-comite-ethique-et-scientifique) [Nous contacter](/contact/) [Signer la Tribune !](/la-tribune/) {.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}" } %}
 
 ::: div { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
 
@@ -64,12 +64,14 @@ Nous sommes un collectif cherchant à promouvoir l’idée d’une _Déclaration
 {% sectionHeader %}
 ### L'initiative est basée sur les travaux de Mark Hunyadi philosophe et auteur.
 {% endsectionHeader %}
-{% twoColumns  %}
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem %}
 {% image src="/_images/declaration.webp", alt="Mark Hunyadi Déclaration universelle des droits de l'esprit humain", width="200" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem %}
-Le numérique et les métatechnologies sont en train de coloniser la part la plus humaine de l’homme : son esprit, lequel englobe bien davantage que ses seules fonctions cognitives. Or, si c’est l’esprit qui est attaqué, c’est l’esprit qu’il faut protéger. Tel est le sens de cette proposition (parution: mai 2024.) [Lire l’entretien de présentation dans Philosophie Magazine (mai 2024)](https://markhunyadi.wordpress.com/wp-content/uploads/2024/04/mai_philosophie-magazine_declaration-universelle-des-droits-de-lesprit-humain-1.pdf)
+Le numérique et les métatechnologies sont en train de coloniser la part la plus humaine de l’homme : son esprit, lequel englobe bien davantage que ses seules fonctions cognitives. Or, si c’est l’esprit qui est attaqué, c’est l’esprit qu’il faut protéger. Tel est le sens de cette proposition (parution: mai 2024.)
+
+[Lire l’entretien de présentation dans Philosophie Magazine (mai 2024)](https://markhunyadi.wordpress.com/wp-content/uploads/2024/04/mai_philosophie-magazine_declaration-universelle-des-droits-de-lesprit-humain-1.pdf)
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 

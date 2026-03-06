@@ -8,7 +8,7 @@ name: Objectif
 eleventyNavigation:
   order: 7
 metadata:
-  title: ''
+  title: ""
   description: "Notre objectif: rétablir la confiance dans le numérique grâce au label Human Mind Rights Now et garantir un avenir respectueux de l'esprit humain."
 vars: null
 ---
@@ -16,7 +16,7 @@ vars: null
 # Notre objectif
 
 ::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
-  
+
 « C’est une urgence. Nous croyons que toutes les initiatives qui peuvent être prises aujourd’hui, toute méritoires qu’elles soient, sont vouées à rester locales, isolées et finalement inefficaces, si elles ne prennent pas place dans un cadre éthique général qui seul peut les ancrer dans une perspective globale, universelle, humaine. »
 
 :::
@@ -48,5 +48,3 @@ Nous ne sommes actuellement pas équipés pour assurer cette confiance-là. Le d
 Tel est le but de la _Déclaration_ qui, comme naguère les Droits de l’homme, nous hisserait à la hauteur des enjeux de long terme dont sont porteuses les technologies qui se déploient aujourd’hui sous nos yeux, mais par-dessus nos têtes – suscitant de ce fait la méfiance des utilisateurs.
 
 C’est une urgence. Nous croyons que toutes les initiatives qui peuvent être prises aujourd’hui, toute méritoires qu’elles soient, sont vouées à rester locales, isolées et finalement inefficaces, si elles ne prennent pas place dans un cadre éthique général qui seul peut les ancrer dans une perspective globale, universelle, humaine.
-
-{% partial "_footer.md" %}

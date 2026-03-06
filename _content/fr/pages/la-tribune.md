@@ -19,7 +19,7 @@ vars: null
 dataList: []
 ---
 
-# IA : levons-nous pour protéger l’esprit humain. L’initiative « Rise For The Mind »
+# IA : levons-nous pour protéger l’esprit humain. L’initiative « Rise For The Mind »
 
 Appel ouvert à signature
 
@@ -39,7 +39,7 @@ Face à cette mutation, les dispositifs juridiques existants — si nécessaires
 
 Nous pensons qu’il est temps d’ouvrir un nouveau chapitre.
 
-De même que la Déclaration des droits de l’homme a marqué une étape historique en instituant un nouveau standard de dignité humaine, nous avons aujourd’hui besoin d’un **marqueur historique d’ampleur comparable **pour consacrer la valeur inaliénable de la souveraineté de l’esprit.
+De même que la Déclaration des droits de l’homme a marqué une étape historique en instituant un nouveau standard de dignité humaine, nous avons aujourd’hui besoin d’un \*\*marqueur historique d’ampleur comparable \*\*pour consacrer la valeur inaliénable de la souveraineté de l’esprit.
 
 C’est pourquoi nous appelons à l’élaboration et à l’adoption d’une **Déclaration universelle de la souveraineté de l’esprit humain.**
 
@@ -65,30 +65,21 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 
 ## Les signataires
 
-{% wrapper tag="section" %}
 **Comité éthique et scientifique de _Rise for the Mind_ :**
 
-**\*Giuliano da Empoli** - écrivain, conseiller et professeur (Italie, Suisse, France)
-
-\***Nathalie Sonnac**  - Médias, professeure et autrice ( France )
-
-\***Nicolas van Zeebroeck**  - Professeur d’économie ( Belgique )
-
-\***Ioan Roxin** - Professeur émérite, chercheur ( France )
-
-\***Hugues Bersini** - Professeur informatique robotique ( Belgique )
-
-\***Francis Jutand**- Expert du numérique ( France )
-{% endwrapper %}
+- **Giuliano da Empoli** - écrivain, conseiller et professeur (Italie, Suisse, France)
+- **Nathalie Sonnac**  - Médias, professeure et autrice ( France )
+- **Nicolas van Zeebroeck**  - Professeur d’économie ( Belgique )
+- **Ioan Roxin** - Professeur émérite, chercheur ( France )
+- **Hugues Bersini** - Professeur informatique robotique ( Belgique )
+- **Francis Jutand** - Expert du numérique ( France )
 
 :::
 
+::: div { .section }
+
 ## Early supporters
 
-{% wrapper tag="section" %}
-**\*Paul Nemitz**
-
-**\*Pierre Cassou-Noguès**
-{% endwrapper %}
-
-{% partial "_footer.md" %}
+- **Paul Nemitz**
+- **Pierre Cassou-Noguès**
+:::

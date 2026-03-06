@@ -8,29 +8,20 @@ name: Goal
 eleventyNavigation:
   order: 7
 metadata:
-  title: ''
-  description: 'Our goal: restore trust in digital technology through the Human Mind Rights Now label and ensure a future that respects the human mind.'
-tags: []
-status: ''
-pageLayout: ''
-generatePage: ''
+  title: ""
+  description: "Our goal: restore trust in digital technology through the Rise for the Mind label and ensure a future that respects the human mind."
 vars: null
-dataList: []
 ---
 
 # Our Goal
 
 ::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
 
-Is the connected device you own, the digital service you use, compliant with the values promoted by the Declaration? Has the company committed alongside Mind the Mind Now? Does its product primarily aim for human utility before serving the utility of the ecosystem? Has it considered long-term effects? Has it kept the mind in mind?
-
-The label answers these questions at a glance. It proves commitment to the values promoted by the Declaration, commitment to the human project carried by digital technology.
-
-And that makes all the difference.
+"It is urgent. We believe that all the initiatives that can be taken today, however meritorious they may be, are destined to remain local, isolated, and ultimately ineffective, if they do not take place within a general ethical framework that alone can anchor them in a global, universal, human perspective."
 
 :::
 
-## For a Trustworthy Digital World
+## For a Truly Trustworthy Digital World
 
 Since the 2000s, digital technology has become the obligatory companion of our daily activities, whether personal, social, or professional.
 
@@ -57,5 +48,3 @@ We are currently not equipped to ensure this kind of trust. The challenge is the
 Such is the purpose of the _Declaration_ which, like the Rights of Man once did, would raise us to the level of the long-term stakes carried by the technologies that are unfolding before our eyes today, but over our heads – thus arousing users' distrust.
 
 It is urgent. We believe that all the initiatives that can be taken today, however meritorious they may be, are destined to remain local, isolated, and ultimately ineffective, if they do not take place within a general ethical framework that alone can anchor them in a global, universal, human perspective.
-
-**Our label is a small contribution to this great design**: steering innovation towards a future that _deserves_ our trust, that is _worthy_ of this second-degree trust that allows everyone to envision humanity's technological future not only with serenity, but with pride.

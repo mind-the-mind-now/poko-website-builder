@@ -10,59 +10,74 @@ eleventyNavigation:
 metadata:
   title: ''
   description: Initiative for a Universal Declaration of the Rights of the Human Mind
-tags: []
-status: ''
 pageLayout: menuless
-generatePage: ''
 vars: null
-dataList: []
 ---
 
-{% component "home-header.md", { preHeading: "Initiative for a", heading: "Universal Declaration of the Rights of the Human Mind", bottom: "[**A Declaration, what for?**](#a-declaration-what-for) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Our approach](#our-approach) [Our goal](#our-goal) [Our team](#the-steering-committee) [Ethics and scientific committee](#the-ethics-and-scientific-committee) [Contact us](/contact/) {.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}" } %}
+{% component "home-header.md", { preHeading: "Rise for the Mind!", heading: "Initiative for a Universal Declaration of the Rights of the Human Mind", bottom: "[**A Declaration, what for?**](#a-declaration-what-for) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Our goal](#our-goal) [Our team](#the-steering-committee) [Ethics and scientific committee](#the-ethics-and-scientific-committee) [Contact us](/en/contact/) [Sign the Tribune!](/en/la-tribune/) {.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}" } %}
+
+::: div { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
+
+{% partial "tribune-cta.md" %}
+
+:::
 
 ## A Declaration, what for?
 
-A new <b>Declaration</b> sets a new course.
+A <b>Declaration</b> sets a course.
 
-A <b>universal</b> Declaration sets a new course for the future of humanity.
+A <b>universal</b> Declaration sets a course for the future of humanity.
 
 The Universal Declaration <b>of the Rights of the Human Mind</b> guarantees future humanity the sovereignty of the human mind over the technologies with which it must now coexist.
 
 Technological evolution progresses as inevitably as a child grows; but faced with its now exponential progression, we must ensure that its trajectory preserves the sovereignty and integrity of the human mind. This is what the <b>Universal Declaration of the Rights of the Human Mind</b> aims to guarantee.
 
-<b>**_Human Mind Rights Now!_**</b> is the name of the approach that drives the process of this ambitious, visionary, and necessary project.
+<b>**_Rise for the Mind!_**</b> is the name of the approach that drives the process of this ambitious, visionary, and necessary project.
 
 [Learn more about the Declaration]({{ "pourquoi" | locale_url }})
 
 ::: div { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
 
-## Our Approach
+## Our Goal
 
-A 3-stage rocket {.h3}
+Concretely, we first want to create a movement of opinion to refocus the debate on technological innovations around essential anthropological questions. The ultimate goal is to achieve universal recognition of the principle of the sovereignty of the mind. We believe that current developments call for a historical marker of equivalent magnitude to what human rights were at the dawn of the industrial revolution.
 
-1. Creation of a label marking adherence to the values of the Declaration
-2. Actions that will help make the principles of the Declaration a shared policy
-3. Universal Declaration of the Rights of the Human Mind: An ideal and visionary stage, but urgent and necessary, that sets the course for the entire approach
+Let us raise our common ethics to the level of the challenges our era imposes on us.
 
-[Learn more about our approach]({{ "demarche" | locale_url }})
+[Learn more about our goal]({{ "objectif" | locale_url }})
 
 :::
 
-## Our Goal
+{% partial "tribune-cta-maxi.md" %}
 
-Concretely, we first want to create a _Human Mind Rights Now_ label. We want users to know, when they use a connected device, what and who they are dealing with.
-
-Users generally have confidence, by default, in the digital _tools_ they use. But they have much less confidence in the future shaped by technology's grip on life and society, in other words, in the future digital ecosystem as a whole.
-
-**Our label is a small contribution to this great design: steering innovation towards a future that deserves our long-term trust.**
-
-[Learn more about our goal]({{ "objectif" | locale_url }})
+[Learn more about the tribune to sign]({{ "La-tribune-à-signer" | locale_url }})
 
 ::: div { #who-section .section .palette-contrast-terracotta .full-bleed-bg}
 
 ## Who Are We?
 
 We are a collective seeking to promote the idea of a _Universal Declaration of the Rights of the Human Mind_.
+
+:::
+
+{% sectionTwoColumns %}
+{% sectionHeader %}
+### The initiative is based on the work of Mark Hunyadi, philosopher and author.
+{% endsectionHeader %}
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
+{% twoColumnsItem %}
+{% image src="/_images/declaration.webp", alt="Mark Hunyadi Universal Declaration of the Rights of the Human Mind", width="200" %}
+{% endtwoColumnsItem %}
+{% twoColumnsItem %}
+Digital technology and metatechnologies are colonizing the most human part of man: his mind, which encompasses far more than just his cognitive functions. Now, if it is the mind that is under attack, it is the mind that must be protected. Such is the meaning of this proposal (published: May 2024.)
+
+[Read the presentation interview in Philosophie Magazine (May 2024)](https://markhunyadi.wordpress.com/wp-content/uploads/2024/04/mai_philosophie-magazine_declaration-universelle-des-droits-de-lesprit-humain-1.pdf)
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
+
+{% endsectionTwoColumns %}
+
+::: div { #who-section .section .palette-contrast-terracotta .full-bleed-bg}
 
 ### The Steering Committee
 
@@ -78,7 +93,7 @@ We are a collective seeking to promote the idea of a _Universal Declaration of t
 
 :::
 
-## How to Join Us?
+## How to Contact Us?
 
 The Universal Declaration of the Rights of the Human Mind project is ambitious and visionary.
 

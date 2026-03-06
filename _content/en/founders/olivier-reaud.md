@@ -18,6 +18,6 @@ shortDescription: Strategic Facilitator of the Initiative | IN PRINCIPO Founder
 <b>IN PRINCIPO Founder</b>
 
 With his team, Olivier Réaud offers an approach centered on collaborative dynamics – a facilitation practice that generates continuous collective intelligence – and applies it to transformation, management, innovation, and ecosystems.  
-Aware of the urgency to act at a global level, and alerted by the growing grip of metatechnologies, he has proactively engaged in the Mind the Mind Now initiative.
+Aware of the urgency to act at a global level, and alerted by the growing grip of metatechnologies, he has proactively engaged in the Rise for the Mind initiative.
 
 [In Principio team webpage](https://inprincipo2024.inprincipo.com/index.php/lequipe/)

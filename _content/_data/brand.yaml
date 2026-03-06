@@ -22,8 +22,8 @@ typeScales:
     customSteps:
       - startStep: '1'
         endStep: '5'
-      - startStep: '4'
-        endStep: '6'
+      - startStep: '1'
+        endStep: '4'
       - startStep: '-1'
         endStep: '0'
 colors:

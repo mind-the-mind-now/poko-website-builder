@@ -5,16 +5,11 @@ createdAt: 2025-11-27T13:16:00.000Z
 uuid: 48d4db461d7f
 localizationKey: adb996d693a0
 name: Approach
-eleventyNavigation:
-  order: 5
+eleventyNavigation: null
 metadata:
-  description: 'Our 3-step approach to protect the human mind: an ethical label, awareness-raising actions, and a Universal Declaration.'
-tags: []
-status: ''
-pageLayout: ''
-generatePage: ''
+  description: "Our 3-step approach to protect the human mind: an ethical label, awareness-raising actions, and a Universal Declaration."
+status: draft
 vars: null
-dataList: []
 ---
 
 # Our Approach
@@ -41,9 +36,9 @@ The stage of the Universal Declaration of the Rights of the Human Mind on a plan
 
 ## A Commitment to Protect the Human Mind
 
-_Mind the Mind Now_ is a bottom-up approach, meaning it starts from today's technological practices and uses to express the general concern of users for a harmonious coexistence between humans and mind technologies. Its endpoint – the Universal Declaration of the Rights of the Human Mind, the third stage of the Mind the Mind Now rocket – would be proclaimed in the name of the peoples of the Earth.
+_Rise for the Mind_ is a bottom-up approach, meaning it starts from today's technological practices and uses to express the general concern of users for a harmonious coexistence between humans and mind technologies. Its endpoint – the Universal Declaration of the Rights of the Human Mind, the third stage of the Rise for the Mind rocket – would be proclaimed in the name of the peoples of the Earth.
 
-The first stage is that of awareness. By obtaining the Mind the Mind Now label, stakeholders are recognized for their commitment to the values of the Declaration. As such, like the Bio label, the Mind the Mind Now label provides valuable information to the user. Like it, the Mind the Mind Now label is not a general policy statement, but a mark of positioning in favor of the consumer's long-term well-being. It is therefore in no way a substitute for state policies, nor a prefiguration of global digital governance. It is, more simply but no less essentially, a mark that producers and consumers keep the mind in mind.
+The first stage is that of awareness. By obtaining the Rise for the Mind label, stakeholders are recognized for their commitment to the values of the Declaration. As such, like the Bio label, the Rise for the Mind label provides valuable information to the user. Like it, the Rise for the Mind label is not a general policy statement, but a mark of positioning in favor of the consumer's long-term well-being. It is therefore in no way a substitute for state policies, nor a prefiguration of global digital governance. It is, more simply but no less essentially, a mark that producers and consumers keep the mind in mind.
 
 Its general principle: that the mind should never be considered as a mere means to ends that do not ultimately serve its good. For us, the legitimate pursuit of economic and technical performance must not come at the expense of the mind's well-being.
 

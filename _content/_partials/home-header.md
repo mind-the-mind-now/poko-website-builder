@@ -1,6 +1,22 @@
-::::: cover
+::::: cover { .home-header }
+<!-- Language navigation -->
+{% if page.url | locale_links | length %}
+<ul role="list" id="lang-nav" class="flex flex-nowrap justify-center gap-[--step--2]">
+{% for link in page.url | locale_links("all") %}
+<li>
+<a href="{{link.url}}" hreflang="{{link.lang}}" aria-current="{{ 'page' if link.lang === page.lang else 'false' }}"
+><abbr lang="{{link.lang}}" title="{{link.label}}"
+>{{link.lang | upper}}</abbr></a>
+</li>
+{% endfor %}
+</ul>
+{% endif %}
 
-# [{{ preHeading }}]{style=color:var(--terracotta);font-size:var(--step-1-5);}<br>{{ heading }} {.centered style=font-size:var(--step-4-6);}
+::: hgroup { .centered }
+# {{ preHeading }} { .mbs-reset style=color:var(--terracotta);font-size:var(--step-1-5);}
+
+{{ heading }} { .h3 style=font-size:var(--step-1-4); }
+:::
 
 :::: flow
 
@@ -15,6 +31,9 @@
 :::::
 
 {% css %}
+.home-header .h1 {
+margin-block: 0;
+}
 .scroll {
 --scroll-proportions: var(--step-2);
 inline-size: var(--scroll-proportions);

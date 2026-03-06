@@ -8,12 +8,12 @@ name: Our Teams
 eleventyNavigation:
   order: 9
 metadata:
-  title: ''
-  description: Discover the steering committee and scientific committee of Mind the Mind Now, united to promote the Universal Declaration of the Rights of the Human Mind.
+  title: ""
+  description: Discover the steering committee and scientific committee of Rise for the Mind, united to promote the Universal Declaration of the Rights of the Human Mind.
 tags: []
-status: ''
-pageLayout: ''
-generatePage: ''
+status: ""
+pageLayout: ""
+generatePage: ""
 vars: null
 dataList: []
 ---
