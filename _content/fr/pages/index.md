@@ -24,9 +24,9 @@ vars: null
 
 ## Une Déclaration, pour quoi faire?
 
-Une nouvelle <b>Déclaration</b> donne un nouveau cap.
+Une <b>Déclaration</b> donne un cap.
 
-Une Déclaration <b>universelle</b> donne un nouveau cap pour l’humanité future.
+Une Déclaration <b>universelle</b> donne un cap pour l’humanité future.
 
 La Déclaration universelle <b>des droits de l’esprit humain</b> garantit à l’humanité future la souveraineté de l’esprit humain sur les technologies avec lesquelles il doit désormais cohabiter.
 
@@ -42,7 +42,7 @@ L’évolution technologique progresse, aussi inévitablement qu’un enfant gra
 
 Concrètement, nous souhaitons d'abord créer un mouvement d'opinion pour recentrer le débat des innovations technologiques sur les questions anthropologiques essentielles. La perspective finale est d'aboutir à une reconnaissance universelle du principe de la souveraineté de l'esprit. Nous pensons que les évolutions actuelles appellent un marqueur historique d'ampleur équivalente à celle que furent les droits de l'homme à l'aube de la révolution industrielle.
 
-Il faut mettre notre éthique commune à la hauteur des enjeux que nous impose notre époque.
+Mettons notre éthique commune à la hauteur des enjeux que nous impose notre époque.
 
 [En savoir plus sur notre objectif]({{ "objectif" | locale_url }})
 
