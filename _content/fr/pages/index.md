@@ -18,7 +18,6 @@ vars: null
 
 ::: div { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
    
-
 {% partial "tribune-cta.md" %}
 
 :::
