@@ -115,11 +115,11 @@
 
     --radius-round: 1e5px;
     --radius-body: 0rem;
-    --radius-section: 2rem;
-    --radius-prose: 2rem;
-    --radius-featured: 2rem;
-    --radius-card: 1rem;
-    --radius-token: 5px;
+    --radius-section: 0rem;
+    --radius-prose: 0rem;
+    --radius-featured: 0rem;
+    --radius-card: 0rem;
+    --radius-token: 0px;
 
     /* Open Props */
     /*--border-size-1: 1px;

@@ -30,7 +30,7 @@ export default async function (eleventyConfig, pluginOptions) {
 
   // We use the renderFile shortcodes to render partials
   const renderFileShortcodeFn =
-    eleventyConfig.nunjucks.asyncShortcodes.renderFile;
+    eleventyConfig.universal.shortcodes.renderFile;
 
   async function retrievePartial(filename) {
     if (!/\./.test(filename)) {

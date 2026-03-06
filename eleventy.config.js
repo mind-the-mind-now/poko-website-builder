@@ -563,12 +563,12 @@ export default async function (eleventyConfig) {
     "env.11ty.js",
     async function (data) {
       const userCmsConfigImport = await userCmsConfig();
-      const allSelectedCollections = getSelectedCollections();
-      const allCollections = [
-        ...allSelectedCollections,
+      const selectedCollections = getSelectedCollections();
+      const activeCollections = [
+        ...selectedCollections,
         ...(userCmsConfigImport?.collections || []),
       ];
-      const allCollectionNames = allCollections?.collections?.map(
+      const activeCollectionNames = activeCollections?.collections?.map(
         ({ name }) => name,
       );
 
@@ -576,8 +576,8 @@ export default async function (eleventyConfig) {
 
       return `
 export const env = ${JSON.stringify(envVars)};
-export const allCollections = ${JSON.stringify(allCollections)};
-export const allCollectionNames = ${JSON.stringify(allCollectionNames)};
+export const activeCollections = ${JSON.stringify(activeCollections)};
+export const activeCollectionNames = ${JSON.stringify(activeCollectionNames)};
 export const iconLists = ${JSON.stringify(iconLists)};
 `;
     },
@@ -617,7 +617,6 @@ export const iconLists = ${JSON.stringify(iconLists)};
       "componentWrapper",
     ],
   });
-  await eleventyConfig.addPlugin(partialShortcodesPlugin);
 
   // Copy files (Keystatic)
   // Retrieve public files from the _files directory
@@ -714,7 +713,7 @@ export const iconLists = ${JSON.stringify(iconLists)};
     // const { dir } = eleventyConf;
 
     // const safeFilter = this.env.filters.safe;
-    const partialShortcodeFn = eleventyConfig.nunjucks.asyncShortcodes.partial;
+    const partialShortcodeFn = eleventyConfig.universal.shortcodes.partial;
 
     await eleventyConf.addShortcode("section", async function (...args) {
       // Old Section implementation mirroring Partial

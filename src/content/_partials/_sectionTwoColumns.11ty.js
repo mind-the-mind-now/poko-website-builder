@@ -1,9 +1,5 @@
-class SectionTwoColumns {
-  async render({ content }) {
-    return `<section class="section section-two-columns">
+export default function ({ content, class: className }) {
+  return `<section class="section section-two-columns ${className || ""}">
 ${content}
 </section>`;
-  }
 }
-
-export default SectionTwoColumns;
