@@ -66,7 +66,7 @@ Nous sommes un collectif cherchant à promouvoir l’idée d’une _Déclaration
 {% endsectionHeader %}
 {% twoColumns  %}
 {% twoColumnsItem %}
-{% image src="/_images/declaration.webp", width="200" %}
+{% image src="/_images/declaration.webp", alt="Mark Hunyadi Déclaration universelle des droits de l'esprit humain", width="200" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem %}
 Le numérique et les métatechnologies sont en train de coloniser la part la plus humaine de l’homme : son esprit, lequel englobe bien davantage que ses seules fonctions cognitives. Or, si c’est l’esprit qui est attaqué, c’est l’esprit qu’il faut protéger. Tel est le sens de cette proposition (parution: mai 2024.) [Lire l’entretien de présentation dans Philosophie Magazine (mai 2024)](https://markhunyadi.wordpress.com/wp-content/uploads/2024/04/mai_philosophie-magazine_declaration-universelle-des-droits-de-lesprit-humain-1.pdf)
