@@ -47,7 +47,7 @@ Mettons notre éthique commune à la hauteur des enjeux que nous impose notre é
 [En savoir plus sur notre objectif]({{ "objectif" | locale_url }})
 
 :::
-
+   
 {% partial "tribune-cta-maxi.md" %}
 
 ::: div { #who-section .section .palette-contrast-terracotta .full-bleed-bg}
