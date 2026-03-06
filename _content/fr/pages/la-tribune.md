@@ -70,15 +70,15 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 
 **\*Giuliano da Empoli** - écrivain, conseiller et professeur (Italie, Suisse, France)
 
-\***Nathalie Sonnac**  - Médias, professeure et autrice (France)
+\***Nathalie Sonnac**  - Médias, professeure et autrice ( France )
 
-\***Nicolas van Zeebroeck**  - Professeur d’économie (Belgique)
+\***Nicolas van Zeebroeck**  - Professeur d’économie ( Belgique )
 
-\***Ioan Roxin** - Professeur émerite, chercheur (Roumanie, France)
+\***Ioan Roxin** - Professeur émérite, chercheur ( France )
 
-\***Hugues Bersini** - Professeur informatique robotique (Belgique)
+\***Hugues Bersini** - Professeur informatique robotique ( Belgique )
 
-\***Francis Jutand**- Expert du numérique (France)
+\***Francis Jutand**- Expert du numérique ( France )
 {% endwrapper %}
 
 :::
@@ -90,3 +90,5 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 
 **\*Pierre Cassou-Noguès**
 {% endwrapper %}
+
+{% partial "_footer.md" %}
