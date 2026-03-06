@@ -16,12 +16,12 @@ vars: null
 # Notre objectif
 
 ::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
-
-"C’est une urgence. Nous croyons que toutes les initiatives qui peuvent être prises aujourd’hui, toute méritoires qu’elles soient, sont vouées à rester locales, isolées et finalement inefficaces, si elles ne prennent pas place dans un cadre éthique général qui seul peut les ancrer dans une perspective globale, universelle, humaine."
+  
+« C’est une urgence. Nous croyons que toutes les initiatives qui peuvent être prises aujourd’hui, toute méritoires qu’elles soient, sont vouées à rester locales, isolées et finalement inefficaces, si elles ne prennent pas place dans un cadre éthique général qui seul peut les ancrer dans une perspective globale, universelle, humaine. »
 
 :::
 
-## Pour un numérique _vraiment _digne de confiance
+## Pour un numérique vraiment digne de confiance
 
 Depuis les années 2000, le numérique est devenu le compagnon de route obligé de nos activités quotidiennes, qu’elles soient personnelles, sociales ou professionnelles.
 
@@ -48,3 +48,5 @@ Nous ne sommes actuellement pas équipés pour assurer cette confiance-là. Le d
 Tel est le but de la _Déclaration_ qui, comme naguère les Droits de l’homme, nous hisserait à la hauteur des enjeux de long terme dont sont porteuses les technologies qui se déploient aujourd’hui sous nos yeux, mais par-dessus nos têtes – suscitant de ce fait la méfiance des utilisateurs.
 
 C’est une urgence. Nous croyons que toutes les initiatives qui peuvent être prises aujourd’hui, toute méritoires qu’elles soient, sont vouées à rester locales, isolées et finalement inefficaces, si elles ne prennent pas place dans un cadre éthique général qui seul peut les ancrer dans une perspective globale, universelle, humaine.
+
+{% partial "_footer.md" %}
