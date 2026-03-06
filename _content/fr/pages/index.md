@@ -50,7 +50,7 @@ Mettons notre éthique commune à la hauteur des enjeux que nous impose notre é
 
 {% partial "tribune-cta-maxi.md" %}
 
-[En savoir plus sur notre objectif]({{ "La-tribune-à-signer" | locale_url }})
+[En savoir plus sur la tribune à signer]({{ "La-tribune-à-signer" | locale_url }})
 
 ::: div { #who-section .section .palette-contrast-terracotta .full-bleed-bg}
 
