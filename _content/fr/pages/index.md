@@ -17,6 +17,7 @@ vars: null
 {% component "home-header.md", { preHeading: "Rise for the Mind !", heading: "Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[**Une Déclaration, pour quoi faire?**](#une-declaration-pour-quoi-faire) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Notre objectif](#notre-objectif) [Notre équipe](#le-comite-de-pilotage) [Comité éthique et scientifique](#le-comite-ethique-et-scientifique) [Nous contacter](/contact/) [La Tribune à signer !](https://preview.mindthemind-now.pages.dev/la-tribune/) {.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}" } %}
 
 ::: div { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
+   
 
 {% partial "tribune-cta.md" %}
 
@@ -47,7 +48,7 @@ Mettons notre éthique commune à la hauteur des enjeux que nous impose notre é
 [En savoir plus sur notre objectif]({{ "objectif" | locale_url }})
 
 :::
-   
+
 {% partial "tribune-cta-maxi.md" %}
 
 ::: div { #who-section .section .palette-contrast-terracotta .full-bleed-bg}
