@@ -16,11 +16,13 @@ vars: null
 
 {% component "home-header.md", { preHeading: "Rise for the Mind !", heading: "Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[**Une Déclaration, pour quoi faire?**](#une-declaration-pour-quoi-faire) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Notre objectif](#notre-objectif) [Notre équipe](#le-comite-de-pilotage) [Comité éthique et scientifique](#le-comite-ethique-et-scientifique) [Nous contacter](/contact/) [Signer la Tribune !](/la-tribune/) {.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}" } %}
 
-::: div { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
+::: section { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
 
 {% partial "tribune-cta.md" %}
 
 :::
+
+::: section
 
 ## Une Déclaration, pour quoi faire?
 
@@ -36,35 +38,11 @@ L’évolution technologique progresse, aussi inévitablement qu’un enfant gra
 
 [En savoir plus sur la Déclaration]({{ "pourquoi" | locale_url }})
 
-::: div { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
-
-## Notre objectif
-
-Concrètement, nous souhaitons d'abord créer un mouvement d'opinion pour recentrer le débat des innovations technologiques sur les questions anthropologiques essentielles. La perspective finale est d'aboutir à une reconnaissance universelle du principe de la souveraineté de l'esprit. Nous pensons que les évolutions actuelles appellent un marqueur historique d'ampleur équivalente à celle que furent les droits de l'homme à l'aube de la révolution industrielle.
-
-Mettons notre éthique commune à la hauteur des enjeux que nous impose notre époque.
-
-[En savoir plus sur notre objectif]({{ "objectif" | locale_url }})
-
-:::
-
-{% partial "tribune-cta-maxi.md" %}
-
-[En savoir plus sur la tribune à signer]({{ "La-tribune-à-signer" | locale_url }})
-
-::: div { #who-section .section .palette-contrast-terracotta .full-bleed-bg}
-
-## Qui sommes-nous?
-
-Nous sommes un collectif cherchant à promouvoir l’idée d’une _Déclaration Universelle des Droits de l’Esprit Humain_.
-
-:::
-
 {% sectionTwoColumns %}
 {% sectionHeader %}
-### L'initiative est basée sur les travaux de Mark Hunyadi, philosophe et auteur. 
+## L'initiative est basée sur les travaux de Mark Hunyadi, philosophe et auteur.
 {% endsectionHeader %}
-{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
+{% twoColumns type="fixedFluid", class="prose", widthFixed="var(--width-card)", fixedSide="fixedLeft" %}
 {% twoColumnsItem %}
 {% image src="/_images/mh-dudeh_001.webp", alt="Mark Hunyadi Déclaration universelle des droits de l'esprit humain", width="200" %}
 {% endtwoColumnsItem %}
@@ -79,7 +57,41 @@ Le numérique et les métatechnologies sont en train de coloniser la part la plu
 
 {% endsectionTwoColumns %}
 
-::: div { #who-section .section .palette-contrast-terracotta .full-bleed-bg}
+:::
+
+::: section { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
+
+## Notre objectif
+
+Concrètement, nous souhaitons d'abord créer un mouvement d'opinion pour recentrer le débat des innovations technologiques sur les questions anthropologiques essentielles. La perspective finale est d'aboutir à une reconnaissance universelle du principe de la souveraineté de l'esprit. Nous pensons que les évolutions actuelles appellent un marqueur historique d'ampleur équivalente à celle que furent les droits de l'homme à l'aube de la révolution industrielle.
+
+Mettons notre éthique commune à la hauteur des enjeux que nous impose notre époque.
+
+[En savoir plus sur notre objectif]({{ "objectif" | locale_url }})
+
+:::
+
+::: section
+
+## La Tribune
+
+> Il ne s’agit pas de rejeter le progrès, mais de l’orienter.
+> >
+> Il ne s’agit pas de freiner l’innovation, mais de lui donner un cap.
+> >
+> Il ne s’agit pas de nourrir la peur, mais d’affirmer une ambition : celle d’une cohabitation harmonieuse entre l’intelligence humaine et les technologies qu’elle a créées.
+> >
+> Nous croyons qu’une telle Déclaration constituerait un repère commun et un cap capable de fédérer les initiatives éducatives, juridiques, scientifiques et civiques, aujourd’hui dispersées. Elle serait un signal clair adressé aux institutions, aux entreprises technologiques et aux citoyens du monde : la souveraineté de l’esprit est un principe non négociable.
+
+[En savoir plus sur la tribune à signer]({{ "la-tribune" | locale_url }})
+
+:::
+
+::: section { #who-section .section .palette-contrast-terracotta .full-bleed-bg}
+
+## Qui sommes-nous?
+
+Nous sommes un collectif cherchant à promouvoir l’idée d’une _Déclaration Universelle des Droits de l’Esprit Humain_.
 
 ### Le comité de pilotage
 
@@ -95,6 +107,8 @@ Le numérique et les métatechnologies sont en train de coloniser la part la plu
 
 :::
 
+::: section
+
 ## Comment nous joindre ?
 
 Le projet de la Déclaration Universelle des Droits de l’Esprit Humain est ambitieux, et visionnaire.
@@ -102,6 +116,8 @@ Le projet de la Déclaration Universelle des Droits de l’Esprit Humain est amb
 Soutenir le projet, c'est participer à la fondation d'un cadre éthique planétaire pour les générations actuelles et futures.
 
 [Contactez-nous]({{ "contact" | locale_url }}){.button} {.center .intrinsic}
+
+:::
 
 {% css %}
 

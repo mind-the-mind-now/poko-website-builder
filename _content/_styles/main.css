@@ -7,10 +7,51 @@
     /* TODO: --full-bleed-max-width */
 }
 
+@view-transition {
+    navigation: auto;
+}
+
 :root {
     --radius-s: 0.15rem;
     --radius-m: 0.3rem;
     --cream-light: hsl(from var(--cream) h s 93);
+
+    --radius-body: 0rem;
+    --radius-section: 0rem;
+    --radius-prose: 0rem;
+    --radius-featured: 0rem;
+    --radius-card: 0rem;
+    --radius-token: 0px;
+    /*--px-body: var(--step--2, 0.8rem);
+    --px-section: var(--step--1, 1rem);
+    --px-prose: var(--step--1, 1rem);
+    --px-featured: var(--step--1, 1rem);
+    --px-card: var(--step--1, 1rem);
+    --px-token: var(--step--1, 1rem);*/
+    /*--py-body: var(--step-2, 0.8rem);*/
+    --py-section: var(--step-6, 3rem);
+    /*--py-prose: var(--step--1, 1rem);*/
+    /*--py-featured: var(--step--1, 1rem);*/
+    /*--py-card: var(--step--1, 1rem);*/
+    /*--py-token: var(--step--1, 1rem);*/
+    --flow-p: 1em; /* Chrome: 1em | for ul, menu, dir, ol, dl, p */
+    --flow-h1: 2em; /* Chrome: 0.67em */
+    --flow-h2: 2em; /* Chrome: 0.83em */
+    --flow-h3: 2em; /* Chrome: 1em */
+    --flow-h4: 1em; /* Chrome: 1.33em */
+    --flow-h5: 1em; /* Chrome: 1.67em */
+    --flow-h6: 1em; /* Chrome: 2.33em */
+    --flow-hr: 1em;
+    --flow-prose: var(--step-1); /* Chrome: 1em | for blockquote, figure */
+    --flow-section: var(--step-2);
+    --offset-list: 2rem; /* ul and ol left padding */
+    --offset-blockquote: 1rem;
+    --text-underline-offset: 0.15em;
+    --fit: cover;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -50,13 +91,13 @@ hr {
 
 /* prettier-ignore */
 :is(h1, h2, h3, h4, h5, h6, .h-1, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8) {
-  margin-block-start: 3em;
+  /*margin-block-start: 3em;*/
 }
 /* prettier-ignore */
-:is(h1, h2, h3, h4, h5, h6, .h-1, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8) + :is(h1, h2, h3, h4, h5, h6, .h-1, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8),
+/*:is(h1, h2, h3, h4, h5, h6, .h-1, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8) + :is(h1, h2, h3, h4, h5, h6, .h-1, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8),
 .mbs-reset {
   margin-block-start: 0.8em;
-}
+}*/
 
 main > h1 {
     margin-block-start: 3em;
@@ -102,9 +143,10 @@ a.button {
 
 main > .section {
     /*padding-inline: var(--step--1);*/
-    padding-block-start: 1px; /* To prevent margin collapse on the first elem inside */
-    padding-block-end: var(--step-5);
-    margin-block: var(--step-5);
+    /* To prevent margin collapse on the first elem inside */
+    /*padding-block-start: 1px;*/
+    /*padding-block-end: var(--step-5);*/
+    /*margin-block: var(--step-5);*/
     & > :first-child {
         /*margin-block-start: 0;*/
     }
