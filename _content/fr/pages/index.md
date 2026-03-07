@@ -62,7 +62,7 @@ Nous sommes un collectif cherchant à promouvoir l’idée d’une _Déclaration
 
 {% sectionTwoColumns %}
 {% sectionHeader %}
-### L'initiative est basée sur les travaux de Mark Hunyadi philosophe et auteur.
+### L'initiative est basée sur les travaux de Mark Hunyadi, philosophe et auteur.
 {% endsectionHeader %}
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem %}
