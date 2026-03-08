@@ -78,8 +78,5 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 
 ::: div { .section }
 
-## Early supporters
-
-- **Paul Nemitz**
-- **Pierre Cassou-Noguès**
+## 
 :::
