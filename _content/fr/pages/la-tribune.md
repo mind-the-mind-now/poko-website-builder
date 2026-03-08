@@ -39,7 +39,7 @@ Face à cette mutation, les dispositifs juridiques existants — si nécessaires
 
 Nous pensons qu’il est temps d’ouvrir un nouveau chapitre.
 
-De même que la Déclaration des droits de l’homme a marqué une étape historique en instituant un nouveau standard de dignité humaine, nous avons aujourd’hui besoin d’un \*\*marqueur historique d’ampleur comparable \*\*pour consacrer la valeur inaliénable de la souveraineté de l’esprit.
+De même que la Déclaration des droits de l’homme a marqué une étape historique en instituant un nouveau standard de dignité humaine, nous avons aujourd’hui besoin d’un **marqueur historique d’ampleur comparable** pour consacrer la valeur inaliénable de la souveraineté de l’esprit.
 
 C’est pourquoi nous appelons à l’élaboration et à l’adoption d’une **Déclaration universelle de la souveraineté de l’esprit humain.**
 
@@ -53,7 +53,7 @@ Nous croyons qu’une telle Déclaration constituerait **un repère commun et un
 
 Nous lançons un appel à toutes celles et ceux — chercheurs, enseignants, juristes, responsables publics, créateurs, citoyens — qui souhaitent affirmer la beauté et l’inaliénabilité de l’esprit humain.
 
-C’est pourquoi nous lançons aujourd’hui **l’initiative _Rise for the Mind_**. Il nous revient d’inscrire dès maintenant la souveraineté de l’esprit dans l’histoire en train de s’écrire, en la portant au cœur du débat public.
+C’est pourquoi nous lançons aujourd’hui l’**initiative_ Rise for the Mind_**. Il nous revient d’inscrire dès maintenant la souveraineté de l’esprit dans l’histoire en train de s’écrire, en la portant au cœur du débat public, jusqu’à obtenir **la reconnaissance internationale** d’une Déclaration universelle des droits de l’esprit humain.
 
 Rejoignez cette initiative.
 
@@ -78,5 +78,5 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 
 ::: div { .section }
 
-## 
+##
 :::
