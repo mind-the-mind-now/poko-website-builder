@@ -1,4 +1,4 @@
-<ul role="list" class="committee-list-summary grid-fluid" style="max-inline-size:var(--width-max); --columns:8;">
+<ul role="list" class="committee-list-summary grid-fluid" style="--columns:8;">
 
 {% for member in collections.committee | filterCollection({ by: 'lang', value:
 

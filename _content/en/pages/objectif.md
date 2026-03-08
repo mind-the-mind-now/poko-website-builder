@@ -8,16 +8,16 @@ name: Goal
 eleventyNavigation:
   order: 7
 metadata:
-  title: ""
-  description: "Our goal: restore trust in digital technology through the Rise for the Mind label and ensure a future that respects the human mind."
+  title: ''
+  description: 'Our goal: restore trust in digital technology through the Rise for the Mind label and ensure a future that respects the human mind.'
 vars: null
 ---
 
 # Our Goal
 
-::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
+::: section {.section .box .palette-contrast-terracotta .full-bleed-bg}
 
-"It is urgent. We believe that all the initiatives that can be taken today, however meritorious they may be, are destined to remain local, isolated, and ultimately ineffective, if they do not take place within a general ethical framework that alone can anchor them in a global, universal, human perspective."
+> It is urgent. We believe that all the initiatives that can be taken today, however meritorious they may be, are destined to remain local, isolated, and ultimately ineffective, if they do not take place within a general ethical framework that alone can anchor them in a global, universal, human perspective.
 
 :::
 

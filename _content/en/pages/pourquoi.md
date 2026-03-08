@@ -11,16 +11,16 @@ metadata:
   title: A Declaration, what for?
   description: Why a Declaration of the Rights of the Human Mind? To protect our mental sovereignty in the face of AI and metatechnology challenges.
 tags: []
-status: ""
-pageLayout: ""
-generatePage: ""
+status: ''
+pageLayout: ''
+generatePage: ''
 vars: null
 dataList: []
 ---
 
 # A Declaration, what for?
 
-::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
+::: section {.section .box .palette-contrast-terracotta .full-bleed-bg}
 
 The idea is simple. Faced with the exponential development of digital technology, AI, and metatechnologies, it is no longer enough to want to protect, as we are currently trying to do, individual rights and freedoms, the bedrock of human rights.
 

@@ -66,6 +66,12 @@ svg {
 [aria-current="page"] {
     color: var(--color-text__a--hover);
 }
+
+blockquote {
+    border-color: var(--color-text-decoration);
+    border-width: 3px;
+}
+
 footer {
     position: sticky;
     top: calc(100vh - 1px);

@@ -14,15 +14,17 @@ pageLayout: menuless
 vars: null
 ---
 
-{% component "home-header.md", { preHeading: "Rise for the Mind !", heading: "Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[**Une Déclaration, pour quoi faire?**](#une-declaration-pour-quoi-faire) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Notre objectif](#notre-objectif) [Notre équipe](#le-comite-de-pilotage) [Comité éthique et scientifique](#le-comite-ethique-et-scientifique) [Nous contacter](/contact/) [Signer la Tribune !](/la-tribune/) {.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}" } %}
+{% component "home-header.md", { preHeading: "Rise for the Mind !", heading: "Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[**Une Déclaration, pour quoi faire?**](#une-declaration-pour-quoi-faire) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Notre objectif](#notre-objectif) [Notre équipe](#le-comite-de-pilotage) [Comité éthique et scientifique](#le-comite-ethique-et-scientifique) [Nous contacter](/contact/) {.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}\n\n[Signer la Tribune !](/la-tribune/)" } %}
 
-::: section { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
+::: section { .section .text-center .flex .flex-col .gap-[--step-2] .palette-contrast-terracotta .full-bleed-bg}
 
-{% partial "tribune-cta.md" %}
+## Mobilisons-nous pour déclarer les droits de l'esprit humain! { .h1 }
+
+{% link url="la-tribune", text="Signer, c'est déjà agir", linkType="internal", collection="pages", class="button" %} { .font-size-[--step-1] }
 
 :::
 
-::: section
+::: section { #demarche }
 
 ## Une Déclaration, pour quoi faire?
 
@@ -76,11 +78,11 @@ Mettons notre éthique commune à la hauteur des enjeux que nous impose notre é
 ## La Tribune
 
 > Il ne s’agit pas de rejeter le progrès, mais de l’orienter.
-> >
+> 
 > Il ne s’agit pas de freiner l’innovation, mais de lui donner un cap.
-> >
+> 
 > Il ne s’agit pas de nourrir la peur, mais d’affirmer une ambition : celle d’une cohabitation harmonieuse entre l’intelligence humaine et les technologies qu’elle a créées.
-> >
+> 
 > Nous croyons qu’une telle Déclaration constituerait un repère commun et un cap capable de fédérer les initiatives éducatives, juridiques, scientifiques et civiques, aujourd’hui dispersées. Elle serait un signal clair adressé aux institutions, aux entreprises technologiques et aux citoyens du monde : la souveraineté de l’esprit est un principe non négociable.
 
 [En savoir plus sur la tribune à signer]({{ "la-tribune" | locale_url }})

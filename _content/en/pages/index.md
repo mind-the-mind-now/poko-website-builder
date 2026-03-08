@@ -14,15 +14,17 @@ pageLayout: menuless
 vars: null
 ---
 
-{% component "home-header.md", { preHeading: "Rise for the Mind!", heading: "Initiative for a Universal Declaration of the Rights of the Human Mind", bottom: "[**A Declaration, what for?**](#a-declaration-what-for) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Our goal](#our-goal) [Our team](#the-steering-committee) [Ethics and scientific committee](#the-ethics-and-scientific-committee) [Contact us](/en/contact/) [Sign the Tribune!](/en/la-tribune/) {.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}" } %}
+{% component "home-header.md", { preHeading: "Rise for the Mind!", heading: "Initiative for a Universal Declaration of the Rights of the Human Mind", bottom: "[**A Declaration, what for?**](#a-declaration-what-for) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Our goal](#our-goal) [Our team](#the-steering-committee) [Ethics and scientific committee](#the-ethics-and-scientific-committee) [Contact us](/en/contact/) {.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}\n\n[Sign the Tribune!](/en/la-tribune/)" } %}
 
-::: section { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
+::: section { .section .text-center .flex .flex-col .gap-[--step-2] .palette-contrast-terracotta .full-bleed-bg}
 
-{% partial "tribune-cta.md" %}
+## Let's rise to declare the rights of the human mind! { .h1 }
+
+{% link url="la-tribune", text="Signing is already acting", linkType="internal", collection="pages", class="button" %} { .font-size-[--step-1] }
 
 :::
 
-::: section
+::: section { #demarche }
 
 ## A Declaration, what for?
 
@@ -76,11 +78,11 @@ Let us raise our common ethics to the level of the challenges our era imposes on
 ## The Tribune
 
 > It is not about rejecting progress, but about guiding it.
-> >
+> 
 > It is not about slowing down innovation, but about giving it direction.
-> >
+> 
 > It is not about feeding fear, but about affirming an ambition: that of a harmonious coexistence between human intelligence and the technologies it has created.
-> >
+> 
 > We believe that such a Declaration would constitute a common reference point and a direction capable of uniting educational, legal, scientific, and civic initiatives that are currently scattered. It would be a clear signal to institutions, technology companies, and citizens of the world: the sovereignty of the mind is a non-negotiable principle.
 
 [Learn more about the tribune to sign]({{ "la-tribune" | locale_url }})

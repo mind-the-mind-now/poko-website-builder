@@ -1,0 +1,6 @@
+tagsList:
+  - slug: founder
+    name: Founder
+vars:
+  namePlaceholder: Name
+dataList: []
