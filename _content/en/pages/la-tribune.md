@@ -65,9 +65,9 @@ Mark Hunyadi
 
 ::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
 
-## **The signatories**
+## The signatories
 
-\*\*The Ethics and Scientific Committee of Rise for the Mind \*\*:
+**The Ethics and Scientific Committee of Rise for the Mind** :
 
 - \*\*Giuliano da Empoli – \*\*Writer, advisor, and professor (Italy, Switzerland, France)
 - **Nathalie Sonnac** – Media specialist, professor, and author (France)
