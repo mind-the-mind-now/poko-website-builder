@@ -50,6 +50,8 @@ Technological evolution progresses as inevitably as a child grows; but faced wit
 Digital technology and metatechnologies are colonizing the most human part of man: his mind, which encompasses far more than just his cognitive functions. Now, if it is the mind that is under attack, it is the mind that must be protected. Such is the meaning of this proposal (published: May 2024.)
 
 [Read the presentation interview in Philosophie Magazine (May 2024)](https://markhunyadi.wordpress.com/wp-content/uploads/2024/04/mai_philosophie-magazine_declaration-universelle-des-droits-de-lesprit-humain-1.pdf)
+
+[www.markhunyadi.be](https://www.markhunyadi.be)
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
