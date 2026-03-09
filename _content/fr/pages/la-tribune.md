@@ -21,6 +21,12 @@ dataList: []
 
 # IA : levons-nous pour protéger l’esprit humain. L’initiative « Rise For The Mind »
 
+::: div { .section .palette-contrast-terracotta .width-prose }
+
+{% link url="https://c.org/T9XV9J5zmD", text="Devenir Signataire", linkType="external", class="button" %} { .text-center .font-bold .h4 }
+
+:::
+
 Appel ouvert à signature
 
 Nous vivons un moment décisif de l’histoire humaine.
@@ -61,9 +67,9 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 
 **Mark Hunyadi**
 
-::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
+:::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
 
-## Les signataires
+## Les  premiers signataires
 
 **Comité éthique et scientifique de _Rise for the Mind_:**
 
@@ -74,4 +80,10 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 - **Hugues Bersini** - Professeur informatique robotique (Belgique)
 - **Francis Jutand** - Expert du numérique (France)
 
+::: div { .my-[--step-4] }
+
+{% link url="https://c.org/T9XV9J5zmD", text="Devenir Signataire", linkType="external", class="button" %} { .text-center .font-bold .h4 .contrast }
+
 :::
+
+::::

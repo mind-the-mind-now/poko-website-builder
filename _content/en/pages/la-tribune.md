@@ -21,6 +21,12 @@ dataList: []
 
 # AI: Let Us Rise to Protect the Sovereignty of the Human Mind
 
+::: div { .section .palette-contrast-terracotta .width-prose }
+
+{% link url="https://c.org/T9XV9J5zmD", text="Sign Now", linkType="external", class="button" %} { .text-center .font-bold .h4 }
+
+:::
+
 An open letter for signature
 
 We are living through a decisive moment in human history.
@@ -63,9 +69,9 @@ For Rise for the Mind
 
 Mark Hunyadi
 
-::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
+:::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
 
-## The signatories
+## The first signatories
 
 **The Ethics and Scientific Committee of Rise for the Mind**:
 
@@ -76,4 +82,10 @@ Mark Hunyadi
 - **Hugues Bersini** – Professor of Computer Science and Robotics (Belgium)
 - **Francis Jutand** – Digital technology expert (France)
 
+::: div { .my-[--step-4] }
+
+{% link url="https://c.org/T9XV9J5zmD", text="Sign Now", linkType="external", class="button" %} { .text-center .font-bold .h4 }
+
 :::
+
+::::
