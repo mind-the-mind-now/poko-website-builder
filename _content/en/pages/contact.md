@@ -1,6 +1,6 @@
 ---
 translationKey: contact
-lang: fr
+lang: en
 createdAt: 2025-11-27T13:23:00.000Z
 uuid: e2c5f3e07f46
 localizationKey: 902307f30f07
@@ -8,11 +8,16 @@ name: Contact
 eleventyNavigation:
   order: 10
 metadata:
-  title: ''
-  description: Prenez contact avec Human Mind Rights Now. Rejoignez-nous pour soutenir la création d'un cadre éthique protégeant l'esprit humain à l'ère du numérique.
+  title: ""
+  description: Get in touch with Rise for the Mind. Join us to support the creation of an ethical framework protecting the human mind in the digital age.
+tags: []
+status: ""
+pageLayout: ""
+generatePage: ""
 vars: null
+dataList: []
 ---
 
-# Nous contacter
+# Contact Us
 
 {% section type="custom", vars={}, blocks=[], advanced={"sectionSlug":"contact-form","vars":null} %}

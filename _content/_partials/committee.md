@@ -1,6 +1,8 @@
-<ul role="list" class="committee-list-summary grid-fluid" style="max-inline-size:var(--width-max); --columns:8;">
+<ul role="list" class="committee-list-summary grid-fluid" style="--columns:8;">
 
-{% for member in collections.committee | asc('order') %}
+{% for member in collections.committee | filterCollection({ by: 'lang', value:
+
+lang }) | asc('order') %}
 
 <li class="flow" style="--flow-space:0.2rem;">
 

@@ -10,10 +10,12 @@ eleventyNavigation:
 metadata:
   title: Une Déclaration, pour quoi faire?
   description: Pourquoi une Déclaration des Droits de l'Esprit Humain? Pour protéger notre souveraineté mentale face aux défis de l'IA et des métatechnologies.
+vars: null
 ---
+
 # Une Déclaration, pour quoi faire?
 
-::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
+::: section {.section .box .palette-contrast-terracotta .full-bleed-bg}
 
 L’idée est simple. Face au développement exponentiel du numérique, de l’IA et des métatechnologies, il ne suffit plus de vouloir protéger, comme on tente de le faire actuellement, les droits et libertés individuels, socle des droits de l’homme.
 

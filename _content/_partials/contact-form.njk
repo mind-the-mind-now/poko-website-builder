@@ -1,10 +1,10 @@
-<form id="contact-form" class="flow prose" style="--flow-space: var(--step--2)" action="https://mtm-n-contact.val.run/" method="post">
-  <input type="text" name="name" id="name" placeholder="Nom" required autocomplete="name" />
+<form id="contact-form" class="flex flex-col gap-[--step--2]" action="https://mtm-n-contact.val.run/" method="post">
+  <input type="text" name="name" id="name" placeholder="{{ "Nom" if lang == 'fr' else 'Name' }}" required autocomplete="name" />
   <input type="email" name="email" id="email" placeholder="Email" required autocomplete="email" />
   <textarea name="message" id="message" placeholder="Message" required></textarea>
   <input name="username" id="username" placeholder="Username" type="text" tabindex="-1" autocomplete="one-time-code" class="hp">
-  <input id="formname" name="formname" type="text" value="MtM_N-contact" style="display: none;" />
-  <input type="submit" value="Envoyer">
+  <input id="formname" name="formname" type="text" value="Rise for the Mind" style="display: none;" />
+  <input type="submit" value="{{ "Envoyer" if lang == 'fr' else 'Submit' }}">
 </form>
 
 {% css %}
@@ -14,7 +14,7 @@ form .hp {
 }
 
 #contact-form {
-    margin-block-start: var(--step-3);
+    margin-block: var(--step-6);
 }
 
 input, textarea {
@@ -24,5 +24,6 @@ input, textarea {
     &:focus-visible {
         outline: 2px inset currentColor;
     }
+    padding-inline: 3px;
 }
 {% endcss %}

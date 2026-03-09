@@ -1,23 +1,28 @@
 ---
 translationKey: a-propos
-lang: fr
+lang: en
 createdAt: 2025-11-28T11:44:00.000Z
 uuid: 7c8881546366
 localizationKey: 1f65cb374700
-name: Nos équipes
+name: Our Teams
 eleventyNavigation:
   order: 9
 metadata:
-  title: ''
-  description: Découvrez le comité de pilotage et le comité scientifique de Human Mind Rights Now, unis pour promouvoir la Déclaration Universelle des Droits de l'Esprit Humain.
+  title: ""
+  description: Discover the steering committee and scientific committee of Rise for the Mind, united to promote the Universal Declaration of the Rights of the Human Mind.
+tags: []
+status: ""
+pageLayout: ""
+generatePage: ""
 vars: null
+dataList: []
 ---
 
-# Nos équipes
+# Our Teams
 
 ::: div { .section .palette-contrast-terracotta .full-bleed-bg }
 
-## Le comité de pilotage
+## The Steering Committee
 
 <ul role="list" class="founders grid-fluid mbs-reset">
 {% for founder in collections.founders | filterCollection({ by: 'lang', value:
@@ -34,9 +39,9 @@ lang }) | asc('order') %}
 
 :::
 
-## Le comité éthique et scientifique
+## The Ethics and Scientific Committee
 
-Le comité éthique et scientifique est l'organe de réflexion interdisciplinaire qui a pour rôle de conseil et de diffusion de l’idée d’une Déclaration Universelle des Droits de l’Esprit Humain.
+The ethics and scientific committee is the interdisciplinary advisory body responsible for guiding and disseminating the idea of a Universal Declaration of the Rights of the Human Mind.
 
 <ul role="list" class="committee-members grid-fluid mbs-reset">
 {% for member in collections.committee | filterCollection({ by: 'lang', value:

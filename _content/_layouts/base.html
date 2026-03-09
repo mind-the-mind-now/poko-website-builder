@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="{{lang or 'en'}}" class="no-js">
+    <head>
+        {% partial "_html-head-default.md" %} {% getBundle "html", "head" %}
+    </head>
+    <body>
+        <!-- Navigation -->
+        {% partial "_page-nav" %}
+
+        <!-- Content -->
+        {% partial "_main-content.md" %}
+
+        <!-- Footer -->
+        {% partial "_footer" %}
+    </body>
+</html>

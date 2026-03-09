@@ -1,3 +1,5 @@
 tagsList:
   - slug: founder
-    name: Founder
+    name: Fondateur
+vars:
+  namePlaceholder: Nom

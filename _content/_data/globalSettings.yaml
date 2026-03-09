@@ -1,13 +1,21 @@
-siteName: Mind the mind now!
-productionUrl: https://www.mindthemind-now.org/
-htmlHead: <link rel="icon" href="/assets/files/icons/favicon-adapt.svg" type="image/svg+xml">
+siteName: Rise for the Mind
+productionUrl: https://www.riseforthemind.org/
+logo: ''
+htmlHead: |-
+  <link rel="icon" href="/assets/files/icons/favicon-adapt.svg" type="image/svg+xml">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="141baef0-51f1-4308-b711-16bc55c657c6"></script>
+cssHead: ''
 languages:
   - code: fr
+    status: published
     name: Français
     customUrlPrefix:
       prefix: ''
-    status: published
     isCmsDefault: false
     isWebsiteDefault: false
+  - code: en
+    status: published
+    keepUrlPrefix: false
 collections:
   - people
+  - articles
