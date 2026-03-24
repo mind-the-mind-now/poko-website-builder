@@ -135,6 +135,78 @@ const extractQuotedString = (argumentsString, propName) => {
   return null;
 };
 
+// Helper function to extract simple values (quoted strings, numbers, booleans, unquoted strings)
+// Does NOT match complex values like objects {} or arrays []
+const extractSimpleValue = (argumentsString, propName) => {
+  const startIndex = argumentsString.indexOf(propName + "=");
+  if (startIndex === -1) return null;
+
+  const valueStart = startIndex + propName.length + 1;
+  const firstChar = argumentsString[valueStart];
+
+  // Skip if it's a complex value (object or array)
+  if (firstChar === "{" || firstChar === "[") return null;
+
+  // Handle quoted strings (double quotes)
+  if (firstChar === '"') {
+    let escape = false;
+    for (let i = valueStart + 1; i < argumentsString.length; i++) {
+      const char = argumentsString[i];
+      if (escape) {
+        escape = false;
+        continue;
+      }
+      if (char === "\\") {
+        escape = true;
+        continue;
+      }
+      if (char === '"') {
+        return argumentsString.substring(valueStart + 1, i);
+      }
+    }
+    return null;
+  }
+
+  // Handle quoted strings (single quotes)
+  if (firstChar === "'") {
+    let escape = false;
+    for (let i = valueStart + 1; i < argumentsString.length; i++) {
+      const char = argumentsString[i];
+      if (escape) {
+        escape = false;
+        continue;
+      }
+      if (char === "\\") {
+        escape = true;
+        continue;
+      }
+      if (char === "'") {
+        return argumentsString.substring(valueStart + 1, i);
+      }
+    }
+    return null;
+  }
+
+  // Handle unquoted values (numbers, booleans, simple strings)
+  // Extract until we hit a delimiter (comma, space, or end of string)
+  let valueEnd = valueStart;
+  while (
+    valueEnd < argumentsString.length &&
+    argumentsString[valueEnd] !== "," &&
+    argumentsString[valueEnd] !== " " &&
+    argumentsString[valueEnd] !== "\n" &&
+    argumentsString[valueEnd] !== "\r" &&
+    argumentsString[valueEnd] !== "\t"
+  ) {
+    valueEnd++;
+  }
+
+  const rawValue = argumentsString.substring(valueStart, valueEnd).trim();
+  if (!rawValue) return null;
+
+  return rawValue;
+};
+
 /**
  * Extracts specified attributes from a string (quoted or unquoted)
  * Works with both Nunjucks (comma-separated) and HTML (space-separated) attributes
@@ -944,23 +1016,31 @@ export const imageShortcode = {
     const argumentsString = match[1];
     // Currently in this form:
     // {% image src="path/to/image.jpg", alt="Description", width="800" %}
-
-    const src = extractQuotedString(argumentsString, "src") || "";
-    const alt = extractQuotedString(argumentsString, "alt") || "";
-    const aspectRatio =
-      extractQuotedString(argumentsString, "aspectRatio") || "";
-    const width = extractQuotedString(argumentsString, "width") || "";
-    const className = extractQuotedString(argumentsString, "class") || "";
-    const id = extractQuotedString(argumentsString, "id") || "";
-    const title = extractQuotedString(argumentsString, "title") || "";
-    const loading = extractQuotedString(argumentsString, "loading") || "";
-    const wrapper = extractQuotedString(argumentsString, "wrapper") || "";
-    const imgAttrs = argumentsString
-      .replace(
-        /(src|alt|aspectRatio|width|class|id|title|loading|wrapper)="[^"]*"(?:\s*,)?/g,
-        "",
-      )
-      .trim();
+    const { extracted, remaining: imgAttrs } = extractAttributes(
+      argumentsString,
+      [
+        "src",
+        "alt",
+        "aspectRatio",
+        "width",
+        "class",
+        "id",
+        "title",
+        "loading",
+        "wrapper",
+      ],
+    );
+    const {
+      src,
+      alt,
+      aspectRatio,
+      width,
+      class: className,
+      id,
+      title,
+      loading,
+      wrapper,
+    } = extracted;
 
     return {
       src,
@@ -1770,6 +1850,12 @@ export const sectionGrid = {
           widget: "markdown",
           required: false,
         },
+        {
+          name: "attributes",
+          label: "Header Raw Attributes",
+          widget: "string",
+          required: false,
+        },
       ],
     },
     {
@@ -1803,6 +1889,12 @@ export const sectionGrid = {
           widget: "markdown",
           required: false,
         },
+        {
+          name: "attributes",
+          label: "Footer Raw Attributes",
+          widget: "string",
+          required: false,
+        },
       ],
     },
     {
@@ -1816,6 +1908,18 @@ export const sectionGrid = {
       collapsed: true,
       types: [layoutTypeSwitcher, layoutTypeGridFluid],
     },
+    {
+      name: "attributes",
+      label: "Section Raw Attributes",
+      widget: "string",
+      required: false,
+    },
+    {
+      name: "itemsAttributes",
+      label: "Items Raw Attributes",
+      widget: "string",
+      required: false,
+    },
   ],
   // Suggested mod by Claude because...
   // The ^ and $ anchors combined with the m (multiline) flag cause problems when there are multiple sectionGrid components - the pattern can match incorrectly across component boundaries.
@@ -1824,6 +1928,7 @@ export const sectionGrid = {
   pattern:
     /^{%\s*sectionGrid\s*([^>]*?)\s*%}\s*([\S\s]*?)\s*{%\s*endsectionGrid\s*%}$/gm,
   fromBlock: function (match) {
+    const sectionAttributes = match[1];
     const sectionInner = match[2];
 
     const header = extractWithNunjucksTag(sectionInner, "sectionHeader");
@@ -1842,6 +1947,7 @@ export const sectionGrid = {
       grid?.content || "",
       "gridItem",
     );
+    const itemsAttributes = gridItems?.[0]?.attributes;
 
     // If gridItems have attributes, parse them:
     // gridItems.forEach(item => {
@@ -1849,10 +1955,12 @@ export const sectionGrid = {
     // });
 
     return {
-      header: header ? { content: header.content } : undefined,
-      footer: footer ? { content: footer.content } : undefined,
+      header: header ? header : undefined,
+      footer: footer ? footer : undefined,
       items: gridItems.map((item) => ({ item: item.content })),
       layoutOptions: gridAttributes,
+      attributes: sectionAttributes,
+      itemsAttributes,
     };
   },
   toBlock: function (data) {
@@ -1865,13 +1973,13 @@ export const sectionGrid = {
     } = data?.layoutOptions || {};
 
     const headerContent = data?.header?.content
-      ? `{% sectionHeader %}
+      ? `{% sectionHeader ${data?.header?.attributes || ""} %}
 ${data?.header?.content}
 {% endsectionHeader %}`
       : "";
 
     const footerContent = data?.footer?.content
-      ? `{% sectionFooter %}
+      ? `{% sectionFooter ${data?.footer?.attributes || ""} %}
 ${data?.footer?.content}
 {% endsectionFooter %}`
       : "";
@@ -1880,7 +1988,7 @@ ${data?.footer?.content}
       ? data.items
           .map(({ item }, index) => {
             return item
-              ? `{% gridItem %}
+              ? `{% gridItem ${data?.itemsAttributes || ""} %}
 ${item}
 {% endgridItem %}`
               : "";
@@ -1897,7 +2005,7 @@ ${gridItemsStr}
 {% endgrid %}`
       : "";
 
-    return `{% sectionGrid %}
+    return `{% sectionGrid ${data?.attributes || ""} %}
 ${headerContent}
 ${gridContent}
 ${footerContent}
@@ -1925,6 +2033,12 @@ export const sectionTwoColumns = {
           widget: "markdown",
           required: false,
         },
+        {
+          name: "attributes",
+          label: "Header Raw Attributes",
+          widget: "string",
+          required: false,
+        },
       ],
     },
     {
@@ -1943,9 +2057,21 @@ export const sectionTwoColumns = {
           required: false,
         },
         {
+          name: "attributesItemLeft",
+          label: "Left Column Raw Attributes",
+          widget: "string",
+          required: false,
+        },
+        {
           name: "itemRight",
           label: "Column Right",
           widget: "markdown",
+          required: false,
+        },
+        {
+          name: "attributesItemRight",
+          label: "Right Column Raw Attributes",
+          widget: "string",
           required: false,
         },
       ],
@@ -1964,6 +2090,12 @@ export const sectionTwoColumns = {
           widget: "markdown",
           required: false,
         },
+        {
+          name: "attributes",
+          label: "Footer Raw Attributes",
+          widget: "string",
+          required: false,
+        },
       ],
     },
     {
@@ -1975,10 +2107,17 @@ export const sectionTwoColumns = {
       collapsed: true,
       types: [layoutTypeSwitcher, layoutTypeFixedFluid],
     },
+    {
+      name: "attributes",
+      label: "Section Raw Attributes",
+      widget: "string",
+      required: false,
+    },
   ],
   pattern:
     /^{%\s*sectionTwoColumns\s*([^>]*?)\s*%}\s*([\S\s]*?)\s*{%\s*endsectionTwoColumns\s*%}$/gm,
   fromBlock: function (match) {
+    const sectionAttributes = match[1];
     const sectionInner = match[2];
 
     const header = extractWithNunjucksTag(sectionInner, "sectionHeader");
@@ -2004,13 +2143,17 @@ export const sectionTwoColumns = {
     );
 
     const itemLeft = columnItems[0]?.content || "";
+    const attributesItemLeft = columnItems[0]?.attributes || "";
+
     const itemRight = columnItems[1]?.content || "";
+    const attributesItemRight = columnItems[1]?.attributes || "";
 
     return {
-      header: header ? { content: header.content } : undefined,
-      footer: footer ? { content: footer.content } : undefined,
-      items: { itemLeft, itemRight },
+      header: header ? header : undefined,
+      footer: footer ? footer : undefined,
+      items: { itemLeft, attributesItemLeft, itemRight, attributesItemRight },
       layoutOptions: twoColumnsAttributes,
+      attributes: sectionAttributes,
     };
   },
   toBlock: function (data) {
@@ -2025,25 +2168,25 @@ export const sectionTwoColumns = {
     } = data?.layoutOptions || {};
 
     const headerContent = data?.header?.content
-      ? `{% sectionHeader %}
+      ? `{% sectionHeader ${data?.header?.attributes || ""} %}
 ${data?.header?.content}
 {% endsectionHeader %}`
       : "";
 
     const footerContent = data?.footer?.content
-      ? `{% sectionFooter %}
+      ? `{% sectionFooter ${data?.footer?.attributes || ""} %}
 ${data?.footer?.content}
 {% endsectionFooter %}`
       : "";
 
     const itemLeftStr = data?.items?.itemLeft
-      ? `{% twoColumnsItem %}
+      ? `{% twoColumnsItem ${data.items.attributesItemLeft || ""} %}
 ${data.items.itemLeft}
 {% endtwoColumnsItem %}`
       : "";
 
     const itemRightStr = data?.items?.itemRight
-      ? `{% twoColumnsItem %}
+      ? `{% twoColumnsItem ${data.items.attributesItemRight || ""} %}
 ${data.items.itemRight}
 {% endtwoColumnsItem %}`
       : "";
@@ -2072,7 +2215,7 @@ ${columnItemsStr}
 {% endtwoColumns %}`
       : "";
 
-    return `{% sectionTwoColumns %}
+    return `{% sectionTwoColumns ${data?.attributes || ""} %}
 ${headerContent}
 ${twoColumnsContent}
 ${footerContent}
@@ -2098,6 +2241,12 @@ export const sectionCollection = {
           name: "content",
           label: "Header Content",
           widget: "markdown",
+          required: false,
+        },
+        {
+          name: "attributes",
+          label: "Header Raw Attributes",
+          widget: "string",
           required: false,
         },
       ],
@@ -2273,6 +2422,12 @@ export const sectionCollection = {
           widget: "markdown",
           required: false,
         },
+        {
+          name: "attributes",
+          label: "Footer Raw Attributes",
+          widget: "string",
+          required: false,
+        },
       ],
     },
     {
@@ -2284,10 +2439,17 @@ export const sectionCollection = {
       collapsed: true,
       types: [layoutTypeSwitcher, layoutTypeGridFluid],
     },
+    {
+      name: "attributes",
+      label: "Section Raw Attributes",
+      widget: "string",
+      required: false,
+    },
   ],
   pattern:
     /^{%\s*sectionCollection\s*([^>]*?)\s*%}\s*([\S\s]*?)\s*{%\s*endsectionCollection\s*%}$/gm,
   fromBlock: function (match) {
+    const sectionAttributes = match[1];
     const sectionInner = match[2];
 
     const header = extractWithNunjucksTag(sectionInner, "sectionHeader");
@@ -2297,6 +2459,10 @@ export const sectionCollection = {
       extractJsonProperty(collection?.attributes, "filters") || [];
     const sortCriterias =
       extractJsonProperty(collection?.attributes, "sortCriterias") || [];
+    const sortAndFilterOptions =
+      filters.length || sortCriterias.length
+        ? { filters, sortCriterias }
+        : undefined;
     const { extracted: collectionAttributes } = extractAttributes(
       collection?.attributes,
       [
@@ -2312,20 +2478,18 @@ export const sectionCollection = {
     );
     const {
       collection: collectionName,
-      filters: noop1,
-      sortCriterias: noop2,
+      filters: noop1, // Just to remove key from ...layoutOptions
+      sortCriterias: noop2, // Just to remove key from ...layoutOptions
       ...layoutOptions
     } = collectionAttributes;
 
     return {
-      header: header ? { content: header.content } : undefined,
-      footer: footer ? { content: footer.content } : undefined,
+      header: header ? header : undefined,
+      footer: footer ? footer : undefined,
       collection: collectionName,
-      sortAndFilterOptions: {
-        filters,
-        sortCriterias,
-      },
+      sortAndFilterOptions,
       layoutOptions,
+      sectionAttributes,
     };
   },
   toBlock: function (data) {
@@ -2366,13 +2530,13 @@ export const sectionCollection = {
     // }
 
     const headerContent = data?.header?.content
-      ? `{% sectionHeader %}
+      ? `{% sectionHeader ${data?.header?.attributes || ""} %}
 ${data?.header?.content}
 {% endsectionHeader %}`
       : "";
 
     const footerContent = data?.footer?.content
-      ? `{% sectionFooter %}
+      ? `{% sectionFooter ${data?.footer?.attributes || ""} %}
 ${data?.footer?.content}
 {% endsectionFooter %}`
       : "";
@@ -2409,7 +2573,7 @@ ${data?.footer?.content}
     const collAttrsStr = njkAttrsStringFromObj(collAttrs);
     const collectionContent = `{% collection ${collAttrsStr} %}{% endcollection %}`;
 
-    return `{% sectionCollection %}
+    return `{% sectionCollection ${data?.sectionAttributes || ""} %}
 ${headerContent}
 ${collectionContent}
 ${footerContent}

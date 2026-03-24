@@ -1,6 +1,6 @@
-export default async function ({ content, class: className }) {
+export default async function ({ content, class: className, tag }) {
   // const renderedPartial = await this.partial("styles/_sectionCollection");
-  return `<section class="section section-collection ${className || ""}">
+  return `<${tag || "section"} class="section-collection ${className || ""}">
 ${content}
-</section>`;
+</${tag || "section"}>`;
 }

@@ -38,19 +38,19 @@ export default function ({
     .filter(Boolean)
     .join(" ");
 
-  const defaultCss =
-    type === "fixedFluid"
-      ? `{% css %}
-.fixed-fluid {
-  --width-fixed: calc(var(--width-max) - var(--width-prose) - var(--gap-fixed-fluid, 1em));
-}
-{% endcss %}
-`
-      : "";
+  //   const defaultCss =
+  //     type === "fixedFluid"
+  //       ? `{% css %}
+  // .fixed-fluid {
+  //   --width-fixed: calc(var(--width-max) - var(--width-prose) - var(--gap-fixed-fluid, 1em));
+  // }
+  // {% endcss %}
+  // `
+  //       : "";
 
   return `<div class="${classes}" ${styleStr}>
 ${content}
 </div>
-${defaultCss}
 `;
+  // ${defaultCss}
 }

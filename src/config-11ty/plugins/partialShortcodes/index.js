@@ -40,6 +40,7 @@ export default async function (eleventyConfig, pluginOptions) {
 
   // prettier-ignore
   for (const partialName of [
+    "wrapper",
     "sectionGrid",
     "grid",
     "sectionHeader",

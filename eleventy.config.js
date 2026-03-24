@@ -676,7 +676,7 @@ export const iconLists = ${JSON.stringify(iconLists)};
   eleventyConfig.addShortcode("button", buttonShortcode);
   eleventyConfig.addShortcode("image", image);
   eleventyConfig.addShortcode("gallery", gallery);
-  eleventyConfig.addPairedShortcode("wrapper", wrapper);
+  // eleventyConfig.addPairedShortcode("wrapper", wrapper);
   // eleventyConfig.addPairedShortcode("calloutShortcode", calloutShortcode);
   // eleventyConfig.addShortcode("ogImageSelected", ogImageSelected);
   // eleventyConfig.addShortcode(

@@ -16,16 +16,32 @@ export default [
   // Width utility
   [
     /^width-prose$/,
-    ([, d]) => ({
-      "max-inline-size": "var(--width-prose)",
-      "margin-inline": "auto",
-    }),
+    (match, { symbols }) => {
+      return {
+        [symbols.selector]: () => `:where(.width-prose)`,
+        "max-inline-size": "var(--width-prose)",
+        "margin-inline": "auto",
+      };
+    },
   ],
   [
     /^width-max$/,
-    ([, d]) => ({
-      "max-inline-size": "var(--width-max)",
-      "margin-inline": "auto",
-    }),
+    (match, { symbols }) => {
+      return {
+        [symbols.selector]: () => `:where(.width-max)`,
+        "max-inline-size": "var(--width-max)",
+        "margin-inline": "auto",
+      };
+    },
+  ],
+  [
+    /^width-body$/,
+    (match, { symbols }) => {
+      return {
+        [symbols.selector]: () => `:where(.width-body)`,
+        "max-inline-size": "var(--width-body)",
+        "margin-inline": "auto",
+      };
+    },
   ],
 ];

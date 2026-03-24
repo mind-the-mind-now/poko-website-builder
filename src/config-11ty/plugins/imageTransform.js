@@ -107,9 +107,9 @@ export const imageOptionsDefaults = {
     // HTML attributes added to `<picture>` (omitted when <img> used)
     pictureAttributes: {},
 
-    // Which source to use for `<img width height src>` attributes
+    // Which source to use for `<img width height src>` attributes (when multiple img definitions)
+    // Should keep "largest" I think, or we'll take the smallest when creating responsive images
     fallback: "largest", // or "smallest"
-    // fallback: "smallest", // or "smallest"
   },
 };
 

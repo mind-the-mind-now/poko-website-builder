@@ -1,5 +1,5 @@
-export default function ({ content, class: className }) {
-  return `<section class="section section-two-columns ${className || ""}">
+export default function ({ content, class: className, tag }) {
+  return `<${tag || "section"} class="section-two-columns ${className || ""}">
 ${content}
-</section>`;
+</${tag || "section"}>`;
 }
