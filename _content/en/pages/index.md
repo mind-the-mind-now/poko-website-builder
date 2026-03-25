@@ -87,6 +87,8 @@ Let us raise our common ethics to the level of the challenges our era imposes on
 
 [Learn more about the Petition to sign]({{ "the-petition" | locale_url }})
 
+{% link url="la-tribune", text="Learn more about the Petition to sign", linkType="internal", collection="pages" %}
+
 :::
 
 ::: section { #who-section .section .palette-contrast-terracotta .full-bleed-bg}
