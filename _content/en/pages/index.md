@@ -85,7 +85,7 @@ Let us raise our common ethics to the level of the challenges our era imposes on
 > >
 > We believe that such a Declaration would constitute a common reference point and a direction capable of uniting educational, legal, scientific, and civic initiatives that are currently scattered. It would be a clear signal to institutions, technology companies, and citizens of the world: the sovereignty of the mind is a non-negotiable principle.
 
-[Learn more about the tribune to sign]({{ "the-petition" | locale_url }})
+[Learn more about the Petition to sign]({{ "the-petition" | locale_url }})
 
 :::
 
