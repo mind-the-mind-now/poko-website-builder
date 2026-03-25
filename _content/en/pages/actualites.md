@@ -19,7 +19,7 @@ vars: null
 dataList: []
 ---
 
-News about de initiative 
+News about de initiative
 
 {% sectionCollection %}
 

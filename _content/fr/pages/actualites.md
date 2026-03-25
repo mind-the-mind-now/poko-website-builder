@@ -21,6 +21,8 @@ dataList: []
 
 # Les actualités de la démarche
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tCEogfwEpq0?si=CdldAZEU0EoQ7hvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 {% sectionCollection %}
 
 {% collection collection="articles", type="grid-fluid", columns="3" %}{% endcollection %}
