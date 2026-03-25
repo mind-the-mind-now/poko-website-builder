@@ -11,11 +11,10 @@ eleventyNavigation:
   order: 6
 metadata: null
 preview: null
-tags:
-  - founder
+tags: []
 status: ''
 pageLayout: ''
-generatePage: ''
+generatePage: normal
 vars: null
 dataList: []
 ---
