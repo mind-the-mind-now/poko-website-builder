@@ -11,7 +11,8 @@ eleventyNavigation:
   order: 6
 metadata: null
 preview: null
-tags: []
+tags:
+  - founder
 status: ''
 pageLayout: ''
 generatePage: ''
@@ -19,8 +20,10 @@ vars: null
 dataList: []
 ---
 
+# Les actualités de la démarche
+
 {% sectionCollection %}
 
-{% collection collection="articles", sort="asc", sortBy="date" %}{% endcollection %}
+{% collection collection="articles", sort="asc", sortBy="date", type="switcher" %}{% endcollection %}
 
 {% endsectionCollection %}
