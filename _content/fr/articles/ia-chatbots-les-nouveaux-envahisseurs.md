@@ -28,3 +28,5 @@ Invité : Mark Hunyadi, professeur de philosophie à l’Université catholique 
 Présentation : Laurent Huguenin-Elie
 
 Mark Hunyadi était présent au festival genevois FIFDH 2026 pour une rencontre organisée par la Société de lecture et une discussion intitulée "Quand l’IA s’attaque à nos esprits", précédée du documentaire de Temps présent, "IA, mon confident mortel", de Corinne Portier et Jacqueline Dubuis.
+
+`<iframe width="560" height="315" src="https://www.youtube.com/embed/tCEogfwEpq0?si=XIsKjMzeP8D0Rewi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
