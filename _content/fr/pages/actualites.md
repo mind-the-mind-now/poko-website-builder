@@ -24,6 +24,6 @@ dataList: []
 
 {% sectionCollection %}
 
-{% collection collection="articles", sort="asc", sortBy="date", type="switcher" %}{% endcollection %}
+{% collection collection="articles", sort="asc", sortBy="date", type="grid-fluid", columns="3" %}{% endcollection %}
 
 {% endsectionCollection %}
