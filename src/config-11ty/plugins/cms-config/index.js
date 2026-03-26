@@ -11,6 +11,7 @@ import {
   CMS_REPO,
   CMS_BACKEND,
   CMS_BRANCH,
+  NAV_DEPTH_MAX,
   selectedCollections,
   allLanguages,
   userCmsConfig,
@@ -220,6 +221,34 @@ export const pageLayoutRelationField = {
   required: false,
   i18n: "duplicate",
 };
+
+// footer defined page by page (in the CMS)
+export const pageFooterRelationField = {
+  name: "pageFooter",
+  label: "Footer",
+  widget: "relation",
+  collection: "footers",
+  hint:
+    "Select a footer for this entry. Leave empty to use default footer set in global settings.",
+  required: false,
+  i18n: "duplicate",
+  search_fields: ["slug"],
+  display_fields: ["slug"],
+  value_field: "{{slug}}",
+};
+export const pageNavRelationField = {
+  name: "pageNav",
+  label: "Page Navigation",
+  widget: "relation",
+  collection: "nav",
+  hint: "Select a navigation for this page or leave empty to use the default navigation",
+  required: false,
+  i18n: "duplicate",
+  search_fields: ["name"],
+  value_field: "{{name}}",
+  display_fields: ["name"],
+};
+
 // const bodyMarkdownField = {
 //   name: "body",
 //   label: "Content",
@@ -882,6 +911,22 @@ export const bodyMarkdownField = {
   widget: "markdown",
   required: false,
   i18n: true,
+  buttons: [
+    "bold",
+    "italic",
+    "strikethrough",
+    "code",
+    // "link",
+    "heading-one",
+    "heading-two",
+    "heading-three",
+    "heading-four",
+    "heading-five",
+    "heading-six",
+    "bulleted-list",
+    "numbered-list",
+    "quote",
+  ],
   editor_components: [
     // "eleventyImage", // Removed
     // "imageShortcode",
@@ -890,6 +935,8 @@ export const bodyMarkdownField = {
     // "wrapper",
     // "section",
     // "links",
+    "code-block",
+    // "image",
     ...defaultEditorComponentNames,
     ...userEditorComponentNames,
   ],
@@ -919,6 +966,8 @@ export const commonPageFields = [
   tagsField,
   statusField,
   pageLayoutRelationField,
+  pageFooterRelationField,
+  pageNavRelationField,
   generatePageField,
   varsField,
   dataListField,
@@ -964,27 +1013,27 @@ export const pagesCollection = {
   //     pattern: true,
   //   },
   // ],
-  index_file: {
-    name: "_index",
-    label: "Page Data",
-    // path: "pages.yaml",
-    path: "_index",
-    extension: "md",
-    // file: `${CONTENT_DIR}/_data/brand.yaml`,
-    // format: "yaml",
-    icon: "home",
-    editor: { preview: false },
-    i18n: false,
-    fields: [
-      {
-        name: "layout",
-        label: "Layout",
-        widget: "string",
-        default: "base",
-        required: false,
-      },
-    ],
-  },
+  // index_file: {
+  //   name: "pages",
+  //   label: "Page Data",
+  //   path: "pages/{{slug}}",
+  //   // path: "_index",
+  //   extension: "yaml",
+  //   // file: `${CONTENT_DIR}/_data/brand.yaml`,
+  //   // format: "yaml",
+  //   icon: "home",
+  //   editor: { preview: false },
+  //   i18n: false,
+  //   fields: [
+  //     {
+  //       name: "layout",
+  //       label: "Layout",
+  //       widget: "string",
+  //       default: "base",
+  //       required: false,
+  //     },
+  //   ],
+  // },
 };
 export function spreadPageSetup(collectionNameRaw) {
   // Make sure the collection name is hyphenized/slugified (kebab-case)
@@ -1009,7 +1058,69 @@ export const articleFields = [...commonCollectionFields, ...commonPageFields];
 export const articles = {
   ...spreadPageSetup("articles"),
   icon: "ink_pen",
-  fields: articleFields,
+  fields: [
+    ...articleFields,
+    {
+      name: "author",
+      label: "Author",
+      type: "text",
+      widget: "string",
+      required: true,
+      i18n: true,
+      // field: { list with objects
+      //   name: "url",
+      //   label: "Link to profile",
+      //   widget: "string",
+      //   type: "url",
+      //   required: false,
+      //   i18n: true,
+      // },
+    },
+    {
+      name: "datePublished",
+      label: "Date Published",
+      type: "datetime",
+      widget: "datetime",
+      format: "YYYY-MM-DDTHH:mm:ss",
+      required: true,
+      i18n: true,
+    },
+    {
+      name: "dateUpdated",
+      label: "Date Updated",
+      type: "datetime",
+      widget: "datetime",
+      format: "YYYY-MM-DDTHH:mm:ss",
+      required: true,
+      i18n: true,
+    },
+    {
+      name: "images",
+      label: "Images",
+      widget: "list",
+      required: "false",
+      i18n: true,
+      fields: [
+        {
+          name: "image",
+          label: "Image",
+          widget: "image",
+          multiple: true,
+          required: true,
+          i18n: true,
+        },
+      ],
+    },
+    {
+      name: "website",
+      label: "Website",
+      widget: "string",
+      type: "url",
+      required: false,
+      i18n: true,
+      hint: "Link to the articles pages",
+    },
+  ],
 };
 export const articlesCollection = { ...articles };
 // SERVICES
@@ -1025,7 +1136,245 @@ export const eventFields = [...commonCollectionFields, ...commonPageFields];
 export const events = {
   ...spreadPageSetup("events"),
   icon: "event",
-  fields: eventFields,
+  fields: [
+    ...eventFields,
+    {
+      name: "startDate",
+      label: "Start Date",
+      widget: "datetime",
+      type: "datetime",
+      format: "YYYY-MM-DDTHH:mm:ss",
+      required: true,
+      i18n: true,
+    },
+    {
+      name: "endDate",
+      label: "End Date",
+      widget: "datetime",
+      type: "datetime",
+      format: "YYYY-MM-DDTHH:mm:ss",
+      required: false,
+      i18n: true,
+    },
+    {
+      name: "eventStatus",
+      label: "Event Status",
+      widget: "select",
+      default: "scheduled",
+      options: [
+        { value: "scheduled", label: "Scheduled" },
+        { value: "rescheduled", label: "Rescheduled" },
+        { value: "ongoing", label: "Ongoing" },
+        { value: "completed", label: "Completed" },
+        { value: "cancelled", label: "Cancelled" },
+        { value: "postponed", label: "Postponed" },
+      ],
+      required: false,
+      i18n: true,
+    },
+    {
+      name: "location",
+      label: "Location",
+      widget: "object",
+      required: false,
+      i18n: true,
+      fields: [
+        {
+          name: "name",
+          label: "Name",
+          widget: "string",
+          required: false,
+          i18n: true,
+        },
+        {
+          name: "address",
+          label: "Address",
+          widget: "object",
+          required: false,
+          i18n: true,
+          fields: [
+            {
+              name: "streetAddress",
+              label: "Street Address",
+              widget: "string",
+              required: false,
+              i18n: true,
+            },
+            {
+              name: "addressLocality",
+              label: "City",
+              widget: "string",
+              required: false,
+              i18n: true,
+            },
+            {
+              name: "postalCode",
+              label: "Postal Code",
+              widget: "string",
+              required: false,
+              i18n: true,
+            },
+            {
+              name: "addressRegion",
+              label: "State/Province",
+              widget: "string",
+              required: false,
+              i18n: true,
+            },
+            {
+              name: "addressCountry",
+              label: "Country",
+              widget: "string",
+              required: false,
+              i18n: true,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      // double emploi avec metadata
+      name: "images",
+      label: "Images",
+      widget: "list",
+      required: false,
+      i18n: true,
+      fields: [
+        {
+          name: "image",
+          label: "Image",
+          widget: "image",
+          multiple: true,
+          required: true,
+          i18n: true,
+        },
+      ],
+    },
+    {
+      // double emploi avec metadata
+      name: "description",
+      label: "Description",
+      widget: "text",
+      required: false,
+      i18n: true,
+    },
+    {
+      name: "offers",
+      label: "Offers",
+      widget: "list",
+      required: false,
+      i18n: true,
+      fields: [
+        {
+          name: "offer",
+          label: "Offer",
+          widget: "object",
+          required: true,
+          i18n: true,
+          fields: [
+            {
+              name: "url",
+              label: "URL",
+              widget: "string",
+              required: true,
+              i18n: true,
+              hint: "Link to ticketing or registration page",
+            },
+            {
+              name: "price",
+              label: "Price",
+              widget: "number",
+              required: false,
+              i18n: true,
+              hint: "Price of the event tickets",
+            },
+            {
+              name: "priceCurrency",
+              label: "Price Currency",
+              widget: "string",
+              required: false,
+              i18n: true,
+              hint: "Currency of the price (e.g. 'USD', 'EUR')",
+            },
+            {
+              name: "availability",
+              label: "Availability",
+              widget: "select",
+              default: "inStock",
+              options: [
+                { value: "inStock", label: "In Stock" },
+                { value: "soldOut", label: "Sold Out" },
+                { value: "preOrder", label: "Pre-order" },
+              ],
+              required: false,
+              i18n: true,
+              hint: "Availability status of the event tickets",
+            },
+            {
+              name: "validFrom",
+              label: "Valid From",
+              widget: "datetime",
+              type: "datetime",
+              format: "YYYY-MM-DDTHH:mm:ss",
+              required: false,
+              i18n: true,
+              hint: "Start date and time when the offer becomes valid",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "performers",
+      label: "Performers",
+      widget: "list",
+      required: false,
+      i18n: true,
+      fields: [
+        {
+          name: "performer",
+          label: "Performer",
+          widget: "object",
+          required: true,
+          i18n: true,
+          fields: [
+            {
+              name: "name",
+              label: "Name",
+              widget: "string",
+              required: true,
+              i18n: true,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "organizers",
+      label: "Organizers",
+      widget: "list",
+      required: false,
+      i18n: true,
+      fields: [
+        {
+          name: "organizer",
+          label: "Organizer",
+          widget: "object",
+          required: true,
+          i18n: true,
+          fields: [
+            {
+              name: "name",
+              label: "Name",
+              widget: "string",
+              required: true,
+              i18n: true,
+            },
+          ],
+        },
+      ],
+    },
+  ],
 };
 export const eventsCollection = { ...events };
 // PEOPLE
@@ -1060,7 +1409,7 @@ export const coursesCollection = { ...courses };
 export const placeFields = [...commonCollectionFields, ...commonPageFields];
 export const places = {
   ...spreadPageSetup("places"),
-  icon: "deployed_code",
+  icon: "location_on",
   fields: placeFields,
 };
 export const placesCollection = { ...places };
@@ -1155,7 +1504,24 @@ const getMiscLinkTypes = (allSelectedCollections, currentLevel, maxLevels) =>
         hint: "Override the page name",
         i18n: true,
       },
-      ...createNavLevels(allSelectedCollections, currentLevel + 1, maxLevels), // Adjust the second argument to set max levels
+      {
+        name: "image",
+        label: "Image",
+        widget: "object",
+        hint: "Override the page title with an image",
+        required: false,
+        i18n: "duplicate",
+        summary: "{{src}}",
+        fields: [
+          {
+            name: "src",
+            label: "Image",
+            widget: "image",
+            required: true,
+            i18n: true,
+          },
+        ],
+      },
     ],
   }));
 
@@ -1165,11 +1531,11 @@ function createNavLevels(allSelectedCollections, currentLevel, maxLevels) {
   return [
     {
       name: "subItems",
-      label: "Sub Items",
-      label_singular: "Sub Item",
+      label: "Items",
+      label_singular: "Item",
       widget: "list",
       i18n: "duplicate",
-      required: false,
+      required: true,
       fields: [
         {
           name: "linkTo",
@@ -1178,6 +1544,7 @@ function createNavLevels(allSelectedCollections, currentLevel, maxLevels) {
           required: true,
           i18n: "duplicate",
           collapsed: "auto",
+          root: true,
           types: [
             {
               name: "pages",
@@ -1190,7 +1557,7 @@ function createNavLevels(allSelectedCollections, currentLevel, maxLevels) {
                   collection: "pages",
                   search_fields: ["name"],
                   display_fields: ["name"],
-                  required: false,
+                  required: true,
                   i18n: "duplicate",
                 },
                 {
@@ -1201,11 +1568,24 @@ function createNavLevels(allSelectedCollections, currentLevel, maxLevels) {
                   hint: "Override the page title",
                   i18n: true,
                 },
-                ...createNavLevels(
-                  allSelectedCollections,
-                  currentLevel + 1,
-                  maxLevels,
-                ),
+                {
+                  name: "image",
+                  label: "Image",
+                  widget: "object",
+                  hint: "Override the page title with an image",
+                  required: false,
+                  i18n: "duplicate",
+                  summary: "{{src}}",
+                  fields: [
+                    {
+                      name: "src",
+                      label: "Src",
+                      widget: "image",
+                      required: true,
+                      i18n: true,
+                    },
+                  ],
+                },
               ],
             },
             ...getMiscLinkTypes(
@@ -1229,20 +1609,33 @@ function createNavLevels(allSelectedCollections, currentLevel, maxLevels) {
                   name: "url",
                   label: "Custom URL",
                   widget: "string",
-                  required: false,
+                  required: true,
                   hint: "Use this for external links or if you want to override the page link.",
                   i18n: true,
                 },
-                ...createNavLevels(
-                  allSelectedCollections,
-                  currentLevel + 1,
-                  maxLevels,
-                ), // Adjust the second argument to set max levels
+                {
+                  name: "image",
+                  label: "Image",
+                  widget: "object",
+                  hint: "Override the page title with an image",
+                  required: false,
+                  i18n: "duplicate",
+                  summary: "{{src}}",
+                  fields: [
+                    {
+                      name: "src",
+                      label: "Src",
+                      widget: "image",
+                      required: true,
+                      i18n: true,
+                    },
+                  ],
+                },
               ],
             },
             {
-              name: "label",
-              label: "Label Only",
+              name: "subItems",
+              label: "Sub Menu",
               fields: [
                 {
                   name: "label",
@@ -1252,11 +1645,29 @@ function createNavLevels(allSelectedCollections, currentLevel, maxLevels) {
                   hint: "Override the page title",
                   i18n: true,
                 },
+                {
+                  name: "image",
+                  label: "Image",
+                  widget: "object",
+                  hint: "Override the page title with an image",
+                  required: false,
+                  i18n: "duplicate",
+                  summary: "{{src}}",
+                  fields: [
+                    {
+                      name: "src",
+                      label: "Src",
+                      widget: "image",
+                      required: true,
+                      i18n: true,
+                    },
+                  ],
+                },
                 ...createNavLevels(
                   allSelectedCollections,
                   currentLevel + 1,
                   maxLevels,
-                ), // Adjust the second argument to set max levels
+                ),
               ],
             },
           ],
@@ -1299,31 +1710,134 @@ export const navCollection = (allSelectedCollections) => ({
           collapsed: "auto",
           types: [
             {
-              name: "pages",
-              label: "Page",
-              fields: [
+              name: "linkTo",
+              label: "Link to ...",
+              widget: "object",
+              required: false,
+              i18n: "duplicate",
+              collapsed: "auto",
+              root: true,
+              types: [
                 {
-                  name: "slug",
-                  label: "Select Page",
-                  widget: "relation",
-                  collection: "pages",
-                  search_fields: ["name"],
-                  display_fields: ["name"],
-                  required: false,
-                  i18n: "duplicate",
+                  name: "pages",
+                  label: "Page",
+                  fields: [
+                    {
+                      name: "slug",
+                      label: "Select Page",
+                      widget: "relation",
+                      collection: "pages",
+                      search_fields: ["name"],
+                      display_fields: ["name"],
+                      required: false,
+                      i18n: "duplicate",
+                    },
+                    {
+                      name: "label",
+                      label: "Label",
+                      widget: "string",
+                      required: false,
+                      hint: "Override the page title",
+                      i18n: true,
+                    },
+                    {
+                      name: "image",
+                      label: "Image",
+                      widget: "object",
+                      hint: "Override the page title with an image",
+                      required: false,
+                      i18n: "duplicate",
+                      summary: "{{src}}",
+                      fields: [
+                        {
+                          name: "src",
+                          label: "Image",
+                          widget: "image",
+                          required: true,
+                          i18n: true,
+                        },
+                      ],
+                    },
+                  ],
+                },
+                ...getMiscLinkTypes(allSelectedCollections, 1, NAV_DEPTH_MAX),
+                {
+                  name: "url",
+                  label: "Custom URL",
+                  fields: [
+                    {
+                      name: "label",
+                      label: "Label",
+                      widget: "string",
+                      required: false,
+                      hint: "Override the page title",
+                      i18n: true,
+                    },
+                    {
+                      name: "url",
+                      label: "Custom URL",
+                      widget: "string",
+                      required: false,
+                      hint: "Use this for external links or if you want to override the page link.",
+                      i18n: true,
+                    },
+                    {
+                      name: "image",
+                      label: "Image",
+                      widget: "object",
+                      hint: "Override the page title with an image",
+                      required: false,
+                      i18n: "duplicate",
+                      summary: "{{src}}",
+                      fields: [
+                        {
+                          name: "src",
+                          label: "Src",
+                          widget: "image",
+                          required: true,
+                          i18n: true,
+                        },
+                      ],
+                    },
+                  ],
                 },
                 {
-                  name: "label",
-                  label: "Label",
-                  widget: "string",
-                  required: false,
-                  hint: "Override the page title",
-                  i18n: true,
+                  name: "subItems",
+                  label: "Sub Menu",
+                  fields: [
+                    {
+                      name: "label",
+                      label: "Label",
+                      widget: "string",
+                      required: true,
+                      hint: "Override the page title",
+                      i18n: true,
+                    },
+                    {
+                      name: "image",
+                      label: "Image",
+                      widget: "object",
+                      hint: "Override the page title with an image",
+                      required: false,
+                      i18n: "duplicate",
+                      summary: "{{src}}",
+                      fields: [
+                        {
+                          name: "src",
+                          label: "Src",
+                          widget: "image",
+                          required: true,
+                          i18n: true,
+                        },
+                      ],
+                    },
+                    ...createNavLevels(allSelectedCollections, 1, NAV_DEPTH_MAX), // Adjust the second argument to set max levels
+                  ],
                 },
-                ...createNavLevels(allSelectedCollections, 1, 4), // Adjust the second argument to set max levels
+                ...createNavLevels(allSelectedCollections, 1, NAV_DEPTH_MAX), // Adjust the second argument to set max levels
               ],
             },
-            ...getMiscLinkTypes(allSelectedCollections, 1, 4),
+            ...getMiscLinkTypes(allSelectedCollections, 1, NAV_DEPTH_MAX),
             {
               name: "url",
               label: "Custom URL",
@@ -1344,7 +1858,7 @@ export const navCollection = (allSelectedCollections) => ({
                   hint: "Use this for external links or if you want to override the page link.",
                   i18n: true,
                 },
-                ...createNavLevels(allSelectedCollections, 1, 4), // Adjust the second argument to set max levels
+                ...createNavLevels(allSelectedCollections, 1, NAV_DEPTH_MAX), // Adjust the second argument to set max levels
               ],
             },
             {
@@ -1359,7 +1873,7 @@ export const navCollection = (allSelectedCollections) => ({
                   hint: "Override the page title",
                   i18n: true,
                 },
-                ...createNavLevels(allSelectedCollections, 1, 4), // Adjust the second argument to set max levels
+                ...createNavLevels(allSelectedCollections, 1, NAV_DEPTH_MAX), // Adjust the second argument to set max levels
               ],
             },
           ],
@@ -1421,6 +1935,21 @@ const globalSettingsSingleton = {
       default_language: "css",
       output_code_only: true,
       allow_language_selection: false,
+    },
+    {
+      // footer defined in global settings (in the CMS)
+      name: "pageFooter",
+      label: "Default Footer",
+      widget: "relation",
+      collection: "footers",
+      hint:
+        "Footer used for all pages and collections that don't have a specific footer set.",
+      required: false,
+      i18n: true,
+      // search_fields: ["slug"],
+      // display_fields: ["fields.slug"],
+      // value_field: "{{slug}}",
+      // options: faire une liste avec les footers disponibles dans la collection footers
     },
     {
       name: "languages",
@@ -1517,6 +2046,17 @@ const globalSettingsSingleton = {
       // TODO: more customization on collections
       options: Object.keys(optionalCollections),
       dropdown_threshold: 100,
+    },
+    {
+      name: "customNav",
+      label: "Custom Navigation",
+      widget: "relation",
+      collection: "nav",
+      value_field: "slug",
+      search_fields: ["slug"],
+      display_fields: ["slug"],
+      required: false,
+      hint: "Choose which custom nav file to use globally",
     },
   ],
 };
@@ -1806,9 +2346,12 @@ const stylesConfigCollection = (fontsourceFonts) => ({
               required: true,
             },
             // prettier-ignore
-            { name: "text", label: "Text Color", ...brandColorField, required: true }, // prettier-ignore
-            { name: "bg", label: "Background Color", ...brandColorField, required: true }, // prettier-ignore
-            { name: "accent", label: "Accent Color", ...brandColorField }, // prettier-ignore
+            { name: "type", label: "Typography Color", ...brandColorField, required: true }, // prettier-ignore
+            { name: "alt", label: "Alternative Typography Color", ...brandColorField, required: true }, // prettier-ignore
+            { name: "accent", label: "Accent Color", ...brandColorField, required: true }, // prettier-ignore
+            { name: "contrast", label: "Contrast Color (E.g. for background)", ...brandColorField, required: true }, // prettier-ignore
+            { name: "text", label: "Text Color", ...brandColorField }, // prettier-ignore
+            { name: "bg", label: "Background Color", ...brandColorField }, // prettier-ignore
             { name: "border", label: "Border Color", ...brandColorField }, // prettier-ignore
             { name: "text-decoration", label: "Text Decoration Color", ...brandColorField }, // prettier-ignore
             { name: "text--marker", label: "Text Marker Color (bullet points, etc.)", ...brandColorField }, // prettier-ignore
@@ -2109,18 +2652,20 @@ class CmsConfig {
 }
 
 export const footerCollection = {
-  identifier_field: "{{slug}}",
+  // identifier_field: "{{slug}}",
   name: "footers",
   label: "Footers",
   label_singular: "Footer",
-  path: "{{slug}}",
+  path: "footers/{{slug}}",
   slug: "{{fields._slug}}",
   icon: "bottom_navigation",
-  folder: `${CONTENT_DIR}/_partials/footer`,
+  folder: `${CONTENT_DIR}/_partials`,
   extension: "md",
   format: "yaml-frontmatter",
   create: true,
+  editor: { preview: false }, // to not display the preview of the page like in other collections
   summary: "{{slug}}",
+  i18n: true, // to have the left-right feature with the two languages
   // MEDIAS
   media_folder: `/${CONTENT_DIR}/_images`,
   public_folder: "/_images",
@@ -2137,6 +2682,7 @@ export const footerCollection = {
       label: "Content",
       widget: "markdown",
       required: false,
+      i18n: true, // each language has its own body
     },
   ],
 };

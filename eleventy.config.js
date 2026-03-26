@@ -57,6 +57,8 @@ import {
   WORKING_DIR_ABSOLUTE,
   CONTENT_DIR,
   // SRC_DIR_FROM_WORKING_DIR,
+  IMAGE_CACHE_DIR,
+  IMAGES_OUTPUT_DIR,
   PARTIALS_DIR,
   LAYOUTS_DIR,
   OUTPUT_DIR,
@@ -260,6 +262,11 @@ export default async function (eleventyConfig) {
   // eleventyConfig.setLibrary("njk", nunjucksEnvironment);
 
   // --------------------- Eleventy Events
+  eleventyConfig.on("eleventy.after", () => {
+    fs.cpSync(IMAGE_CACHE_DIR, IMAGES_OUTPUT_DIR, {
+      recursive: true,
+    });
+  });
   // eleventyConfig.on(
   //   "eleventy.before",
   //   async (/*{ directories,`src/styles/ctx/index.css` runMode, outputMode, dir, ...arg }*/) => {
@@ -307,28 +314,16 @@ export default async function (eleventyConfig) {
   });
 
   // --------------------- Plugins Markdown
+  eleventyConfig.amendLibrary("md", (mdLib) =>
+    mdLib.set({
+      breaks: true,
+      // linkify: true // Do not do this until we implement an automatic email protection 11ty transform
+    }),
+  );
   eleventyConfig.amendLibrary(
     "md",
     (mdLib) =>
       mdLib
-        // https://github.com/markdown-it/markdown-it-container
-        // .use(markdownItContainer, "@", {
-        //   render: function (tokens, idx) {
-        //     const token = tokens[idx];
-        //     const attrsStr =
-        //       token.attrs
-        //         ?.map(([name, value]) => `${name}="${value}"`)
-        //         ?.join(" ") || "";
-        //     const tagMatch = token.info
-        //       .trim()
-        //       .match(/^@\s*([a-zA-Z0-9]+)\s*(.*)$/);
-        //     const tag = tagMatch ? tagMatch[1] : "div";
-
-        //     console.log({ token, idx, tag, attrsStr });
-
-        //     return token.nesting === 1 ? `<${tag} ${attrsStr}>` : `</${tag}>`;
-        //   },
-        // })
         // Use it like this:
         // ::: section
         // :::
@@ -358,54 +353,7 @@ export default async function (eleventyConfig) {
         .use(markdownItContainer, "cover")
         .use(markdownItContainer, "fixed-fluid")
         .use(markdownItContainer, "prose")
-
-        // .use(markdownItContainer, {
-        //   name: "@",
-        //   // render: function (tokens, idx) {
-        //   //   const token = tokens[idx];
-        //   //   const attrsStr =
-        //   //     token.attrs
-        //   //       ?.map(([name, value]) => `${name}="${value}"`)
-        //   //       ?.join(" ") || "";
-        //   //   const tagMatch = token.info
-        //   //     .trim()
-        //   //     .match(/^@\s*([a-zA-Z0-9]+)\s*(.*)$/);
-        //   //   const tag = tagMatch ? tagMatch[1] : "div";
-
-        //   //   return token.nesting === 1 ? `<${tag} ${attrsStr}>` : `</${tag}>`;
-        //   // },
-        //   openRender: (tokens, idx, _options) => {
-        //     const token = tokens[idx];
-        //     const attrsStr =
-        //       token.attrs
-        //         ?.map(([name, value]) => `${name}="${value}"`)
-        //         ?.join(" ") || "";
-        //     const tagMatch = token.info
-        //       .trim()
-        //       .match(/^@\s*([a-zA-Z0-9]+)\s*(.*)$/);
-        //     const tag = tagMatch ? tagMatch[1] : "div";
-
-        //     console.log({ token, tag, attrsStr, _options });
-
-        //     return `<${tag} ${attrsStr}>`;
-        //   },
-        //   closeRender: (tokens, idx, _options) => {
-        //     const tagMatch = tokens[idx].info
-        //       .trim()
-        //       .match(/^@\s*([a-zA-Z0-9]+)\s*(.*)$/);
-        //     const tag = tagMatch ? tagMatch[1] : "div";
-
-        //     console.log({ token: tokens[idx], tag, _options });
-
-        //     return `</${tag}>`;
-        //   },
-        // })
-        // .use(markdownItContainer, { name: "block" })
-        // .use(markdownItContainer, { name: "flow" })
-        // .use(markdownItContainer, { name: "grid-fluid" })
-        // .use(markdownItContainer, { name: "cluster" })
-        // .use(markdownItContainer, { name: "switcher" })
-
+        //
         .use(markdownItMark) // https://github.com/markdown-it/markdown-it-mark
         .use(markdownItLinkAttributes) // https://github.com/crookedneighbor/markdown-it-link-attributes
         .use(markdownItAttrs) // https://github.com/arve0/markdown-it-attrs
@@ -439,6 +387,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addGlobalData("inlineAllStyles", inlineAllStyles);
   eleventyConfig.addGlobalData("brandStyles", brandStyles);
   eleventyConfig.addGlobalData("fontPreloadTags", fontPreloadTags);
+  // eleventyConfig.addGlobalData("pageFooter", "");
   // Computed Data
   eleventyConfig.addGlobalData("eleventyComputed", eleventyComputed);
 
@@ -614,12 +563,12 @@ export default async function (eleventyConfig) {
     "env.11ty.js",
     async function (data) {
       const userCmsConfigImport = await userCmsConfig();
-      const allSelectedCollections = getSelectedCollections();
-      const allCollections = [
-        ...allSelectedCollections,
+      const selectedCollections = getSelectedCollections();
+      const activeCollections = [
+        ...selectedCollections,
         ...(userCmsConfigImport?.collections || []),
       ];
-      const allCollectionNames = allCollections?.collections?.map(
+      const activeCollectionNames = activeCollections?.collections?.map(
         ({ name }) => name,
       );
 
@@ -627,8 +576,8 @@ export default async function (eleventyConfig) {
 
       return `
 export const env = ${JSON.stringify(envVars)};
-export const allCollections = ${JSON.stringify(allCollections)};
-export const allCollectionNames = ${JSON.stringify(allCollectionNames)};
+export const activeCollections = ${JSON.stringify(activeCollections)};
+export const activeCollectionNames = ${JSON.stringify(activeCollectionNames)};
 export const iconLists = ${JSON.stringify(iconLists)};
 `;
     },
@@ -668,7 +617,6 @@ export const iconLists = ${JSON.stringify(iconLists)};
       "componentWrapper",
     ],
   });
-  await eleventyConfig.addPlugin(partialShortcodesPlugin);
 
   // Copy files (Keystatic)
   // Retrieve public files from the _files directory
@@ -728,7 +676,7 @@ export const iconLists = ${JSON.stringify(iconLists)};
   eleventyConfig.addShortcode("button", buttonShortcode);
   eleventyConfig.addShortcode("image", image);
   eleventyConfig.addShortcode("gallery", gallery);
-  eleventyConfig.addPairedShortcode("wrapper", wrapper);
+  // eleventyConfig.addPairedShortcode("wrapper", wrapper);
   // eleventyConfig.addPairedShortcode("calloutShortcode", calloutShortcode);
   // eleventyConfig.addShortcode("ogImageSelected", ogImageSelected);
   // eleventyConfig.addShortcode(
@@ -765,7 +713,7 @@ export const iconLists = ${JSON.stringify(iconLists)};
     // const { dir } = eleventyConf;
 
     // const safeFilter = this.env.filters.safe;
-    const partialShortcodeFn = eleventyConfig.nunjucks.asyncShortcodes.partial;
+    const partialShortcodeFn = eleventyConfig.universal.shortcodes.partial;
 
     await eleventyConf.addShortcode("section", async function (...args) {
       // Old Section implementation mirroring Partial

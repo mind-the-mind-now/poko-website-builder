@@ -61,10 +61,17 @@
 /* We might want to define each line separately like we do with colors */ /* prettier-ignore */
 :where(.prose, p, h1, h2, h3, h4, h5, h6, hgroup, address, :where(ul, ol):not([role="list"]):not(.reset), menu, search),
 :where(figure,figcaption,form,fieldset),
-:where(dl,dt,dd,blockquote,details),
-:where() {
+:where(dl,dt,dd,blockquote,details) {
     max-inline-size: min(100%, var(--width-prose));
     margin-inline: auto;
+    :where(:where(.layout, .section-header, .section-footer) &) {
+        margin-inline: 0;
+    }
+    :where(&.reset-w),
+    :where(.reset-down-w &){
+        max-inline-size: unset;
+        margin-inline: unset;
+    }
 
     /* Reset Flow */
     margin-block-start: 0;
@@ -149,10 +156,10 @@
     --px-applied: 0;
 }
 
-/* Content elements: apply padding only if flag is 0, then set flag to 1 */
+/* Content elements: apply body padding on the first 'content' element (only if flag is 0, then set flag to 1 for children) */
 /* :where(p, h1, h2, h3, h4, h5, h6, hgroup, address, blockquote, figure, figcaption, ul, ol, dl, menu, pre, form, table, details, search), */
 /* prettier-ignore */
-:where(*:not(html, body, main, section, .section, header, footer, aside, article, hgroup, div:not(.layout, .switcher, .grid-fluid, .cluster, .flow, .fixed-fluid, .center, cover, reel))) {
+:where(*:not(html, body, main, section, .section, header, footer, aside, article, hgroup, div), .layout, .switcher, .grid-fluid, .cluster, .flow, .fixed-fluid, .center, .cover, .reel) {
   padding-inline: calc(var(--px-body, 0.8rem) * (1 - var(--px-applied)));
 
   & > * {
@@ -208,12 +215,16 @@
 }
 :where(body > main:has(& > :where(header, footer, aside):last-child)) {
     padding-block-end: 0;
-}
-:where(:where(section, .section) :where(section, .section, header, footer)),
-:where(:where(section, .section) > div) {
+} /* prettier-ignore */
+:where(.prose) {
     --py: var(--py-prose);
     padding-block: var(--py-prose);
 } /* prettier-ignore */
+:where(.featured) {
+    --py: var(--py-featured);
+    padding-block: var(--py-featured);
+} /* prettier-ignore */
 :where(.box, .card:where(.palette--contrast, .palette--dark, .palette--light)) {
     padding: var(--py);
+    --padding-box: var(--py);
 }

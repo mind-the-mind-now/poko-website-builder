@@ -93,7 +93,7 @@ export function sortCollection(collection, sortCriteriasRaw) {
     : [sortCriteriasRaw];
 
   const sortedCollection = sort(collection).by(
-    sortCriterias.map(({ direction, by }) => ({
+    sortCriterias.filter(sc => sc?.by && sc?.direction).map(({ direction, by }) => ({
       [direction]: (collectionItem) => sortCb(collectionItem, by),
     })),
   );
