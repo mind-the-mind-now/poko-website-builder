@@ -1,8 +1,6 @@
 <ul role="list" class="committee-list-summary grid-fluid" style="--columns:8;">
 
-{% for member in collections.committee | filterCollection({ by: 'lang', value:
-
-lang }) | asc('order') %}
+{% for member in collections.committee | filterCollection({ by: 'lang', value: lang }) | asc('order') %}
 
 <li class="flow" style="--flow-space:0.2rem;">
 

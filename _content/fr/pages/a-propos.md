@@ -15,11 +15,11 @@ vars: null
 
 # Nos équipes
 
-::: div { .section .palette-contrast-terracotta .full-bleed-bg }
+::: section { .palette-contrast-terracotta .full-bleed-bg }
 
 ## Le comité de pilotage
 
-<ul role="list" class="founders grid-fluid mbs-reset">
+<ul role="list" class="founders layout grid-fluid mbs-reset">
 {% for founder in collections.founders | filterCollection({ by: 'lang', value:
 lang }) | asc('order') %}
 <li class="founder box palette-main">
@@ -34,11 +34,13 @@ lang }) | asc('order') %}
 
 :::
 
+::: section
+
 ## Le comité éthique et scientifique
 
 Le comité éthique et scientifique est l'organe de réflexion interdisciplinaire qui a pour rôle de conseil et de diffusion de l’idée d’une Déclaration Universelle des Droits de l’Esprit Humain.
 
-<ul role="list" class="committee-members grid-fluid mbs-reset">
+<ul role="list" class="committee-members layout grid-fluid mbs-reset">
 {% for member in collections.committee | filterCollection({ by: 'lang', value:
 lang }) | asc('order') %}
 <li class="committee-member box palette-main">
@@ -50,6 +52,8 @@ lang }) | asc('order') %}
 </li>
 {% endfor %}
 </ul>
+
+:::
 
 {% css %}
 .founders, .committee-members {
@@ -78,12 +82,12 @@ max-inline-size: 250px;
 
 .founder .flow, .committee-member .flow {
 font-size: var(--step--1);
---flow-space: calc(1em / 3);
+--flow-space: .2em;
 inline-size: 100%;
 }
 
-.founder .name + \*, .committee-member .name + \* {
-margin-block-start: 0.5em;
+.founder p, .committee-member p {
+inline-size: 100%;
 }
 
 {% endcss %}

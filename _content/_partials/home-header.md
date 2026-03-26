@@ -18,7 +18,7 @@
 {{ heading }} { .h3 style=font-size:var(--step-1-4); }
 :::
 
-:::: flow
+:::: flow { .v--flow-space:0 }
 
 {{ bottom | safe }}
 

@@ -40,13 +40,13 @@ L’évolution technologique progresse, aussi inévitablement qu’un enfant gra
 
 [En savoir plus sur la Déclaration]({{ "pourquoi" | locale_url }})
 
-{% sectionTwoColumns %}
+{% sectionTwoColumns class="prose" %}
 {% sectionHeader %}
 ## L'initiative est basée sur les travaux de Mark Hunyadi, philosophe et auteur.
 {% endsectionHeader %}
 {% twoColumns type="fixedFluid", class="prose", widthFixed="var(--width-card)", fixedSide="fixedLeft" %}
 {% twoColumnsItem %}
-{% image src="/_images/mh-dudeh_001.webp", alt="Mark Hunyadi Déclaration universelle des droits de l'esprit humain", width="200" %}
+{% image src="/_images/mh-dudeh_001.webp", alt="Mark Hunyadi Déclaration universelle des droits de l'esprit humain", width="325" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem %}
 Le numérique et les métatechnologies sont en train de coloniser la part la plus humaine de l’homme : son esprit, lequel englobe bien davantage que ses seules fonctions cognitives. Or, si c’est l’esprit qui est attaqué, c’est l’esprit qu’il faut protéger. Tel est le sens de cette proposition (parution: mai 2024.)

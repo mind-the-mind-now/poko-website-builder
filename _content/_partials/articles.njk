@@ -1,11 +1,10 @@
-<ul role="list" class="articles-list-summary flow" style="--flow-space:2em;">
+<ul role="list" class="articles-list-summary flow layout" style="--flow-space:2em;">
 
 {% for article in collections.articles | filterCollection({ by: 'lang', value: lang }) | asc('order') %}
 
 <li class="fixed-fluid items-end breakout-clickable">
-
 {% if article.data.pagePreview.image.src %}
-{% image src=article.data.pagePreview.image.src, alt=article.data.pagePreview.title, width="300", aspectRatio="1.7" %}
+{% image src=article.data.pagePreview.image.src, alt=article.data.pagePreview.title, width=300, aspectRatio="1.7" %}
 
 {% endif %}
 

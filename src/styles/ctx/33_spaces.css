@@ -122,7 +122,7 @@
 }
 
 /* prettier-ignore */
-:where(:where(.layout, .switcher, .grid-fluid, .cluster, .flow, .fixed-fluid, .center, cover, reel) > *),
+:where(:where(.layout, .switcher, .grid-fluid, .cluster, .fixed-fluid, .center, cover, reel) > *),
 :where(hgroup > *) {
     margin-block-start: 0;
 }

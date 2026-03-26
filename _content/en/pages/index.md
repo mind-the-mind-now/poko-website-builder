@@ -40,13 +40,13 @@ Technological evolution progresses as inevitably as a child grows; but faced wit
 
 [Learn more about the Declaration]({{ "pourquoi" | locale_url }})
 
-{% sectionTwoColumns %}
+{% sectionTwoColumns class="prose" %}
 {% sectionHeader %}
 ## The initiative is based on the work of Mark Hunyadi, philosopher and author.
 {% endsectionHeader %}
 {% twoColumns type="fixedFluid", class="prose", widthFixed="var(--width-card)", fixedSide="fixedLeft" %}
 {% twoColumnsItem %}
-{% image src="/_images/declaration.webp", alt="Mark Hunyadi Universal Declaration of the Rights of the Human Mind", width="200" %}
+{% image src="/_images/declaration.webp", alt="Mark Hunyadi Universal Declaration of the Rights of the Human Mind", width="325" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem %}
 Digital technology and metatechnologies are colonizing the most human part of man: his mind, which encompasses far more than just his cognitive functions. Now, if it is the mind that is under attack, it is the mind that must be protected. Such is the meaning of this proposal (published: May 2024.)
@@ -84,8 +84,6 @@ Let us raise our common ethics to the level of the challenges our era imposes on
 > It is not about feeding fear, but about affirming an ambition: that of a harmonious coexistence between human intelligence and the technologies it has created.
 > >
 > We believe that such a Declaration would constitute a common reference point and a direction capable of uniting educational, legal, scientific, and civic initiatives that are currently scattered. It would be a clear signal to institutions, technology companies, and citizens of the world: the sovereignty of the mind is a non-negotiable principle.
-
-[Learn more about the Petition to sign]({{ "the-petition" | locale_url }})
 
 {% link url="la-tribune", text="Learn more about the Petition to sign", linkType="internal", collection="pages" %}
 

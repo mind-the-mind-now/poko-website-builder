@@ -1,8 +1,6 @@
 <ul role="list" class="grid-fluid" style="--columns:8;">
 
-{% for founder in collections.founders | filterCollection({ by: 'lang', value:
-
-lang }) | asc('order') %}
+{% for founder in collections.founders | filterCollection({ by: 'lang', value: lang }) | asc('order') %}
 
 <li class="flow" style="--flow-space:0.2rem;">
 

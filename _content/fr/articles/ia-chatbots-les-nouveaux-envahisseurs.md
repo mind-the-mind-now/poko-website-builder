@@ -9,7 +9,7 @@ eleventyNavigation: null
 metadata: null
 preview:
   title: ''
-  description: ''
+  description: "Radio Télé Suisse - L'émission Géopolitis du 22 mars 2026"
   image:
     src: https://img.youtube.com/vi/tCEogfwEpq0/0.jpg
     alt: ''
