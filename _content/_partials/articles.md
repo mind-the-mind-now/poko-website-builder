@@ -1,0 +1,22 @@
+<ul role="list" class="articles-list-summary flow" style="--flow-space:2em;">
+
+{% for article in collections.articles | filterCollection({ by: 'lang', value: lang }) | asc('order') %}
+
+<li class="fixed-fluid items-end breakout-clickable">
+
+{% if article.data.pagePreview.image.src %}
+{% image src=article.data.pagePreview.image.src, alt=article.data.pagePreview.title, width="300", aspectRatio="1.7" %}
+
+{% endif %}
+
+<div>
+<h3 class=""><a href="{{article.data.url}}">{{article.data.pagePreview.title}}</a></h3>
+
+{{article.data.pagePreview.description | md}}
+
+</div>
+</li>
+
+{% endfor %}
+
+</ul>

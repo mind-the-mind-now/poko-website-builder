@@ -12,17 +12,12 @@ eleventyNavigation:
 metadata: null
 preview: null
 tags: []
-status: ''
+status: draft
 pageLayout: ''
-generatePage: normal
 vars: null
 dataList: []
 ---
 
-News about de initiative
+# News about de initiative
 
-{% sectionCollection %}
-
-{% collection collection="articles" %}{% endcollection %}
-
-{% endsectionCollection %}
+{% partial "articles.md" %}

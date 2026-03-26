@@ -12,17 +12,12 @@ eleventyNavigation:
 metadata: null
 preview: null
 tags: []
-status: ''
+status: draft
 pageLayout: ''
-generatePage: normal
 vars: null
 dataList: []
 ---
 
 # Les actualités de la démarche
 
-{% sectionCollection %}
-
-{% collection collection="articles", type="grid-fluid", columns="3" %}{% endcollection %}
-
-{% endsectionCollection %}
+{% partial "articles.md" %}
