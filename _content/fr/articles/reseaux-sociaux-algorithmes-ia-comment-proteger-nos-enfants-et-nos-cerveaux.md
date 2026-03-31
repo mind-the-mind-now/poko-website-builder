@@ -15,17 +15,17 @@ generatePage: ''
 vars: null
 dataList: []
 author: Rise for the Mind
-datePublished: 2026-03-22T22:07:00
-dateUpdated: 2026-03-31T22:07:00
+datePublished: 2026-03-18T22:07:00
+dateUpdated: 2026-03-18T22:07:00
 images:
   - image:
-      - /_images/rts-geopolitis-mark-hunyadi.webp
+      - /_images/capture-d-ecran-2026-03-31-222206.webp
 website: ''
 ---
 
 # Réseaux sociaux, algorithmes, IA : comment protéger nos enfants… et nos cerveaux ?
 
-RTS Suisse :
+{% link url="https://https://www.rts.ch/emissions/infrarouge/2026/article/reseaux-sociaux-et-ia-faut-il-proteger-les-enfants-et-nos-cerveaux-29184720.html", text="RTS - L'émission Infrarouge 18 mars 2026", linkType="external" %}
 
 > Alors que toujours plus de pays réfléchissent à interdire les réseaux sociaux aux plus jeunes et que Meta et Youtube sont accusés devant la justice américaine de ruiner la santé mentale des ados, WhatsApp annonce une fonctionnalité… pour les moins de 13 ans.
 > >
