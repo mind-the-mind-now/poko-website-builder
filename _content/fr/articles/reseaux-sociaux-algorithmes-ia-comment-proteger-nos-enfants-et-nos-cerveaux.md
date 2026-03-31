@@ -14,6 +14,13 @@ pageLayout: ''
 generatePage: ''
 vars: null
 dataList: []
+author: Rise for the Mind
+datePublished: 2026-03-22T22:07:00
+dateUpdated: 2026-03-31T22:07:00
+images:
+  - image:
+      - /_images/rts-geopolitis-mark-hunyadi.webp
+website: ''
 ---
 
 # Réseaux sociaux, algorithmes, IA : comment protéger nos enfants… et nos cerveaux ?
