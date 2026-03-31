@@ -9,7 +9,7 @@ eleventyNavigation: null
 metadata: null
 preview:
   title: ''
-  description: "Radio Télé Suisse - L'émission Géopolitis du 22 mars 2026"
+  description: Radio Télé Suisse - L'émission Géopolitis du 22 mars 2026
   image:
     src: https://img.youtube.com/vi/tCEogfwEpq0/0.jpg
     alt: ''
@@ -24,6 +24,13 @@ pageLayout: ''
 generatePage: ''
 vars: null
 dataList: []
+author: Rise for the Mind !
+datePublished: 2026-03-22T19:22:00
+dateUpdated: 2026-03-22T21:04:00
+images:
+  - image:
+      - /_images/rts-geopolitis-mark-hunyadi.webp
+website: https://www.rts.ch/play/tv/-/video/-?urn=urn:rts:video:cba04df2-85c4-3973-a891-e30dd1777c2c
 ---
 
 # IA, chatbots, les nouveaux envahisseurs?
