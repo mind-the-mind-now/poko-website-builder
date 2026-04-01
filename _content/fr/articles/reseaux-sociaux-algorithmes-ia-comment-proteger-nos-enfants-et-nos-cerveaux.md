@@ -7,7 +7,17 @@ localizationKey: d3de0d9e29a6
 name: 'Réseaux sociaux, algorithmes, IA : comment protéger nos enfants… et nos cerveaux ?'
 eleventyNavigation: null
 metadata: null
-preview: null
+preview:
+  title: ''
+  description: ''
+  image:
+    src: /_images/capture-d-ecran-2026-03-31-222206.webp
+    alt: ''
+    title: ''
+    width: null
+    aspectRatio: null
+    loading: ''
+    imgAttrs: ''
 tags: []
 status: ''
 pageLayout: ''
