@@ -30,7 +30,7 @@ uuid: 34d75906b733
 {% endsectionHeader %}
 {% twoColumns type="fixedFluid", widthFixed="var(--width-card)", fixedSide="fixedLeft", class="prose" %}
 {% twoColumnsItem  %}
-{% image src="/_images/fichier-1.webp", alt="Mark Hunyadi Déclaration universelle des droits de l'esprit humain", width="325" %}
+{% image src="/_images/fichier-1.webp", alt="Mark Hunyadi Déclaration universelle des droits de l'esprit humain", width=325 %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 {% image src="/_images/declaration.webp", alt="Mark Hunyadi", width=100 %}
