@@ -8,12 +8,22 @@ eleventyNavigation:
   add: Nav
 metadata:
   description: Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain
-pageLayout: menuless
 localizationKey: fe784f9b8041
 uuid: 34d75906b733
 ---
 
-{% component "home-header.md", { preHeading: "Rise for the Mind !", heading: "Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain", bottom: "[**Une Déclaration, pour quoi faire?**](#une-declaration-pour-quoi-faire) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Notre objectif](#notre-objectif) [Notre équipe](#le-comite-de-pilotage) [Comité éthique et scientifique](#le-comite-ethique-et-scientifique) [Nous contacter](/contact/) {.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}\n\n[Signer la Tribune !](/la-tribune/)" } %}
+{% sectionTwoColumns  %}
+
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
+{% twoColumnsItem  %}
+{% image src="/_images/humanmindrightsnow-sansfondnettoye.svg", width=300 %}
+{% endtwoColumnsItem %}
+{% twoColumnsItem  %}
+# Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain { .h3 style=font-size:var(--step-1-4); }
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
+
+{% endsectionTwoColumns %}
 
 ::: section { .section .text-center .flex .flex-col .gap-[--step-2] .palette-contrast-terracotta .full-bleed-bg}
 

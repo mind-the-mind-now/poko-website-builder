@@ -6,12 +6,22 @@ createdAt: 2025-10-29T12:33:00.000Z
 name: Home
 metadata:
   description: Initiative for a Universal Declaration of the Rights of the Human Mind
-pageLayout: menuless
 localizationKey: fe784f9b8041
 uuid: 34d75906b733
 ---
 
-{% component "home-header.md", { preHeading: "Rise for the Mind!", heading: "Initiative for a Universal Declaration of the Rights of the Human Mind", bottom: "[**A Declaration, what for?**](#a-declaration-what-for) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Our goal](#our-goal) [Our team](#the-steering-committee) [Ethics and scientific committee](#the-ethics-and-scientific-committee) [Contact us](/en/contact/) {.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}\n\n[Sign the Petition!](/en/la-tribune/)" } %}
+{% sectionTwoColumns  %}
+
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
+{% twoColumnsItem  %}
+{% image src="/_images/humanmindrightsnow-sansfondnettoye.svg", width=300 %}
+{% endtwoColumnsItem %}
+{% twoColumnsItem  %}
+# Initiative for a Universal Declaration of the Rights of the Human Mind { .h3 style=font-size:var(--step-1-4); }
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
+
+{% endsectionTwoColumns %}
 
 ::: section { .section .text-center .flex .flex-col .gap-[--step-2] .palette-contrast-terracotta .full-bleed-bg}
 

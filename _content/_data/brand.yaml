@@ -1,5 +1,4 @@
-ctxCssImport:
-  filename: _ctx.css
+ctxCssImport: true
 inlineAllStyles: true
 widthsContexts:
   - name: main
@@ -43,36 +42,27 @@ colors:
     value: '#e5e5e5'
 palettes:
   - name: main
+    b:
+      text__b: terracotta
+    a:
+      text__a--hover: terracotta
+    button:
+      text__button: terracotta
+      text__button--hover: cream
+      text__button--disabled: blue-lighter
     text: blue
     bg: cream
     border: ''
     text-decoration: terracotta
     text--marker: terracotta
-    b:
-      text__b: terracotta
-      bg__b: ''
-    a:
-      text__a: ''
-      bg__a: ''
-      text__a--hover: terracotta
-      bg__a--hover: ''
-    button:
-      text__button: terracotta
-      bg__button: ''
-      text__button--hover: cream
-      bg__button--hover: ''
-      text__button--disabled: blue-lighter
   - name: contrast-blue
+    a:
+      text__a--hover: terracotta
     text: cream
     bg: blue
     border: ''
     text-decoration: ''
     text--marker: ''
-    a:
-      text__a: ''
-      bg__a: ''
-      text__a--hover: terracotta
-      bg__a--hover: ''
     outline: ''
     text-emphasis: ''
     text--selection: ''
@@ -84,26 +74,19 @@ palettes:
     stroke: ''
     outline--focus: ''
   - name: contrast-terracotta
+    b:
+      text__b: blue
+    a:
+      text__a--hover: blue
+    button:
+      text__button: cream
+      text__button--hover: blue
+      text__button--disabled: gray
     text: cream
     bg: terracotta
     border: ''
     text-decoration: blue
     text--marker: blue
-    b:
-      text__b: blue
-      bg__b: ''
-    a:
-      text__a: ''
-      bg__a: ''
-      text__a--hover: blue
-      bg__a--hover: ''
-    button:
-      text__button: cream
-      bg__button: ''
-      text__button--hover: blue
-      bg__button--hover: ''
-      text__button--disabled: gray
-      bg__button--disabled: ''
 styleContexts:
   - name: main
     value: ctx

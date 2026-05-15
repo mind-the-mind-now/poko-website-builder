@@ -14,7 +14,7 @@ uuid: 91bb6c452c53
 
 ::: div { .section .palette-contrast-terracotta .width-prose }
 
-{% link url="https://c.org/T9XV9J5zmD", type="external", class="button" %}Devenir Signataire{% endlink %} { .text-center .font-bold .h4 }
+{% link url="https://www.change.org/riseforthemind/", type="external", class="button" %}Devenir Signataire{% endlink %} { .text-center .font-bold .h4 }
 
 :::
 
@@ -73,7 +73,7 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 
 ::: div { .my-[--step-4] }
 
-{% link url="https://c.org/T9XV9J5zmD", type="external", class="button" %}Devenir Signataire{% endlink %} { .text-center .font-bold .h4 .contrast }
+{% link url="https://www.change.org/riseforthemind/", type="external", class="button" %}Devenir Signataire{% endlink %} { .text-center .font-bold .h4 .contrast }
 
 :::
 
