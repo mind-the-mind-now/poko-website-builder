@@ -8,7 +8,6 @@ eleventyNavigation:
   add: Nav
 metadata:
   description: Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain
-vars: {}
 localizationKey: fe784f9b8041
 uuid: 34d75906b733
 ---
@@ -40,10 +39,10 @@ uuid: 34d75906b733
 {% endsectionHeader %}
 {% twoColumns type="switcher", class="prose" %}
 {% twoColumnsItem  %}
-{% image src="/_images/fichier-1.webp", alt="Mark Hunyadi Déclaration universelle des droits de l'esprit humain", width=325 %}
+{% image src="/_images/fichier-1.webp", alt="Mark Hunyadi Déclaration universelle des droits de l'esprit humain", width=250 %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-{% image src="/_images/declaration.webp", alt="Mark Hunyadi", width=325 %}
+{% image src="/_images/declaration.webp", alt="Mark Hunyadi", width=200 %}
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 {% sectionFooter  %}
@@ -64,7 +63,6 @@ Le numérique et les métatechnologies sont en train de coloniser la part la plu
 {% collection collection="articles", filters=[{"value":3,"by":"first"}], sortCriterias=[{"direction":"desc","by":"date"}], type="switcher" %}{% endcollection %}
 
 {% endsectionCollection %}
-
 
 ::: section { #demarche }
 
