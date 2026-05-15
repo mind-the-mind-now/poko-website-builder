@@ -1,9 +1,13 @@
 <footer class="palette-contrast-blue full-bleed-bg flow text-center" style="--flow-space: 1em">
 {% image src="/_images/rise-logo-options-v7-02-1-1.webp", width=100, class="mx-auto" %}
 
-{% link url="https://www.instagram.com/riseforthemind_be", type="external" %}{% icon "tablerOutline:brand-instagram" %}{% endlink %}
+::: cluster
 
-{% link url="https://www.linkedin.com/company/rise-for-the-mind", type="external" %}{% icon "tablerOutline:brand-linkedin", width="30", height="30" %}{% endlink %}
+{% link url="https://www.instagram.com/riseforthemind_be", type="external" %}{% icon "tablerOutline:brand-instagram", width="40", height="40" %}{% endlink %}
+
+{% link url="https://www.linkedin.com/company/rise-for-the-mind", type="external" %}{% icon "tablerOutline:brand-linkedin", width="40", height="40" %}{% endlink %}
+
+:::
 
 {{ "contact@riseforthemind.org" | emailLink }}
 
