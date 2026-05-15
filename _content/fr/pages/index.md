@@ -33,6 +33,28 @@ uuid: 34d75906b733
 
 :::
 
+{% sectionTwoColumns class="prose" %}
+{% sectionHeader  %}
+## L'initiative est basée sur les travaux de Mark Hunyadi, philosophe et auteur.
+{% endsectionHeader %}
+{% twoColumns type="fixedFluid", widthFixed="var(--width-card)", fixedSide="fixedLeft", class="prose" %}
+{% twoColumnsItem  %}
+{% image src="/_images/fichier-1.webp", alt="Mark Hunyadi Déclaration universelle des droits de l'esprit humain", width=325 %}
+{% endtwoColumnsItem %}
+{% twoColumnsItem  %}
+{% image src="/_images/declaration.webp", alt="Mark Hunyadi", width=100 %}
+
+Le numérique et les métatechnologies sont en train de coloniser la part la plus humaine de l’homme : son esprit, lequel englobe bien davantage que ses seules fonctions cognitives. Or, si c’est l’esprit qui est attaqué, c’est l’esprit qu’il faut protéger. Tel est le sens de cette proposition (parution: mai 2024.)
+
+[Lire l’entretien de présentation dans Philosophie Magazine (mai 2024)](https://markhunyadi.wordpress.com/wp-content/uploads/2024/04/mai_philosophie-magazine_declaration-universelle-des-droits-de-lesprit-humain-1.pdf)
+
+[www.markhunyadi.be](https://www.markhunyadi.be)
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
+
+{% endsectionTwoColumns %}
+
+:::
 ::: section { #demarche }
 
 ## Une Déclaration, pour quoi faire?
@@ -48,27 +70,6 @@ L’évolution technologique progresse, aussi inévitablement qu’un enfant gra
 <b>**_Rise for the Mind !_**</b> est le nom de la démarche qui porte le processus de ce projet ambitieux, visionnaire, et nécessaire.
 
 [En savoir plus sur la Déclaration]({{ "pourquoi" | locale_url }})
-
-{% sectionTwoColumns class="prose" %}
-{% sectionHeader  %}
-## L'initiative est basée sur les travaux de Mark Hunyadi, philosophe et auteur.
-{% endsectionHeader %}
-{% twoColumns type="fixedFluid", widthFixed="var(--width-card)", fixedSide="fixedLeft", class="prose" %}
-{% twoColumnsItem  %}
-{% image src="/_images/mh-dudeh_001.webp", alt="Mark Hunyadi Déclaration universelle des droits de l'esprit humain", width="325" %}
-{% endtwoColumnsItem %}
-{% twoColumnsItem  %}
-Le numérique et les métatechnologies sont en train de coloniser la part la plus humaine de l’homme : son esprit, lequel englobe bien davantage que ses seules fonctions cognitives. Or, si c’est l’esprit qui est attaqué, c’est l’esprit qu’il faut protéger. Tel est le sens de cette proposition (parution: mai 2024.)
-
-[Lire l’entretien de présentation dans Philosophie Magazine (mai 2024)](https://markhunyadi.wordpress.com/wp-content/uploads/2024/04/mai_philosophie-magazine_declaration-universelle-des-droits-de-lesprit-humain-1.pdf)
-
-[www.markhunyadi.be](https://www.markhunyadi.be)
-{% endtwoColumnsItem %}
-{% endtwoColumns %}
-
-{% endsectionTwoColumns %}
-
-:::
 
 ::: section { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
 
