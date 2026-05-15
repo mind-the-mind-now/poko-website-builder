@@ -3,6 +3,8 @@
 
 {% link url="https://www.instagram.com/riseforthemind_be", type="external" %}{% icon "tablerOutline:brand-instagram" %}{% endlink %}
 
+{% link url="https://www.linkedin.com/company/rise-for-the-mind", type="external" %}{% icon "tablerOutline:brand-linkedin", width="30", height="30" %}{% endlink %}
+
 {{ "contact@riseforthemind.org" | emailLink }}
 
 &copy; 2025-{{year}} <em>Rise for the Mind!</em> - Tous droits réservés<br>
