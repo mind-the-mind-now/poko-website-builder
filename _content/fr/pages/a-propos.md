@@ -8,11 +8,9 @@ eleventyNavigation:
   add: Nav
 metadata:
   description: Découvrez le comité de pilotage et le comité scientifique de Human Mind Rights Now, unis pour promouvoir la Déclaration Universelle des Droits de l'Esprit Humain.
-vars: {}
 localizationKey: 1f65cb374700
 uuid: 7c8881546366
 ---
-
 
 # Nos équipes
 
@@ -56,27 +54,24 @@ lang }) | asc('order') %}
 
 :::
 
-### Le comité des jeunes
-
 {% sectionTwoColumns class="palette-contrast-terracotta" %}
-
-{% twoColumns  %}
+{% sectionHeader class="prose" %}
+## Le comité des jeunes
+{% endsectionHeader %}
+{% twoColumns class="prose items-center" %}
 {% twoColumnsItem  %}
-![](/_images/img_1796.webp)
+{% image src="/_images/img_1796.webp", aspectRatio=1, width=350, class="radius-round" %}
 
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-Camille Deprez {.h4}
-
-Virgile Nieuwenhuys {.h4}
-
-Marion Zimmermann {.h4}
-
-Sarah Deblocq {.h4}
-
-Eve Bellemans {.h4}
-
-Auguste Nieuwenhuys {.h4}
+::: flow { .font-size-[--step-1] }
+Camille Deprez
+Virgile Nieuwenhuys
+Marion Zimmermann
+Sarah Deblocq
+Eve Bellemans
+Auguste Nieuwenhuys
+:::
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 

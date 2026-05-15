@@ -12,14 +12,16 @@ localizationKey: fe784f9b8041
 uuid: 34d75906b733
 ---
 
-{% sectionTwoColumns  %}
+{% sectionTwoColumns class="breathe" %}
 
-{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft", class="items-center" %}
 {% twoColumnsItem  %}
 {% image src="/_images/rise-logo-options-v7-03-1.webp", width=300 %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-# Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain { .h3 style=font-size:var(--step-1-4); }
+
+# Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain { }
+
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
@@ -27,7 +29,7 @@ uuid: 34d75906b733
 
 ::: section { .section .text-center .flex .flex-col .gap-[--step-2] .palette-contrast-terracotta .full-bleed-bg}
 
-## Mobilisons-nous pour déclarer les droits de l'esprit humain! 
+## Mobilisons-nous pour déclarer les droits de l'esprit humain!
 
 {% link url="la-tribune", type="internal", collection="pages", class="button" %}Signer, c'est déjà agir{% endlink %} { .font-size-[--step-1] }
 
@@ -35,7 +37,9 @@ uuid: 34d75906b733
 
 {% sectionTwoColumns class="prose" %}
 {% sectionHeader  %}
+
 ## L'initiative est basée sur les travaux de Mark Hunyadi, philosophe et auteur.
+
 {% endsectionHeader %}
 {% twoColumns type="switcher", class="prose" %}
 {% twoColumnsItem  %}
@@ -46,7 +50,7 @@ uuid: 34d75906b733
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 {% sectionFooter  %}
-Le numérique et les métatechnologies sont en train de coloniser la part la plus humaine de l’homme : son esprit, lequel englobe bien davantage que ses seules fonctions cognitives. Or, si c’est l’esprit qui est attaqué, c’est l’esprit qu’il faut protéger. Tel est le sens de cette proposition (parution: mai 2024.) {.h4}
+Le numérique et les métatechnologies sont en train de coloniser la part la plus humaine de l’homme : son esprit, lequel englobe bien davantage que ses seules fonctions cognitives. Or, si c’est l’esprit qui est attaqué, c’est l’esprit qu’il faut protéger. Tel est le sens de cette proposition (parution: mai 2024.) { .font-size-[--step-1] }
 
 [Lire l’entretien de présentation dans Philosophie Magazine (mai 2024)](https://markhunyadi.wordpress.com/wp-content/uploads/2024/04/mai_philosophie-magazine_declaration-universelle-des-droits-de-lesprit-humain-1.pdf)
 
@@ -56,7 +60,9 @@ Le numérique et les métatechnologies sont en train de coloniser la part la plu
 
 {% sectionCollection class="palette-contrast-terracotta full-bleed-bg" %}
 {% sectionHeader  %}
+
 ## Actualités
+
 {% endsectionHeader %}
 {% collection collection="articles", filters=[{"value":3,"by":"first"}], sortCriterias=[{"direction":"desc","by":"date"}], type="switcher" %}{% endcollection %}
 
@@ -93,11 +99,11 @@ Mettons notre éthique commune à la hauteur des enjeux que nous impose notre é
 ## La Tribune
 
 > Il ne s’agit pas de rejeter le progrès, mais de l’orienter.
-> 
+>
 > Il ne s’agit pas de freiner l’innovation, mais de lui donner un cap.
-> 
+>
 > Il ne s’agit pas de nourrir la peur, mais d’affirmer une ambition : celle d’une cohabitation harmonieuse entre l’intelligence humaine et les technologies qu’elle a créées.
-> 
+>
 > Nous croyons qu’une telle Déclaration constituerait un repère commun et un cap capable de fédérer les initiatives éducatives, juridiques, scientifiques et civiques, aujourd’hui dispersées. Elle serait un signal clair adressé aux institutions, aux entreprises technologiques et aux citoyens du monde : la souveraineté de l’esprit est un principe non négociable.
 
 [En savoir plus sur la tribune à signer]({{ "la-tribune" | locale_url }})
@@ -105,72 +111,52 @@ Mettons notre éthique commune à la hauteur des enjeux que nous impose notre é
 :::
 
 {% sectionBuilder class="palette-contrast-terracotta full-bleed-bg", id='who-sectio' %}
-{% sectionHeader  %}
+{% sectionHeader class="prose" %}
+
 ## Qui sommes-nous?
 
 Nous sommes un collectif cherchant à promouvoir l’idée d’une Déclaration Universelle des Droits de l’Esprit Humain.
 {% endsectionHeader %}
-{% areaRaw class="area" %}
+{% areaRaw class="area prose" %}
+
 ### Le comité de pilotage
+
 {% endareaRaw %}
 {% collection collection="founders", type="grid-fluid", itemPartial="person-card" %}{% endcollection %}
-{% areaRaw class="area" %}
+{% areaRaw class="area prose" %}
 {% link url="a-propos", anchor="Le comité de pilotage", type="internal", collection="pages", class="button" %}En savoir plus sur le comité de pilotage{% endlink %}
 {% endareaRaw %}
-{% areaRaw class="area" %}
+{% areaRaw class="area prose" %}
+
 ### Le comité éthique et scientifique
+
 {% endareaRaw %}
 {% collection collection="committee", type="grid-fluid", columns=8, itemPartial="person-card" %}{% endcollection %}
-{% areaRaw class="area" %}
+{% areaRaw class="area prose" %}
 {% link url="a-propos", anchor="Le comité éthique et scientifique", type="internal", collection="pages", class="button" %}En savoir plus sur le comité éthique et scientifique{% endlink %}
 {% endareaRaw %}
+{% areaRaw class="prose" %}
 
-{% endsectionBuilder %}
-
-::: section { #who-section .section .palette-contrast-terracotta .full-bleed-bg}
-
-## Qui sommes-nous?
-
-Nous sommes un collectif cherchant à promouvoir l’idée d’une _Déclaration Universelle des Droits de l’Esprit Humain_.
-
-### Le comité de pilotage
-
-{% partial "founders.md" %}
-
-[En savoir plus sur le comité de pilotage]({{ "a-propos" | locale_url }}#le-comite-de-pilotage){.button} {.center .intrinsic}
-
-### Le comité éthique et scientifique
-
-{% partial "committee.md" %}
-
-[En savoir plus sur le comité éthique et scientifique]({{ "a-propos" | locale_url }}#le-comite-ethique-et-scientifique){.button} {.center .intrinsic}
-
-{% sectionTwoColumns  %}
-{% sectionHeader  %}
 ### Le comité des jeunes
-{% endsectionHeader %}
-{% twoColumns  %}
+
+{% endareaRaw %}
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft", class="prose items-center" %}
 {% twoColumnsItem  %}
-{% image src="/_images/img_1796.webp", width=350 %}
+{% image src="/_images/img_1796.webp", aspectRatio=1, width=350, class="radius-round" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-Camille Deprez {.h4}
-
-Virgile Nieuwenhuys {.h4}
-
-Marion Zimmermann {.h4}
-
-Sarah Deblocq {.h4}
-
-Eve Bellemans {.h4}
-
-Auguste Nieuwenhuys {.h4}
+::: flow { .font-size-[--step-1] }
+Camille Deprez
+Virgile Nieuwenhuys
+Marion Zimmermann
+Sarah Deblocq
+Eve Bellemans
+Auguste Nieuwenhuys
+:::
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
-{% endsectionTwoColumns %}
-
-:::
+{% endsectionBuilder %}
 
 ::: section
 

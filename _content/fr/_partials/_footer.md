@@ -1,7 +1,7 @@
-<footer class="palette-contrast-blue full-bleed-bg flow text-center" style="--flow-space: 1em">
+<footer class="palette-contrast-blue full-bleed-bg flow text-center" style="--flow-space: .5em">
 {% image src="/_images/rise-logo-options-v7-02-1-1.webp", width=100, class="mx-auto" %}
 
-::: cluster
+::: cluster { .justify-center }
 
 {% link url="https://www.instagram.com/riseforthemind_be", type="external" %}{% icon "tablerOutline:brand-instagram", width="40", height="40" %}{% endlink %}
 

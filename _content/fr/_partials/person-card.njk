@@ -2,7 +2,7 @@
 <article class="person-card flow text-center font-size-[--step--1] line-height-[1.1]" style="--flow-space:0.4rem;">
 
 {% if pagePreview.image.src %}
-{% image src=pagePreview.image.src, alt=pagePreview.title, width=550, aspectRatio=1, class="radius-round" %}
+{% image src=pagePreview.image.src, alt=pagePreview.title, width=550, aspectRatio=1, class="radius-round bg-[currentColor]" %}
 {% endif %}
 
 <p class="name font-bold font-size-[--step-1]">{{pagePreview.title}}</p>
