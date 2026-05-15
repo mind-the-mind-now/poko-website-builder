@@ -54,17 +54,13 @@ Le numérique et les métatechnologies sont en train de coloniser la part la plu
 {% endsectionFooter %}
 {% endsectionTwoColumns %}
 
-::: section { #who-section .section .palette-contrast-terracotta .full-bleed-bg}
-{% sectionCollection  %}
+{% sectionCollection class="palette-contrast-terracotta full-bleed-bg" %}
 {% sectionHeader  %}
-
 ## Actualités
 {% endsectionHeader %}
 {% collection collection="articles", filters=[{"value":3,"by":"first"}], sortCriterias=[{"direction":"desc","by":"date"}], type="switcher" %}{% endcollection %}
 
 {% endsectionCollection %}
-
-:::
 
 ## Une Déclaration, pour quoi faire?
 
