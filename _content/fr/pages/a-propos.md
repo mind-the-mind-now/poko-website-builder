@@ -52,6 +52,8 @@ lang }) | asc('order') %}
 {% endfor %}
 </ul>
 
+{% partial "le-comite-des-jeunes.md" %}
+
 :::
 
 {% css %}
