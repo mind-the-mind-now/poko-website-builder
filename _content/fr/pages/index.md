@@ -24,22 +24,6 @@ uuid: 34d75906b733
 
 :::
 
-::: section { #demarche }
-
-## Une Déclaration, pour quoi faire?
-
-Une <b>Déclaration</b> donne un cap.
-
-Une Déclaration <b>universelle</b> donne un cap pour l’humanité future.
-
-La Déclaration universelle <b>des droits de l’esprit humain</b> garantit à l’humanité future la souveraineté de l’esprit humain sur les technologies avec lesquelles il doit désormais cohabiter.
-
-L’évolution technologique progresse, aussi inévitablement qu’un enfant grandit ; mais face à sa progression désormais exponentielle, nous devons veiller à ce que sa trajectoire préserve la souveraineté et l’intégrité de l’esprit humain. Voilà ce que vise à garantir la <b>Déclaration universelle des droits de l’esprit humain</b>.
-
-<b>**_Rise for the Mind !_**</b> est le nom de la démarche qui porte le processus de ce projet ambitieux, visionnaire, et nécessaire.
-
-[En savoir plus sur la Déclaration]({{ "pourquoi" | locale_url }})
-
 {% sectionTwoColumns class="prose" %}
 {% sectionHeader  %}
 ## L'initiative est basée sur les travaux de Mark Hunyadi, philosophe et auteur.
@@ -62,6 +46,21 @@ Le numérique et les métatechnologies sont en train de coloniser la part la plu
 {% endsectionTwoColumns %}
 
 :::
+::: section { #demarche }
+
+## Une Déclaration, pour quoi faire?
+
+Une <b>Déclaration</b> donne un cap.
+
+Une Déclaration <b>universelle</b> donne un cap pour l’humanité future.
+
+La Déclaration universelle <b>des droits de l’esprit humain</b> garantit à l’humanité future la souveraineté de l’esprit humain sur les technologies avec lesquelles il doit désormais cohabiter.
+
+L’évolution technologique progresse, aussi inévitablement qu’un enfant grandit ; mais face à sa progression désormais exponentielle, nous devons veiller à ce que sa trajectoire préserve la souveraineté et l’intégrité de l’esprit humain. Voilà ce que vise à garantir la <b>Déclaration universelle des droits de l’esprit humain</b>.
+
+<b>**_Rise for the Mind !_**</b> est le nom de la démarche qui porte le processus de ce projet ambitieux, visionnaire, et nécessaire.
+
+[En savoir plus sur la Déclaration]({{ "pourquoi" | locale_url }})
 
 ::: section { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
 
