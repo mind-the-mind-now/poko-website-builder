@@ -42,7 +42,7 @@ uuid: 34d75906b733
 {% image src="/_images/fichier-1.webp", alt="Mark Hunyadi Déclaration universelle des droits de l'esprit humain", width=250 %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-{% image src="/_images/declaration.webp", alt="Mark Hunyadi", width=150 %}
+{% image src="/_images/declaration.webp", alt="Mark Hunyadi", width=180 %}
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 {% sectionFooter  %}
@@ -124,10 +124,10 @@ Nous sommes un collectif cherchant à promouvoir l’idée d’une _Déclaration
 
 [En savoir plus sur le comité éthique et scientifique]({{ "a-propos" | locale_url }}#le-comite-ethique-et-scientifique){.button} {.center .intrinsic}
 
-### Le comité des jeunes
-
 {% sectionTwoColumns  %}
-
+{% sectionHeader  %}
+### Le comité des jeunes
+{% endsectionHeader %}
 {% twoColumns  %}
 {% twoColumnsItem  %}
 {% image src="/_images/img_1796.webp", width=350 %}
@@ -144,7 +144,6 @@ Sarah Deblocq {.h4}
 Eve Bellemans {.h4}
 
 Auguste Nieuwenhuys {.h4}
-
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
