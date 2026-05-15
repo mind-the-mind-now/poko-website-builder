@@ -35,7 +35,7 @@ website: ''
 
 # Réseaux sociaux, algorithmes, IA : comment protéger nos enfants… et nos cerveaux ?
 
-{% link url="https://https://www.rts.ch/emissions/infrarouge/2026/article/reseaux-sociaux-et-ia-faut-il-proteger-les-enfants-et-nos-cerveaux-29184720.html", text="RTS - L'émission Infrarouge 18 mars 2026", linkType="external" %}
+{% link url="https://https://www.rts.ch/emissions/infrarouge/2026/article/reseaux-sociaux-et-ia-faut-il-proteger-les-enfants-et-nos-cerveaux-29184720.html", text="RTS - L'émission Infrarouge 18 mars 2026", type="external" %}{% endlink %}
 
 > Alors que toujours plus de pays réfléchissent à interdire les réseaux sociaux aux plus jeunes et que Meta et Youtube sont accusés devant la justice américaine de ruiner la santé mentale des ados, WhatsApp annonce une fonctionnalité… pour les moins de 13 ans.
 > >

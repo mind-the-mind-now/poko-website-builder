@@ -20,7 +20,7 @@ vars: null
 
 ## Mobilisons-nous pour déclarer les droits de l'esprit humain! { .h1 }
 
-{% link url="la-tribune", text="Signer, c'est déjà agir", linkType="internal", collection="pages", class="button" %} { .font-size-[--step-1] }
+{% link url="la-tribune", text="Signer, c'est déjà agir", type="internal", collection="pages", class="button" %}{% endlink %} { .font-size-[--step-1] }
 
 :::
 

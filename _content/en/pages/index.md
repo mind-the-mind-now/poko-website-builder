@@ -20,7 +20,7 @@ vars: null
 
 ## Let's rise to declare the rights of the human mind! { .h1 }
 
-{% link url="la-tribune", text="Signing is already acting", linkType="internal", collection="pages", class="button" %} { .font-size-[--step-1] }
+{% link url="la-tribune", text="Signing is already acting", type="internal", collection="pages", class="button" %}{% endlink %} { .font-size-[--step-1] }
 
 :::
 
@@ -85,7 +85,7 @@ Let us raise our common ethics to the level of the challenges our era imposes on
 > >
 > We believe that such a Declaration would constitute a common reference point and a direction capable of uniting educational, legal, scientific, and civic initiatives that are currently scattered. It would be a clear signal to institutions, technology companies, and citizens of the world: the sovereignty of the mind is a non-negotiable principle.
 
-{% link url="la-tribune", text="Learn more about the Petition to sign", linkType="internal", collection="pages" %}
+{% link url="la-tribune", text="Learn more about the Petition to sign", type="internal", collection="pages" %}{% endlink %}
 
 :::
 

@@ -23,7 +23,7 @@ dataList: []
 
 ::: div { .section .palette-contrast-terracotta .width-prose }
 
-{% link url="https://c.org/T9XV9J5zmD", text="Sign Now", linkType="external", class="button" %} { .text-center .font-bold .h4 }
+{% link url="https://c.org/T9XV9J5zmD", text="Sign Now", type="external", class="button" %}{% endlink %} { .text-center .font-bold .h4 }
 
 :::
 
@@ -84,7 +84,7 @@ Mark Hunyadi
 
 ::: div { .my-[--step-4] }
 
-{% link url="https://c.org/T9XV9J5zmD", text="Sign Now", linkType="external", class="button" %} { .text-center .font-bold .h4 }
+{% link url="https://c.org/T9XV9J5zmD", text="Sign Now", type="external", class="button" %}{% endlink %} { .text-center .font-bold .h4 }
 
 :::
 

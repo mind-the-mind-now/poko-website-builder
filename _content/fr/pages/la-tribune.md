@@ -23,7 +23,7 @@ dataList: []
 
 ::: div { .section .palette-contrast-terracotta .width-prose }
 
-{% link url="https://c.org/T9XV9J5zmD", text="Devenir Signataire", linkType="external", class="button" %} { .text-center .font-bold .h4 }
+{% link url="https://c.org/T9XV9J5zmD", text="Devenir Signataire", type="external", class="button" %}{% endlink %} { .text-center .font-bold .h4 }
 
 :::
 
@@ -82,7 +82,7 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 
 ::: div { .my-[--step-4] }
 
-{% link url="https://c.org/T9XV9J5zmD", text="Devenir Signataire", linkType="external", class="button" %} { .text-center .font-bold .h4 .contrast }
+{% link url="https://c.org/T9XV9J5zmD", text="Devenir Signataire", type="external", class="button" %}{% endlink %} { .text-center .font-bold .h4 .contrast }
 
 :::
 
