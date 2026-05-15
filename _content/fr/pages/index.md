@@ -42,7 +42,7 @@ uuid: 34d75906b733
 {% image src="/_images/fichier-1.webp", alt="Mark Hunyadi Déclaration universelle des droits de l'esprit humain", width=250 %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-{% image src="/_images/declaration.webp", alt="Mark Hunyadi", width=200 %}
+{% image src="/_images/declaration.webp", alt="Mark Hunyadi", width=150 %}
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 {% sectionFooter  %}
@@ -53,8 +53,6 @@ Le numérique et les métatechnologies sont en train de coloniser la part la plu
 [www.markhunyadi.be](https://www.markhunyadi.be)
 {% endsectionFooter %}
 {% endsectionTwoColumns %}
-
-:::
 
 {% sectionCollection  %}
 {% sectionHeader  %}
