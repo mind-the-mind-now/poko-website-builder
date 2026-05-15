@@ -52,9 +52,9 @@ lang }) | asc('order') %}
 {% endfor %}
 </ul>
 
-{% partial "le-comite-des-jeunes.md" %}
-
 :::
+
+{% partial "le-comite-des-jeunes.md" %}
 
 {% css %}
 .founders, .committee-members {
