@@ -56,6 +56,32 @@ lang }) | asc('order') %}
 
 :::
 
+### Le comité des jeunes
+
+{% sectionTwoColumns class="palette-contrast-terracotta" %}
+
+{% twoColumns  %}
+{% twoColumnsItem  %}
+![](/_images/img_1796.webp)
+
+{% endtwoColumnsItem %}
+{% twoColumnsItem  %}
+Camille Deprez {.h4}
+
+Virgile Nieuwenhuys {.h4}
+
+Marion Zimmermann {.h4}
+
+Sarah Deblocq {.h4}
+
+Eve Bellemans {.h4}
+
+Auguste Nieuwenhuys {.h4}
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
+
+{% endsectionTwoColumns %}
+
 {% css %}
 .founders, .committee-members {
 max-inline-size: var(--width-max);

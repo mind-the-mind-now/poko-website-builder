@@ -16,7 +16,7 @@ uuid: 34d75906b733
 
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-{% image src="/_images/humanmindrightsnow-sansfondnettoye.svg", width=300 %}
+{% image src="/_images/rise-logo-options-v7-03-1.webp", width=300 %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 # Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain { .h3 style=font-size:var(--step-1-4); }
@@ -27,7 +27,7 @@ uuid: 34d75906b733
 
 ::: section { .section .text-center .flex .flex-col .gap-[--step-2] .palette-contrast-terracotta .full-bleed-bg}
 
-## Mobilisons-nous pour déclarer les droits de l'esprit humain! { .h1 }
+## Mobilisons-nous pour déclarer les droits de l'esprit humain! 
 
 {% link url="la-tribune", type="internal", collection="pages", class="button" %}Signer, c'est déjà agir{% endlink %} { .font-size-[--step-1] }
 
@@ -37,24 +37,30 @@ uuid: 34d75906b733
 {% sectionHeader  %}
 ## L'initiative est basée sur les travaux de Mark Hunyadi, philosophe et auteur.
 {% endsectionHeader %}
-{% twoColumns type="fixedFluid", widthFixed="var(--width-card)", fixedSide="fixedLeft", class="prose" %}
+{% twoColumns type="switcher", class="prose" %}
 {% twoColumnsItem  %}
-{% image src="/_images/fichier-1.webp", alt="Mark Hunyadi Déclaration universelle des droits de l'esprit humain", width=325 %}
+{% image src="/_images/fichier-1.webp", alt="Mark Hunyadi Déclaration universelle des droits de l'esprit humain", width=250 %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-{% image src="/_images/declaration.webp", alt="Mark Hunyadi", width=100 %}
-
-Le numérique et les métatechnologies sont en train de coloniser la part la plus humaine de l’homme : son esprit, lequel englobe bien davantage que ses seules fonctions cognitives. Or, si c’est l’esprit qui est attaqué, c’est l’esprit qu’il faut protéger. Tel est le sens de cette proposition (parution: mai 2024.)
+{% image src="/_images/declaration.webp", alt="Mark Hunyadi", width=180 %}
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
+{% sectionFooter  %}
+Le numérique et les métatechnologies sont en train de coloniser la part la plus humaine de l’homme : son esprit, lequel englobe bien davantage que ses seules fonctions cognitives. Or, si c’est l’esprit qui est attaqué, c’est l’esprit qu’il faut protéger. Tel est le sens de cette proposition (parution: mai 2024.) {.h4}
 
 [Lire l’entretien de présentation dans Philosophie Magazine (mai 2024)](https://markhunyadi.wordpress.com/wp-content/uploads/2024/04/mai_philosophie-magazine_declaration-universelle-des-droits-de-lesprit-humain-1.pdf)
 
 [www.markhunyadi.be](https://www.markhunyadi.be)
-{% endtwoColumnsItem %}
-{% endtwoColumns %}
-
+{% endsectionFooter %}
 {% endsectionTwoColumns %}
 
-::: section { #demarche }
+{% sectionCollection class="palette-contrast-terracotta full-bleed-bg" %}
+{% sectionHeader  %}
+## Actualités
+{% endsectionHeader %}
+{% collection collection="articles", filters=[{"value":3,"by":"first"}], sortCriterias=[{"direction":"desc","by":"date"}], type="switcher" %}{% endcollection %}
+
+{% endsectionCollection %}
 
 ## Une Déclaration, pour quoi faire?
 
@@ -138,6 +144,31 @@ Nous sommes un collectif cherchant à promouvoir l’idée d’une _Déclaration
 {% partial "committee.md" %}
 
 [En savoir plus sur le comité éthique et scientifique]({{ "a-propos" | locale_url }}#le-comite-ethique-et-scientifique){.button} {.center .intrinsic}
+
+{% sectionTwoColumns  %}
+{% sectionHeader  %}
+### Le comité des jeunes
+{% endsectionHeader %}
+{% twoColumns  %}
+{% twoColumnsItem  %}
+{% image src="/_images/img_1796.webp", width=350 %}
+{% endtwoColumnsItem %}
+{% twoColumnsItem  %}
+Camille Deprez {.h4}
+
+Virgile Nieuwenhuys {.h4}
+
+Marion Zimmermann {.h4}
+
+Sarah Deblocq {.h4}
+
+Eve Bellemans {.h4}
+
+Auguste Nieuwenhuys {.h4}
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
+
+{% endsectionTwoColumns %}
 
 :::
 
