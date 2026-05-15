@@ -60,6 +60,9 @@ export async function image(args) {
   // wrapperTag = wrapperTag || (width ? "p" : "");
   // TODO: compute sizes from widths
   // TODO: Allow defining a wrapping tag??
+  //
+  // TODO: If we have some 'full-bleed' class on the image, we need sizes to be "100vw"?? We might want to account for a max bleed nonetheless
+
   const options = deepmerge.all(
     [
       imageTransformOptions,
@@ -78,6 +81,7 @@ export async function image(args) {
             ...((fetchpriority || loading === "eager") && {
               fetchpriority: fetchpriority || "high",
             }),
+            ...(width && { sizes: null }), // TODO: right?
             ...(sizes && { sizes }),
             ...((aspectRatio && {
               class: `${className || imgAttributes?.class || ""} aspect-ratio-${aspectRatio}`,
@@ -86,7 +90,9 @@ export async function image(args) {
                 class: className || imgAttributes?.class || "",
               })),
             ...(id && { id }),
-            ...((width && { style: `max-width:${width}px;${style || ""}` }) ||
+            ...((width && {
+              style: `inline-size:${width}px;${style || ""}`,
+            }) ||
               (style && { style })),
             // ...(style && { style }),
             ...otherArgs,

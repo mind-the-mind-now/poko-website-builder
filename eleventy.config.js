@@ -30,6 +30,7 @@ import yamlData from "./src/config-11ty/plugins/yamlData/index.js";
 import cmsConfigPlugin from "./src/config-11ty/plugins/cms-config/index.js";
 import autoCollections from "./src/config-11ty/plugins/auto-collections/index.js";
 import htmlClassesTransform from "./src/config-11ty/plugins/html-classes-transform/index.js";
+import ioElementsTransform from "./src/config-11ty/plugins/io-elements-transform/index.js";
 import populateInputDir from "./src/config-11ty/plugins/populateInputDir/index.js";
 import partialsPlugin from "./src/config-11ty/plugins/partials/index.js";
 import partialShortcodesPlugin from "./src/config-11ty/plugins/partialShortcodes/index.js";
@@ -46,7 +47,7 @@ import markdownItLinkAttributes from "markdown-it-link-attributes";
 import markdownItAttrs from "markdown-it-attrs";
 import markdownItBracketedSpans from "markdown-it-bracketed-spans";
 // -------- Env Variables
-import * as env from "./env.config.js";
+import * as envConf from "./env.config.js";
 import {
   DEBUG,
   CMS_IMPORT,
@@ -78,9 +79,14 @@ import {
   brandStyles,
   fontPreloadTags,
   userCmsConfig,
+  userHtmlClasses,
 } from "./env.config.js";
 import { getSelectedCollections } from "./src/config-11ty/plugins/cms-config/index.js";
 import eleventyComputed from "./src/data/eleventyComputed.js";
+import ldWebSite from "./src/data/structured-data/ldWebSite.js";
+
+const env = { ...envConf.default, ...envConf };
+delete env.default;
 
 // Eleventy Config
 import {
@@ -102,14 +108,18 @@ import {
   desc,
   ogImageSrc,
   image as imageFilter,
+  imgStats,
   emailLink,
   email,
   htmlAttrs,
   htmlImgAttrs,
+  ioAttr,
 } from "./src/config-11ty/filters/index.js";
 import {
   newLine,
   fetchFile as fetchFileShortcode,
+  linkPaired as linkPairedShortcode,
+  buttonPaired as buttonPairedShortcode,
   link as linkShortcode,
   button as buttonShortcode,
   image,
@@ -122,11 +132,12 @@ if (DEBUG) {
   console.log("---------ENV-----------\n", env, "\n---------/ENV---------");
 }
 
-// TODOS:
-// - Look at persisting images in cache between builds: https://github.com/11ty/eleventy-img/issues/285
-
 function shouldNotRender(data) {
-  if (data.page.filePathStem.startsWith("/_")) {
+  // This excludes files whose path contains a `.` or a `_` directly after a `/`
+  if (
+    /(?:^|\/)_/.test(data.page.filePathStem) ||
+    /(?:^|\/)\\./.test(data.page.filePathStem)
+  ) {
     return true;
   }
   for (const lang of unrenderedLanguages) {
@@ -212,7 +223,7 @@ export const config = {
     includes: PARTIALS_DIR, // this is probably '_partials'
     layouts: LAYOUTS_DIR, // this is probably '_layouts'
     // data: "../src/data", // Directory for global data files. Default: "_data"
-    // data: "/src/data", // Directory for global data files. Default: "_data"
+    // data: ["_data", path.join(SRC_DIR_FROM_WORKING_DIR, "content/_data")], // NOTE: Not possible to provide an array here
     // output: "public",
     output: OUTPUT_DIR,
   },
@@ -262,10 +273,14 @@ export default async function (eleventyConfig) {
   // eleventyConfig.setLibrary("njk", nunjucksEnvironment);
 
   // --------------------- Eleventy Events
+  // INFO: persisting images in cache between builds: https://github.com/11ty/eleventy-img/issues/285
   eleventyConfig.on("eleventy.after", () => {
-    fs.cpSync(IMAGE_CACHE_DIR, IMAGES_OUTPUT_DIR, {
-      recursive: true,
-    });
+    // Make sure directories exist
+    if (fs.existsSync(IMAGE_CACHE_DIR)) {
+      fs.cpSync(IMAGE_CACHE_DIR, IMAGES_OUTPUT_DIR, {
+        recursive: true,
+      });
+    }
   });
   // eleventyConfig.on(
   //   "eleventy.before",
@@ -390,6 +405,7 @@ export default async function (eleventyConfig) {
   // eleventyConfig.addGlobalData("pageFooter", "");
   // Computed Data
   eleventyConfig.addGlobalData("eleventyComputed", eleventyComputed);
+  eleventyConfig.addGlobalData("ldWebSite", ldWebSite);
 
   // --------------------- Collections
   eleventyConfig.addCollection("sitemap", function (collectionApi) {
@@ -508,22 +524,30 @@ export default async function (eleventyConfig) {
     sources: iconSources,
     icon: {
       class: (name, source) => `icon icon-${source} icon-${name}`,
+      transform: async (svg) => {
+        const min = (svg || "").replace(/\s+/g, " ");
+        return min;
+      },
     },
   });
 
   eleventyConfig.addPlugin(pluginCodeblocks([pluginCodeBlocksCharts]));
 
-  // await eleventyConfig.addPlugin(ctxCss);
-  await eleventyConfig.addPlugin(buildExternalCSS);
-  await eleventyConfig.addPlugin(pluginUnoCSS);
-  // TODO: import those classes from a data file
+  // Add classes to specific elements depending on the project
+  const userHtmlClassesImport = await userHtmlClasses();
   eleventyConfig.addPlugin(htmlClassesTransform, {
     classes: {
       // <selector>: "<class>",
       // html: "imported-html-class",
       // body: "imported-body-class",
+      ...(userHtmlClassesImport || {}),
     },
   });
+
+  // await eleventyConfig.addPlugin(ctxCss);
+  await eleventyConfig.addPlugin(buildExternalCSS);
+  await eleventyConfig.addPlugin(pluginUnoCSS);
+  eleventyConfig.addPlugin(ioElementsTransform);
 
   // --------------------- Populate files and default content
   eleventyConfig.addPassthroughCopy({
@@ -538,6 +562,7 @@ export default async function (eleventyConfig) {
     [`${WORKING_DIR}/_files/_headers`]: "_headers",
     // All CSS files to assets
     [`${WORKING_DIR}/*.css`]: "/assets/styles/",
+    "assets/js/instant-page.js": "assets/js/instant-page.js",
   });
   // Copy Sveltia CMS if not using CDN
   if (CMS_IMPORT === "npm") {
@@ -601,6 +626,10 @@ export const iconLists = ${JSON.stringify(iconLists)};
   await eleventyConfig.addPlugin(partialsPlugin, {
     defaultExt: ["11ty.js", "njk", "md"],
     dirs: [
+      {
+        pattern: path.join(WORKING_DIR, "*", PARTIALS_DIR),
+        resolveDiscriminant: (data) => (data?.lang ? `/${data.lang}/` : ""),
+      },
       path.join(WORKING_DIR, PARTIALS_DIR),
       path.join(`src/themes/${POKO_THEME}/_partials`),
       path.join("src/content/_partials"),
@@ -653,12 +682,15 @@ export const iconLists = ${JSON.stringify(iconLists)};
   // Images
   eleventyConfig.addAsyncFilter("ogImage", ogImageSrc);
   eleventyConfig.addAsyncFilter("image", imageFilter);
+  eleventyConfig.addAsyncFilter("imgStats", imgStats);
   // Email
   eleventyConfig.addFilter("emailLink", emailLink);
   eleventyConfig.addFilter("email", email);
   // HTML helpers
   eleventyConfig.addFilter("htmlAttrs", htmlAttrs);
   eleventyConfig.addFilter("htmlImgAttrs", htmlImgAttrs);
+  eleventyConfig.addFilter("ioAttr", ioAttr);
+  eleventyConfig.addFilter("io", ioAttr);
 
   // --------------------- Shortcodes
   // eleventyConfig.addAsyncShortcode("partial", partialShortcode);
@@ -672,8 +704,12 @@ export const iconLists = ${JSON.stringify(iconLists)};
     "fetchFile",
     fetchFileShortcode,
   );
-  eleventyConfig.addShortcode("link", linkShortcode);
-  eleventyConfig.addShortcode("button", buttonShortcode);
+  eleventyConfig.addPairedShortcode("link", linkPairedShortcode);
+  eleventyConfig.addPairedShortcode("button", buttonPairedShortcode);
+  // TODO: remove these someday!
+  // We are keeping for now for easier migration from '{% link' to '{% linkSimple' before manually replacing
+  eleventyConfig.addAsyncShortcode("linkSimple", linkShortcode);
+  eleventyConfig.addShortcode("buttonSimple", buttonShortcode);
   eleventyConfig.addShortcode("image", image);
   eleventyConfig.addShortcode("gallery", gallery);
   // eleventyConfig.addPairedShortcode("wrapper", wrapper);
