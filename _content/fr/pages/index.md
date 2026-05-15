@@ -126,6 +126,30 @@ Nous sommes un collectif cherchant à promouvoir l’idée d’une _Déclaration
 
 ### Le comité des jeunes
 
+{% sectionTwoColumns  %}
+
+{% twoColumns  %}
+{% twoColumnsItem  %}
+{% image src="/_images/img_1796.webp", width=350 %}
+{% endtwoColumnsItem %}
+{% twoColumnsItem  %}
+Camille Deprez {.h4}
+
+Virgile Nieuwenhuys {.h4}
+
+Marion Zimmermann {.h4}
+
+Sarah Deblocq {.h4}
+
+Eve Bellemans {.h4}
+
+Auguste Nieuwenhuys {.h4}
+
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
+
+{% endsectionTwoColumns %}
+
 :::
 
 ::: section
