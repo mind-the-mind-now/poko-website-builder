@@ -1,17 +1,14 @@
 ---
 translationKey: index
+order: 1
 lang: en
 createdAt: 2025-10-29T12:33:00.000Z
-uuid: 34d75906b733
-localizationKey: fe784f9b8041
 name: Home
-eleventyNavigation:
-  order: 1
 metadata:
-  title: ''
   description: Initiative for a Universal Declaration of the Rights of the Human Mind
 pageLayout: menuless
-vars: null
+localizationKey: fe784f9b8041
+uuid: 34d75906b733
 ---
 
 {% component "home-header.md", { preHeading: "Rise for the Mind!", heading: "Initiative for a Universal Declaration of the Rights of the Human Mind", bottom: "[**A Declaration, what for?**](#a-declaration-what-for) { style=text-align:center;font-size:var(--step--1-0);}\n\n[Our goal](#our-goal) [Our team](#the-steering-committee) [Ethics and scientific committee](#the-ethics-and-scientific-committee) [Contact us](/en/contact/) {.cluster style=justify-content:center;row-gap:.2em;font-size:var(--step--1-0);}\n\n[Sign the Petition!](/en/la-tribune/)" } %}
@@ -20,7 +17,7 @@ vars: null
 
 ## Let's rise to declare the rights of the human mind! { .h1 }
 
-{% link url="la-tribune", text="Signing is already acting", type="internal", collection="pages", class="button" %}{% endlink %} { .font-size-[--step-1] }
+{% link url="la-tribune", type="internal", collection="pages", class="button" %}Signing is already acting{% endlink %} { .font-size-[--step-1] }
 
 :::
 
@@ -41,14 +38,14 @@ Technological evolution progresses as inevitably as a child grows; but faced wit
 [Learn more about the Declaration]({{ "pourquoi" | locale_url }})
 
 {% sectionTwoColumns class="prose" %}
-{% sectionHeader %}
+{% sectionHeader  %}
 ## The initiative is based on the work of Mark Hunyadi, philosopher and author.
 {% endsectionHeader %}
-{% twoColumns type="fixedFluid", class="prose", widthFixed="var(--width-card)", fixedSide="fixedLeft" %}
-{% twoColumnsItem %}
+{% twoColumns type="fixedFluid", widthFixed="var(--width-card)", fixedSide="fixedLeft", class="prose" %}
+{% twoColumnsItem  %}
 {% image src="/_images/declaration.webp", alt="Mark Hunyadi Universal Declaration of the Rights of the Human Mind", width="325" %}
 {% endtwoColumnsItem %}
-{% twoColumnsItem %}
+{% twoColumnsItem  %}
 Digital technology and metatechnologies are colonizing the most human part of man: his mind, which encompasses far more than just his cognitive functions. Now, if it is the mind that is under attack, it is the mind that must be protected. Such is the meaning of this proposal (published: May 2024.)
 
 [Read the presentation interview in Philosophie Magazine (May 2024)](https://markhunyadi.wordpress.com/wp-content/uploads/2024/04/mai_philosophie-magazine_declaration-universelle-des-droits-de-lesprit-humain-1.pdf)
@@ -78,14 +75,14 @@ Let us raise our common ethics to the level of the challenges our era imposes on
 ## The Petition
 
 > It is not about rejecting progress, but about guiding it.
-> >
+> 
 > It is not about slowing down innovation, but about giving it direction.
-> >
+> 
 > It is not about feeding fear, but about affirming an ambition: that of a harmonious coexistence between human intelligence and the technologies it has created.
-> >
+> 
 > We believe that such a Declaration would constitute a common reference point and a direction capable of uniting educational, legal, scientific, and civic initiatives that are currently scattered. It would be a clear signal to institutions, technology companies, and citizens of the world: the sovereignty of the mind is a non-negotiable principle.
 
-{% link url="la-tribune", text="Learn more about the Petition to sign", type="internal", collection="pages" %}{% endlink %}
+{% link url="la-tribune", type="internal", collection="pages" %}Learn more about the Petition to sign{% endlink %}
 
 :::
 

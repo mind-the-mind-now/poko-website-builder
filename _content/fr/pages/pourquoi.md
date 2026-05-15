@@ -1,16 +1,16 @@
 ---
 translationKey: pourquoi
+order: 3
 lang: fr
 createdAt: 2025-11-27T13:05:00.000Z
-uuid: a95563fcffac
-localizationKey: 0ba63286b3ab
 name: Pourquoi
 eleventyNavigation:
-  order: 3
+  add: Nav
 metadata:
   title: Une Déclaration, pour quoi faire?
   description: Pourquoi une Déclaration des Droits de l'Esprit Humain? Pour protéger notre souveraineté mentale face aux défis de l'IA et des métatechnologies.
-vars: null
+localizationKey: 0ba63286b3ab
+uuid: a95563fcffac
 ---
 
 # Une Déclaration, pour quoi faire?

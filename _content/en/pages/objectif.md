@@ -1,16 +1,13 @@
 ---
 translationKey: objectif
+order: 7
 lang: en
 createdAt: 2025-11-27T13:19:00.000Z
-uuid: e26234246ecf
-localizationKey: f9a70152aad2
 name: Goal
-eleventyNavigation:
-  order: 7
 metadata:
-  title: ''
   description: 'Our goal: restore trust in digital technology through the Rise for the Mind label and ensure a future that respects the human mind.'
-vars: null
+localizationKey: f9a70152aad2
+uuid: e26234246ecf
 ---
 
 # Our Goal

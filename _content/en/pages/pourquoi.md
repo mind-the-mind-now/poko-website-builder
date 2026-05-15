@@ -1,21 +1,14 @@
 ---
 translationKey: pourquoi
+order: 3
 lang: en
 createdAt: 2025-11-27T13:05:00.000Z
-uuid: a95563fcffac
-localizationKey: 0ba63286b3ab
 name: Why
-eleventyNavigation:
-  order: 3
 metadata:
   title: A Declaration, what for?
   description: Why a Declaration of the Rights of the Human Mind? To protect our mental sovereignty in the face of AI and metatechnology challenges.
-tags: []
-status: ''
-pageLayout: ''
-generatePage: ''
-vars: null
-dataList: []
+localizationKey: 0ba63286b3ab
+uuid: a95563fcffac
 ---
 
 # A Declaration, what for?

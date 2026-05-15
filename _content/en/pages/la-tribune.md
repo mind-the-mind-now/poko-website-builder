@@ -1,29 +1,18 @@
 ---
 translationKey: la-tribune
+order: 5
 lang: en
 createdAt: 2026-02-27T09:42:00.000Z
-uuid: 91bb6cf52c53
-localizationKey: 7fdc9a5483a9
 name: The Petition
-eleventyNavigation:
-  title: ''
-  parent: ''
-  order: 5
-metadata: null
-preview: null
-tags: []
-status: ''
-pageLayout: ''
-generatePage: ''
-vars: null
-dataList: []
+localizationKey: 7fdc9a5483a9
+uuid: 91bb6cf52c53
 ---
 
 # AI: Let Us Rise to Protect the Sovereignty of the Human Mind
 
 ::: div { .section .palette-contrast-terracotta .width-prose }
 
-{% link url="https://c.org/T9XV9J5zmD", text="Sign Now", type="external", class="button" %}{% endlink %} { .text-center .font-bold .h4 }
+{% link url="https://c.org/T9XV9J5zmD", type="external", class="button" %}Sign Now{% endlink %} { .text-center .font-bold .h4 }
 
 :::
 
@@ -84,7 +73,7 @@ Mark Hunyadi
 
 ::: div { .my-[--step-4] }
 
-{% link url="https://c.org/T9XV9J5zmD", text="Sign Now", type="external", class="button" %}{% endlink %} { .text-center .font-bold .h4 }
+{% link url="https://c.org/T9XV9J5zmD", type="external", class="button" %}Sign Now{% endlink %} { .text-center .font-bold .h4 }
 
 :::
 

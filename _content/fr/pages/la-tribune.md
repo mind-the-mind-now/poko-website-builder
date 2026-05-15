@@ -1,29 +1,20 @@
 ---
 translationKey: la-tribune
+order: 5
 lang: fr
 createdAt: 2026-02-27T09:42:00.000Z
-uuid: 91bb6c452c53
-localizationKey: 7fdc9a5483a9
 name: La tribune
 eleventyNavigation:
-  title: ''
-  parent: ''
-  order: 5
-metadata: null
-preview: null
-tags: []
-status: ''
-pageLayout: ''
-generatePage: ''
-vars: null
-dataList: []
+  add: Nav
+localizationKey: 7fdc9a5483a9
+uuid: 91bb6c452c53
 ---
 
 # IA : levons-nous pour protéger l’esprit humain. L’initiative « Rise For The Mind »
 
 ::: div { .section .palette-contrast-terracotta .width-prose }
 
-{% link url="https://c.org/T9XV9J5zmD", text="Devenir Signataire", type="external", class="button" %}{% endlink %} { .text-center .font-bold .h4 }
+{% link url="https://c.org/T9XV9J5zmD", type="external", class="button" %}Devenir Signataire{% endlink %} { .text-center .font-bold .h4 }
 
 :::
 
@@ -69,20 +60,20 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 
 :::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
 
-## Les  premiers signataires
+## Les premiers signataires
 
 **Comité éthique et scientifique de _Rise for the Mind_:**
 
 - **Giuliano da Empoli** - écrivain, conseiller et professeur (Italie, Suisse, France)
-- **Nathalie Sonnac**  - Médias, professeure et autrice (France)
-- **Nicolas van Zeebroeck**  - Professeur d’économie (Belgique)
+- **Nathalie Sonnac** - Médias, professeure et autrice (France)
+- **Nicolas van Zeebroeck** - Professeur d’économie (Belgique)
 - **Ioan Roxin** - Professeur émérite, chercheur (France)
 - **Hugues Bersini** - Professeur informatique robotique (Belgique)
 - **Francis Jutand** - Expert du numérique (France)
 
 ::: div { .my-[--step-4] }
 
-{% link url="https://c.org/T9XV9J5zmD", text="Devenir Signataire", type="external", class="button" %}{% endlink %} { .text-center .font-bold .h4 .contrast }
+{% link url="https://c.org/T9XV9J5zmD", type="external", class="button" %}Devenir Signataire{% endlink %} { .text-center .font-bold .h4 .contrast }
 
 :::
 
