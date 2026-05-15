@@ -8,6 +8,7 @@ eleventyNavigation:
   add: Nav
 metadata:
   description: Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain
+vars: {}
 localizationKey: fe784f9b8041
 uuid: 34d75906b733
 ---
@@ -16,7 +17,7 @@ uuid: 34d75906b733
 
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
 {% twoColumnsItem  %}
-{% image src="/_images/humanmindrightsnow-sansfondnettoye.svg", width=300 %}
+{% image src="/_images/rise-logo-options-v7-03-1.webp", width=300 %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 # Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain { .h3 style=font-size:var(--step-1-4); }
@@ -42,16 +43,16 @@ uuid: 34d75906b733
 {% image src="/_images/fichier-1.webp", alt="Mark Hunyadi Déclaration universelle des droits de l'esprit humain", width=325 %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-{% image src="/_images/declaration.webp", alt="Mark Hunyadi", width=100 %}
-
+{% image src="/_images/declaration.webp", alt="Mark Hunyadi", width=325 %}
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
+{% sectionFooter  %}
 Le numérique et les métatechnologies sont en train de coloniser la part la plus humaine de l’homme : son esprit, lequel englobe bien davantage que ses seules fonctions cognitives. Or, si c’est l’esprit qui est attaqué, c’est l’esprit qu’il faut protéger. Tel est le sens de cette proposition (parution: mai 2024.)
 
 [Lire l’entretien de présentation dans Philosophie Magazine (mai 2024)](https://markhunyadi.wordpress.com/wp-content/uploads/2024/04/mai_philosophie-magazine_declaration-universelle-des-droits-de-lesprit-humain-1.pdf)
 
 [www.markhunyadi.be](https://www.markhunyadi.be)
-{% endtwoColumnsItem %}
-{% endtwoColumns %}
-
+{% endsectionFooter %}
 {% endsectionTwoColumns %}
 
 :::

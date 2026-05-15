@@ -6,6 +6,7 @@ createdAt: 2025-10-29T12:33:00.000Z
 name: Home
 metadata:
   description: Initiative for a Universal Declaration of the Rights of the Human Mind
+vars: {}
 localizationKey: fe784f9b8041
 uuid: 34d75906b733
 ---
