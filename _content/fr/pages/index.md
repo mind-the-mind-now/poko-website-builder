@@ -28,7 +28,7 @@ uuid: 34d75906b733
 
 ::: section { .section .text-center .flex .flex-col .gap-[--step-2] .palette-contrast-terracotta .full-bleed-bg}
 
-## Mobilisons-nous pour déclarer les droits de l'esprit humain! { .h1 }
+## Mobilisons-nous pour déclarer les droits de l'esprit humain! 
 
 {% link url="la-tribune", type="internal", collection="pages", class="button" %}Signer, c'est déjà agir{% endlink %} { .font-size-[--step-1] }
 
@@ -117,6 +117,8 @@ Nous sommes un collectif cherchant à promouvoir l’idée d’une _Déclaration
 {% partial "committee.md" %}
 
 [En savoir plus sur le comité éthique et scientifique]({{ "a-propos" | locale_url }}#le-comite-ethique-et-scientifique){.button} {.center .intrinsic}
+
+### Le comité des jeunes
 
 :::
 
