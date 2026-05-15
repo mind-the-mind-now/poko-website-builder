@@ -1,14 +1,16 @@
 ---
 translationKey: a-propos
-order: 9
+order: 6
 lang: en
 createdAt: 2025-11-28T11:44:00.000Z
 name: Our Teams
 metadata:
   description: Discover the steering committee and scientific committee of Rise for the Mind, united to promote the Universal Declaration of the Rights of the Human Mind.
+vars: {}
 localizationKey: 1f65cb374700
 uuid: 7c8881546366
 ---
+
 
 # Our Teams
 

@@ -1,14 +1,16 @@
 ---
+order: 3
 lang: fr
 createdAt: 2025-11-28T13:43:00.000Z
-uuid: 51f54b219a73
-localizationKey: b12c395a25d8
 name: Hugues Bersini
 preview:
   image:
     src: /_images/hugues-bersini.webp
-order: 10
+vars: {}
+localizationKey: b12c395a25d8
+uuid: 51f54b219a73
 ---
+
 <b>Informatique, robotique et IA</b>
 
 ::: flow

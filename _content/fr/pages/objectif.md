@@ -1,6 +1,6 @@
 ---
 translationKey: objectif
-order: 7
+order: 5
 lang: fr
 createdAt: 2025-11-27T13:19:00.000Z
 name: Objectif
@@ -8,9 +8,11 @@ eleventyNavigation:
   add: Nav
 metadata:
   description: "Notre objectif: rétablir la confiance dans le numérique grâce au label Human Mind Rights Now et garantir un avenir respectueux de l'esprit humain."
+vars: {}
 localizationKey: f9a70152aad2
 uuid: e26234246ecf
 ---
+
 
 # Notre objectif
 

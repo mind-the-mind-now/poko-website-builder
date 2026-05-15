@@ -1,15 +1,17 @@
 ---
+order: 5
 lang: en
 createdAt: 2025-12-01T09:06:00.000Z
-uuid: f4c8e1b73d28
-localizationKey: 24ecf737c40d
-generatePage: previewOnly
 name: Ioan Roxin
 preview:
   image:
     src: /_images/ioan_roxin-copie-380x480.webp
-order: 25
+generatePage: previewOnly
+vars: {}
+localizationKey: 24ecf737c40d
+uuid: f4c8e1b73d28
 ---
+
 
 <b>Digital Technologies</b>
 

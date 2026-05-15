@@ -1,14 +1,16 @@
 ---
+order: 2
 lang: fr
 createdAt: 2025-11-28T13:46:00.000Z
-uuid: b48c7e079aa5
-localizationKey: 41915fc9d14b
 name: Giuliano da Empoli
 preview:
   image:
     src: /_images/da_empoli_giuliano_copy_francesca_mantovani_editionsgallimard.webp
-order: 20
+vars: {}
+localizationKey: 41915fc9d14b
+uuid: b48c7e079aa5
 ---
+
 
 <b>Écrivain et conseiller politique</b>
 

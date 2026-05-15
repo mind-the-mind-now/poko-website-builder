@@ -1,16 +1,16 @@
 ---
 translationKey: demarche
+order: 8
 lang: fr
 createdAt: 2025-11-27T13:16:00.000Z
-uuid: 48d4db461d7f
-localizationKey: adb996d693a0
 name: Démarche
-eleventyNavigation: null
 metadata:
   description: "Notre démarche en 3 étapes pour protéger l'esprit humain: un label éthique, des actions de sensibilisation et une Déclaration Universelle."
 status: draft
-vars: null
+localizationKey: adb996d693a0
+uuid: 48d4db461d7f
 ---
+
 
 # Notre démarche
 

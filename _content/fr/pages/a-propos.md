@@ -1,6 +1,6 @@
 ---
 translationKey: a-propos
-order: 9
+order: 6
 lang: fr
 createdAt: 2025-11-28T11:44:00.000Z
 name: Nos équipes
@@ -8,9 +8,11 @@ eleventyNavigation:
   add: Nav
 metadata:
   description: Découvrez le comité de pilotage et le comité scientifique de Human Mind Rights Now, unis pour promouvoir la Déclaration Universelle des Droits de l'Esprit Humain.
+vars: {}
 localizationKey: 1f65cb374700
 uuid: 7c8881546366
 ---
+
 
 # Nos équipes
 

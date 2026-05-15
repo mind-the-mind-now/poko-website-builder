@@ -1,15 +1,17 @@
 ---
+order: 5
 lang: fr
 createdAt: 2025-12-01T09:06:00.000Z
-uuid: 53ae51532758
-localizationKey: 24ecf737c40d
-generatePage: previewOnly
 name: Ioan Roxin
 preview:
   image:
     src: /_images/ioan_roxin-copie-380x480.webp
-order: 25
+generatePage: previewOnly
+vars: {}
+localizationKey: 24ecf737c40d
+uuid: 53ae51532758
 ---
+
 
 <b>Technologies des numériques</b>
 

@@ -1,14 +1,16 @@
 ---
+order: 4
 lang: fr
 createdAt: 2025-11-28T13:44:00.000Z
-uuid: c19b90633f50
-localizationKey: ee58e4351581
 name: Francis Jutand
 preview:
   image:
     src: /_images/f-jutand-0535-1024x682.webp
-order: 15
+vars: {}
+localizationKey: ee58e4351581
+uuid: c19b90633f50
 ---
+
 
 <b>Expert du numérique</b>
 

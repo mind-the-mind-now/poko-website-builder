@@ -1,16 +1,16 @@
 ---
 translationKey: demarche
+order: 8
 lang: en
 createdAt: 2025-11-27T13:16:00.000Z
-uuid: 48d4db461d7f
-localizationKey: adb996d693a0
 name: Approach
-eleventyNavigation: null
 metadata:
-  description: "Our 3-step approach to protect the human mind: an ethical label, awareness-raising actions, and a Universal Declaration."
+  description: 'Our 3-step approach to protect the human mind: an ethical label, awareness-raising actions, and a Universal Declaration.'
 status: draft
-vars: null
+localizationKey: adb996d693a0
+uuid: 48d4db461d7f
 ---
+
 
 # Our Approach
 

@@ -1,12 +1,14 @@
 ---
 translationKey: la-tribune
-order: 5
+order: 4
 lang: en
 createdAt: 2026-02-27T09:42:00.000Z
 name: The Petition
+vars: {}
 localizationKey: 7fdc9a5483a9
 uuid: 91bb6cf52c53
 ---
+
 
 # AI: Let Us Rise to Protect the Sovereignty of the Human Mind
 

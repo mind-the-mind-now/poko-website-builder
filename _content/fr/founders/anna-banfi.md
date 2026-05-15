@@ -1,8 +1,7 @@
 ---
+order: 5
 lang: fr
 createdAt: 2025-10-29T14:00:00.000Z
-uuid: c06d0de90fab
-localizationKey: 4035f31643a7
 name: Anna Bánfi
 preview:
   description: Coach entrepreneuriale, sociale et écologique
@@ -10,9 +9,12 @@ preview:
     src: /_images/anna_banfi-1.webp
 tags:
   - founder
-order: 5
+localizationKey: 4035f31643a7
+uuid: c06d0de90fab
 shortDescription: Facilitatrice de la Démarche | Coache entrepreneuriale
 ---
+
+
 
 <b>Facilitatrice de la Démarche</b>  
 <b>Coache entrepreneuriale</b>

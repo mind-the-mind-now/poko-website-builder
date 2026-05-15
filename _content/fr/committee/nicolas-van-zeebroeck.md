@@ -1,15 +1,17 @@
 ---
+order: 6
 lang: fr
 createdAt: 2025-12-01T09:05:00.000Z
-uuid: 48e5ba8b7040
-localizationKey: 851f715712ca
-generatePage: previewOnly
 name: Nicolas van Zeebroeck
 preview:
   image:
     src: /_images/nicolas-van-zeebroeck.webp
-order: 30
+generatePage: previewOnly
+vars: {}
+localizationKey: 851f715712ca
+uuid: 48e5ba8b7040
 ---
+
 <b>Économie</b>
 
 ::: flow

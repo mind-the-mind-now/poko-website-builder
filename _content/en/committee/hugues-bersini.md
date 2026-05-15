@@ -1,14 +1,16 @@
 ---
+order: 3
 lang: en
 createdAt: 2025-11-28T13:43:00.000Z
-uuid: e3b7d9a52f16
-localizationKey: b12c395a25d8
 name: Hugues Bersini
 preview:
   image:
     src: /_images/hugues-bersini.webp
-order: 10
+vars: {}
+localizationKey: b12c395a25d8
+uuid: e3b7d9a52f16
 ---
+
 <b>Computer Science, Robotics and AI</b>
 
 ::: flow

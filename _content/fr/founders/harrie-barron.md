@@ -1,8 +1,7 @@
 ---
+order: 4
 lang: fr
 createdAt: 2025-10-29T13:59:00.000Z
-uuid: 22301aaf7ed6
-localizationKey: d8b40464e0cf
 name: Harrie Barron
 preview:
   description: |-
@@ -12,9 +11,12 @@ preview:
     src: /_images/harrie_barron.webp
 tags:
   - founder
-order: 4
+localizationKey: d8b40464e0cf
+uuid: 22301aaf7ed6
 shortDescription: Facilitateur de transitions | Associé IN PRINCIPO
 ---
+
+
 
 <b>Facilitateur de transitions</b>  
 <b>Associé IN PRINCIPO</b>

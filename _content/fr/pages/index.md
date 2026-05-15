@@ -54,7 +54,6 @@ Le numérique et les métatechnologies sont en train de coloniser la part la plu
 
 {% endsectionTwoColumns %}
 
-:::
 ::: section { #demarche }
 
 ## Une Déclaration, pour quoi faire?
@@ -98,6 +97,29 @@ Mettons notre éthique commune à la hauteur des enjeux que nous impose notre é
 [En savoir plus sur la tribune à signer]({{ "la-tribune" | locale_url }})
 
 :::
+
+{% sectionBuilder class="palette-contrast-terracotta full-bleed-bg", id='who-sectio' %}
+{% sectionHeader  %}
+## Qui sommes-nous?
+
+Nous sommes un collectif cherchant à promouvoir l’idée d’une Déclaration Universelle des Droits de l’Esprit Humain.
+{% endsectionHeader %}
+{% areaRaw class="area" %}
+### Le comité de pilotage
+{% endareaRaw %}
+{% collection collection="founders", type="grid-fluid", itemPartial="person-card" %}{% endcollection %}
+{% areaRaw class="area" %}
+{% link url="a-propos", anchor="Le comité de pilotage", type="internal", collection="pages", class="button" %}En savoir plus sur le comité de pilotage{% endlink %}
+{% endareaRaw %}
+{% areaRaw class="area" %}
+### Le comité éthique et scientifique
+{% endareaRaw %}
+{% collection collection="committee", type="grid-fluid", columns=8, itemPartial="person-card" %}{% endcollection %}
+{% areaRaw class="area" %}
+{% link url="a-propos", anchor="Le comité éthique et scientifique", type="internal", collection="pages", class="button" %}En savoir plus sur le comité éthique et scientifique{% endlink %}
+{% endareaRaw %}
+
+{% endsectionBuilder %}
 
 ::: section { #who-section .section .palette-contrast-terracotta .full-bleed-bg}
 
