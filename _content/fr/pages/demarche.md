@@ -14,7 +14,7 @@ uuid: 48d4db461d7f
 
 # Notre démarche
 
-::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
+::: div {.section .palette-contrast-terracotta .bleed-bg}
 
 ## Une fusée à trois étages
 

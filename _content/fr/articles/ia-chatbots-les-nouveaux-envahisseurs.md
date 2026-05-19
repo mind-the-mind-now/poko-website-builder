@@ -1,37 +1,25 @@
 ---
 translationKey: ia-chatbots-les-nouveaux-envahisseurs
+order: 2
 lang: fr
 createdAt: 2026-03-25T09:40:00.000Z
-uuid: 78e48b23b08b
-localizationKey: 2f0844f9e1ca
 name: IA, chatbots, les nouveaux envahisseurs?
-eleventyNavigation: null
-metadata: null
 preview:
-  title: ''
   description: Radio Télé Suisse - L'émission Géopolitis du 22 mars 2026
   image:
-    src: https://img.youtube.com/vi/tCEogfwEpq0/0.jpg
-    alt: ''
-    title: ''
-    width: null
-    aspectRatio: null
-    loading: ''
-    imgAttrs: ''
-tags: []
-status: ''
-pageLayout: ''
-generatePage: ''
-vars: null
-dataList: []
-author: Rise for the Mind !
-datePublished: 2026-03-22T19:22:00
-dateUpdated: 2026-03-22T21:04:00
+    src: /_images/ai-bots-maxresdefault.webp
+vars: {}
 images:
   - image:
       - /_images/rts-geopolitis-mark-hunyadi.webp
+author: Rise for the Mind !
+localizationKey: 2f0844f9e1ca
+uuid: 78e48b23b08b
+datePublished: 2026-03-22T19:22:00
+dateUpdated: 2026-03-22T21:04:00
 website: https://www.rts.ch/play/tv/-/video/-?urn=urn:rts:video:cba04df2-85c4-3973-a891-e30dd1777c2c
 ---
+
 
 # IA, chatbots, les nouveaux envahisseurs?
 

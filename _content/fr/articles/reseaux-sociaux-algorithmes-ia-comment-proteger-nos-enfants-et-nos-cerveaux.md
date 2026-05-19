@@ -1,37 +1,23 @@
 ---
 translationKey: reseaux-sociaux-algorithmes-ia-comment-proteger-nos-enfants-et-nos-cerveaux
+order: 1
 lang: fr
 createdAt: 2026-03-25T09:37:00.000Z
-uuid: 6301b5467ca7
-localizationKey: d3de0d9e29a6
 name: 'Réseaux sociaux, algorithmes, IA : comment protéger nos enfants… et nos cerveaux ?'
-eleventyNavigation: null
-metadata: null
 preview:
-  title: ''
-  description: ''
   image:
     src: /_images/capture-d-ecran-2026-03-31-222206.webp
-    alt: ''
-    title: ''
-    width: null
-    aspectRatio: null
-    loading: ''
-    imgAttrs: ''
-tags: []
-status: ''
-pageLayout: ''
-generatePage: ''
-vars: null
-dataList: []
-author: Rise for the Mind
-datePublished: 2026-03-18T22:07:00
-dateUpdated: 2026-03-18T22:07:00
 images:
   - image:
       - /_images/capture-d-ecran-2026-03-31-222206.webp
+author: Rise for the Mind
+localizationKey: d3de0d9e29a6
+uuid: 6301b5467ca7
+datePublished: 2026-03-18T22:07:00
+dateUpdated: 2026-03-18T22:07:00
 website: ''
 ---
+
 
 # Réseaux sociaux, algorithmes, IA : comment protéger nos enfants… et nos cerveaux ?
 

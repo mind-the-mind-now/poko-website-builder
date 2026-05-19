@@ -4,6 +4,8 @@ order: 1
 lang: en
 createdAt: 2025-10-29T12:33:00.000Z
 name: Home
+eleventyNavigation:
+  add: Nav
 metadata:
   description: Initiative for a Universal Declaration of the Rights of the Human Mind
 localizationKey: fe784f9b8041
@@ -12,24 +14,32 @@ uuid: 34d75906b733
 
 {% sectionTwoColumns  %}
 
-{% twoColumns type="fixedFluid", fixedSide="fixedLeft" %}
+{% twoColumns type="fixedFluid", fixedSide="fixedLeft", class="items-center" %}
 {% twoColumnsItem  %}
-{% image src="/_images/humanmindrightsnow-sansfondnettoye.svg", width=300 %}
+{% image src="/_images/rise-logo-options-v7-03-1.webp", width=300 %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-# Initiative for a Universal Declaration of the Rights of the Human Mind { .h3 style=font-size:var(--step-1-4); }
+# Initiative for a Universal Declaration of the Rights of the Human Mind
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
 {% endsectionTwoColumns %}
 
-::: section { .section .text-center .flex .flex-col .gap-[--step-2] .palette-contrast-terracotta .full-bleed-bg}
+::: section { .section .text-center .flex .flex-col .gap-[--step-2] .palette-contrast-terracotta .bleed-bg}
 
 ## Let's rise to declare the rights of the human mind! { .h1 }
 
 {% link url="la-tribune", type="internal", collection="pages", class="button" %}Signing is already acting{% endlink %} { .font-size-[--step-1] }
 
 :::
+
+{% sectionCollection class="palette-contrast-terracotta full-bleed-bg" %}
+{% sectionHeader  %}
+## News
+{% endsectionHeader %}
+{% collection collection="articles", filters=[{"value":3,"by":"first"}], sortCriterias=[{"direction":"desc","by":"date"}], type="switcher" %}{% endcollection %}
+
+{% endsectionCollection %}
 
 ::: section { #demarche }
 
@@ -68,7 +78,7 @@ Digital technology and metatechnologies are colonizing the most human part of ma
 
 :::
 
-::: section { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
+::: section { #demarche .section .palette-contrast-terracotta .bleed-bg}
 
 ## Our Goal
 
@@ -96,7 +106,7 @@ Let us raise our common ethics to the level of the challenges our era imposes on
 
 :::
 
-::: section { #who-section .section .palette-contrast-terracotta .full-bleed-bg}
+::: section { #who-section .section .palette-contrast-terracotta .bleed-bg}
 
 ## Who Are We?
 

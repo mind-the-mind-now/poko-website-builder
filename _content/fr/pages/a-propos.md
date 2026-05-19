@@ -14,7 +14,7 @@ uuid: 7c8881546366
 
 # Nos équipes
 
-::: section { .palette-contrast-terracotta .full-bleed-bg }
+::: section { .palette-contrast-terracotta .bleed-bg }
 
 ## Le comité de pilotage
 
@@ -54,14 +54,13 @@ lang }) | asc('order') %}
 
 :::
 
-{% sectionTwoColumns class="palette-contrast-terracotta" %}
+{% sectionTwoColumns class="palette-contrast-terracotta bleed-bg" %}
 {% sectionHeader class="prose" %}
 ## Le comité des jeunes
 {% endsectionHeader %}
 {% twoColumns class="prose items-center" %}
 {% twoColumnsItem  %}
 {% image src="/_images/img_1796.webp", aspectRatio=1, width=350, class="radius-round" %}
-
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 ::: flow { .font-size-[--step-1] }

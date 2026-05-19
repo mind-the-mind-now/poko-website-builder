@@ -19,15 +19,13 @@ uuid: 34d75906b733
 {% image src="/_images/rise-logo-options-v7-03-1.webp", width=300 %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-
-# Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain { }
-
+# Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
 {% endsectionTwoColumns %}
 
-::: section { .section .text-center .flex .flex-col .gap-[--step-2] .palette-contrast-terracotta .full-bleed-bg}
+::: section { .section .text-center .flex .flex-col .gap-[--step-2] .palette-contrast-terracotta .bleed-bg}
 
 ## Mobilisons-nous pour déclarer les droits de l'esprit humain!
 
@@ -37,9 +35,7 @@ uuid: 34d75906b733
 
 {% sectionTwoColumns class="prose" %}
 {% sectionHeader  %}
-
 ## L'initiative est basée sur les travaux de Mark Hunyadi, philosophe et auteur.
-
 {% endsectionHeader %}
 {% twoColumns type="switcher", class="prose" %}
 {% twoColumnsItem  %}
@@ -60,11 +56,9 @@ Le numérique et les métatechnologies sont en train de coloniser la part la plu
 
 {% sectionCollection class="palette-contrast-terracotta full-bleed-bg" %}
 {% sectionHeader  %}
-
 ## Actualités
-
 {% endsectionHeader %}
-{% collection collection="articles", filters=[{"value":3,"by":"first"}], sortCriterias=[{"direction":"desc","by":"date"}], type="switcher" %}{% endcollection %}
+{% collection collection="articles", filters=[{"value":3,"by":"first"}], sortCriterias=[{"direction":"desc","by":"date"}], type="switcher", itemPartial="news-card" %}{% endcollection %}
 
 {% endsectionCollection %}
 
@@ -82,7 +76,7 @@ L’évolution technologique progresse, aussi inévitablement qu’un enfant gra
 
 [En savoir plus sur la Déclaration]({{ "pourquoi" | locale_url }})
 
-::: section { #demarche .section .palette-contrast-terracotta .full-bleed-bg}
+::: section { #demarche .section .palette-contrast-terracotta .bleed-bg}
 
 ## Notre objectif
 
@@ -99,11 +93,11 @@ Mettons notre éthique commune à la hauteur des enjeux que nous impose notre é
 ## La Tribune
 
 > Il ne s’agit pas de rejeter le progrès, mais de l’orienter.
->
+> >
 > Il ne s’agit pas de freiner l’innovation, mais de lui donner un cap.
->
+> >
 > Il ne s’agit pas de nourrir la peur, mais d’affirmer une ambition : celle d’une cohabitation harmonieuse entre l’intelligence humaine et les technologies qu’elle a créées.
->
+> >
 > Nous croyons qu’une telle Déclaration constituerait un repère commun et un cap capable de fédérer les initiatives éducatives, juridiques, scientifiques et civiques, aujourd’hui dispersées. Elle serait un signal clair adressé aux institutions, aux entreprises technologiques et aux citoyens du monde : la souveraineté de l’esprit est un principe non négociable.
 
 [En savoir plus sur la tribune à signer]({{ "la-tribune" | locale_url }})
@@ -112,33 +106,26 @@ Mettons notre éthique commune à la hauteur des enjeux que nous impose notre é
 
 {% sectionBuilder class="palette-contrast-terracotta full-bleed-bg", id='who-sectio' %}
 {% sectionHeader class="prose" %}
-
 ## Qui sommes-nous?
 
 Nous sommes un collectif cherchant à promouvoir l’idée d’une Déclaration Universelle des Droits de l’Esprit Humain.
 {% endsectionHeader %}
 {% areaRaw class="area prose" %}
-
 ### Le comité de pilotage
-
 {% endareaRaw %}
 {% collection collection="founders", type="grid-fluid", itemPartial="person-card" %}{% endcollection %}
 {% areaRaw class="area prose" %}
 {% link url="a-propos", anchor="Le comité de pilotage", type="internal", collection="pages", class="button" %}En savoir plus sur le comité de pilotage{% endlink %}
 {% endareaRaw %}
 {% areaRaw class="area prose" %}
-
 ### Le comité éthique et scientifique
-
 {% endareaRaw %}
 {% collection collection="committee", type="grid-fluid", columns=8, itemPartial="person-card" %}{% endcollection %}
 {% areaRaw class="area prose" %}
 {% link url="a-propos", anchor="Le comité éthique et scientifique", type="internal", collection="pages", class="button" %}En savoir plus sur le comité éthique et scientifique{% endlink %}
 {% endareaRaw %}
 {% areaRaw class="prose" %}
-
 ### Le comité des jeunes
-
 {% endareaRaw %}
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft", class="prose items-center" %}
 {% twoColumnsItem  %}
@@ -169,19 +156,3 @@ Soutenir le projet, c'est participer à la fondation d'un cadre éthique planét
 [Contactez-nous]({{ "contact" | locale_url }}){.button} {.center .intrinsic}
 
 :::
-
-{% css %}
-
-#who-section {
-& ul {margin-block-start: var(--step-2);}
-& li {text-align: center;font-size:var(--step--1);}
-& p {line-height: 1.1;}
-& .name {font-weight:bold;font-size:var(--step-1);}
-& img {
-aspect-ratio: 1;
-border-radius: 100%;
-background-color: currentColor;
-}
-}
-
-{% endcss %}

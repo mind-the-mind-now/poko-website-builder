@@ -6,11 +6,7 @@ createdAt: 2026-02-27T09:42:00.000Z
 name: La tribune
 eleventyNavigation:
   add: Nav
-vars: {}
-localizationKey: 7fdc9a5483a9
-uuid: 91bb6c452c53
 ---
-
 
 # IA : levons-nous pour protéger l’esprit humain. L’initiative « Rise For The Mind »
 
@@ -60,7 +56,7 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 
 **Mark Hunyadi**
 
-:::: div {.section .box .palette-contrast-terracotta .full-bleed-bg}
+:::: div {.section .palette-contrast-terracotta .bleed-bg}
 
 ## Les premiers signataires
 

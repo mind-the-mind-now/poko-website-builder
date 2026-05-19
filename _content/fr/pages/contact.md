@@ -8,11 +8,9 @@ eleventyNavigation:
   add: Nav
 metadata:
   description: Prenez contact avec Human Mind Rights Now. Rejoignez-nous pour soutenir la création d'un cadre éthique protégeant l'esprit humain à l'ère du numérique.
-vars: {}
 localizationKey: 902307f30f07
 uuid: e2c5f3e07f46
 ---
-
 
 # Nous contacter
 

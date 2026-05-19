@@ -8,15 +8,13 @@ eleventyNavigation:
   add: Nav
 metadata:
   description: "Notre objectif: rétablir la confiance dans le numérique grâce au label Human Mind Rights Now et garantir un avenir respectueux de l'esprit humain."
-vars: {}
 localizationKey: f9a70152aad2
 uuid: e26234246ecf
 ---
 
-
 # Notre objectif
 
-::: section {.section .box .palette-contrast-terracotta .full-bleed-bg}
+::: section {.section .palette-contrast-terracotta .bleed-bg }
 
 > C’est une urgence. Nous croyons que toutes les initiatives qui peuvent être prises aujourd’hui, toute méritoires qu’elles soient, sont vouées à rester locales, isolées et finalement inefficaces, si elles ne prennent pas place dans un cadre éthique général qui seul peut les ancrer dans une perspective globale, universelle, humaine.
 

@@ -4,17 +4,17 @@ order: 5
 lang: en
 createdAt: 2025-11-27T13:19:00.000Z
 name: Goal
+eleventyNavigation:
+  add: Nav
 metadata:
   description: 'Our goal: restore trust in digital technology through the Rise for the Mind label and ensure a future that respects the human mind.'
-vars: {}
 localizationKey: f9a70152aad2
 uuid: e26234246ecf
 ---
 
-
 # Our Goal
 
-::: section {.section .box .palette-contrast-terracotta .full-bleed-bg}
+::: section {.section .palette-contrast-terracotta .bleed-bg}
 
 > It is urgent. We believe that all the initiatives that can be taken today, however meritorious they may be, are destined to remain local, isolated, and ultimately ineffective, if they do not take place within a general ethical framework that alone can anchor them in a global, universal, human perspective.
 

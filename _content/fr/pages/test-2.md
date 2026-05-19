@@ -20,7 +20,7 @@ Sans un nouveau cadre éthique global, toutes nos mesures, réglementations et d
 
 Soutenir la DUDEH, c'est participer à la fondation d'un cadre éthique planétaire pour les générations actuelles et futures.
 
-::: div { #who-section .palette-contrast-terracotta .full-bleed-bg}
+::: div { #who-section .palette-contrast-terracotta .bleed-bg}
 
 ## Qui sommes-nous?
 

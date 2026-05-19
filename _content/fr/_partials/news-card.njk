@@ -1,0 +1,11 @@
+<article class="news-card flow" style="--flow-space:0.4rem;">
+
+{% if pagePreview.image.src %}
+{% image src=pagePreview.image.src, alt=pagePreview.title, aspectRatio=1.7, class="" %}
+{% endif %}
+
+<h3 class="title"><a href="{{url}}">{{pagePreview.title}}</a></h3>
+
+{{pagePreview.description | md}}
+
+</article>
