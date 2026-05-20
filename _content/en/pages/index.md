@@ -33,14 +33,6 @@ uuid: 34d75906b733
 
 :::
 
-{% sectionCollection class="palette-contrast-terracotta full-bleed-bg" %}
-{% sectionHeader  %}
-## News
-{% endsectionHeader %}
-{% collection collection="articles", filters=[{"value":3,"by":"first"}], sortCriterias=[{"direction":"desc","by":"date"}], type="switcher" %}{% endcollection %}
-
-{% endsectionCollection %}
-
 ::: section { #demarche }
 
 ## A Declaration, what for?
@@ -63,7 +55,7 @@ Technological evolution progresses as inevitably as a child grows; but faced wit
 {% endsectionHeader %}
 {% twoColumns type="fixedFluid", widthFixed="var(--width-card)", fixedSide="fixedLeft", class="prose" %}
 {% twoColumnsItem  %}
-{% image src="/_images/declaration.webp", alt="Mark Hunyadi Universal Declaration of the Rights of the Human Mind", width="325" %}
+{% image src="/_images/mark-book.webp", alt="Mark Hunyadi Universal Declaration of the Rights of the Human Mind", width="325" %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 Digital technology and metatechnologies are colonizing the most human part of man: his mind, which encompasses far more than just his cognitive functions. Now, if it is the mind that is under attack, it is the mind that must be protected. Such is the meaning of this proposal (published: May 2024.)
