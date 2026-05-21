@@ -71,7 +71,7 @@ Faisons de la souveraineté de l’esprit un horizon commun.
 
 ::: div { .my-[--step-4] }
 
-{% link url="https://www.change.org/riseforthemind/", type="external", class="button" %}Devenir Signataire{% endlink %} { .text-center .font-bold .h4 .contrast }
+{% link url="https://www.change.org/riseforthemind/", type="external", class="button", target="_blank", rel="noopener" %}Devenir Signataire{% endlink %} { .text-center .font-bold .h4 .contrast }
 
 :::
 
