@@ -1,4 +1,4 @@
-<footer class="palette-contrast-blue full-bleed-bg flow text-center" style="--flow-space: .5em">
+<footer class="palette-contrast-blue bleed-bg flow text-center" style="--flow-space: .5em">
 {% image src="/_images/rise-logo-options-v7-02-1-1.webp", width=100, class="mx-auto" %}
 
 ::: cluster { .justify-center }

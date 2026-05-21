@@ -8,11 +8,11 @@ eleventyNavigation:
   add: Nav
 ---
 
-# IA : levons-nous pour protéger l’esprit humain. L’initiative « Rise For The Mind »
+# IA: levons-nous pour protéger l’esprit humain. L’initiative « Rise For The Mind »
 
 ::: div { .section .palette-contrast-terracotta .width-prose }
 
-{% link url="https://www.change.org/riseforthemind/", type="external", class="button" %}Devenir Signataire{% endlink %} { .text-center .font-bold .h4 }
+{% link url="https://www.change.org/riseforthemind/", type="external", class="button", target="_blank", rel="noopener" %}Devenir Signataire{% endlink %} { .text-center .font-bold .h4 }
 
 :::
 

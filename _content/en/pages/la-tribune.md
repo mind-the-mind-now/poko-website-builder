@@ -14,7 +14,7 @@ uuid: 91bb6cf52c53
 
 ::: div { .section .palette-contrast-terracotta .width-prose }
 
-{% link url="https://www.change.org/riseforthemind/", type="external", class="button" %}Sign Now{% endlink %} { .text-center .font-bold .h4 }
+{% link url="https://www.change.org/riseforthemind/", type="external", class="button", target="_blank", rel="noopener" %}Sign Now{% endlink %} { .text-center .font-bold .h4 }
 
 :::
 

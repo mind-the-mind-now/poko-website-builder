@@ -54,6 +54,30 @@ lang }) | asc('order') %}
 
 :::
 
+{% sectionTwoColumns class="palette-contrast-terracotta bleed-bg" %}
+{% sectionHeader class="prose" %}
+
+## The Youth Committee
+
+{% endsectionHeader %}
+{% twoColumns class="prose items-center" %}
+{% twoColumnsItem  %}
+{% image src="/_images/img_1796.webp", aspectRatio=1, width=350, class="radius-round" %}
+{% endtwoColumnsItem %}
+{% twoColumnsItem  %}
+::: flow { .font-size-[--step-1] }
+Camille Deprez
+Virgile Nieuwenhuys
+Marion Zimmermann
+Sarah Deblocq
+Eve Bellemans
+Auguste Nieuwenhuys
+:::
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
+
+{% endsectionTwoColumns %}
+
 {% css %}
 .founders, .committee-members {
 max-inline-size: var(--width-max);
