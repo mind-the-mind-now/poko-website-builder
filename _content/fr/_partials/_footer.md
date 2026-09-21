@@ -13,5 +13,7 @@
 
 &copy; 2026-{{year}} <em>Rise for the Mind!</em> - Tous droits réservés<br>
 
-<p>Site web éco-conçu avec <a href="https://www.poko.eco/" target="_blank" rel="noopener">poko</a> par <a href="https://www.mookai.be/" target="_blank" rel="noopener">mookaï asbl</a></p>
+<p>Site web éco-conçu avec <a href="https://www.poko.eco/" target="_blank" rel="noopener">poko</a> par <a href="https://www.mookai.be/" target="_blank" rel="noopener">mookaï asbl</a><br>
+Logo par <a href="https://ideainaforest.org/" target="_blank" rel="noopener noreferrer nofollow">Idea In a Forest</a></p>
+
 </footer>
