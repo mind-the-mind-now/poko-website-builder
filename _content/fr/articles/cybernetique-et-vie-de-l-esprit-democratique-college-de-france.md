@@ -5,11 +5,19 @@ lang: fr
 createdAt: 2026-10-02T07:46:00.000Z
 ldType: Article
 name: Cybernétique et vie de l’esprit démocratique - Collège de France
+dataList:
+  - type: image
+    key: Mark Hunyadi - Collège de France
+    src: /_images/capture-d-ecran-2026-10-02-101629.webp
+    alt: Mark Hunyadi; Collège de France;
 ---
 
 `<iframe width="560" height="315" src="https://www.youtube.com/embed/eC5rXIUONRo?si=ps8tY8HIqPgQRIv3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 
-https://www.college-de-france.fr/fr/agenda/colloque/democratie-ou-dictature-numerique-perspectives-historiques-et-comparatives
+Colloque : Démocratie ou dictature numérique : perspectives historiques et comparatives
+Conférence du 25 juin 2026 : Cybernétique et vie de l’esprit démocratique
+{% link url="https://www.college-de-france.fr/fr/agenda/colloque/democratie-ou-dictature-numerique-perspectives-historiques-et-comparatives", type="external" %}Démocratie ou dictature numérique : perspectives historiques et comparatives
+Conférence du 25 juin 2026 : Cybernétique et vie de l’esprit démocratique{% endlink %}
 
 ## Présentation du colloque
 
