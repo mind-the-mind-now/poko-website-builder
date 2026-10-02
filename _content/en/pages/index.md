@@ -8,6 +8,7 @@ eleventyNavigation:
   add: Nav
 metadata:
   description: Initiative for a Universal Declaration of the Rights of the Human Mind
+vars: {}
 localizationKey: fe784f9b8041
 uuid: 34d75906b733
 ---
@@ -19,9 +20,7 @@ uuid: 34d75906b733
 {% image src="/_images/rise-logo-options-v7-03-1.webp", width=300 %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-
 # Initiative for a Universal Declaration of the Rights of the Human Mind
-
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
@@ -37,9 +36,7 @@ uuid: 34d75906b733
 
 {% sectionTwoColumns class="width-prose" %}
 {% sectionHeader  %}
-
 ## The initiative is based on the work of Mark Hunyadi, philosopher and author.
-
 {% endsectionHeader %}
 {% twoColumns type="fixedFluid", widthFixed="var(--width-card)", fixedSide="fixedLeft", class="prose" %}
 {% twoColumnsItem  %}
@@ -91,11 +88,11 @@ Let us raise our common ethics to the level of the challenges our era imposes on
 ## The Petition
 
 > It is not about rejecting progress, but about guiding it.
->
+> >
 > It is not about slowing down innovation, but about giving it direction.
->
+> >
 > It is not about feeding fear, but about affirming an ambition: that of a harmonious coexistence between human intelligence and the technologies it has created.
->
+> >
 > We believe that such a Declaration would constitute a common reference point and a direction capable of uniting educational, legal, scientific, and civic initiatives that are currently scattered. It would be a clear signal to institutions, technology companies, and citizens of the world: the sovereignty of the mind is a non-negotiable principle.
 
 {% link url="la-tribune", type="internal", collection="pages" %}Learn more about the Petition to sign{% endlink %}
@@ -104,33 +101,26 @@ Let us raise our common ethics to the level of the challenges our era imposes on
 
 {% sectionBuilder class="palette-contrast-terracotta full-bleed-bg", id='who-section' %}
 {% sectionHeader class="prose" %}
-
 ## Who Are We?
 
 We are a collective seeking to promote the idea of a _Universal Declaration of the Rights of the Human Mind_.
 {% endsectionHeader %}
 {% areaRaw class="area prose" %}
-
 ### The Steering Committee
-
 {% endareaRaw %}
 {% collection collection="founders", type="grid-fluid", itemPartial="person-card" %}{% endcollection %}
 {% areaRaw class="area prose" %}
 {% link url="a-propos", anchor="the-steering-committee", type="internal", collection="pages", class="button" %}Learn more about the steering committee{% endlink %}
 {% endareaRaw %}
 {% areaRaw class="area prose" %}
-
 ### The Ethics and Scientific Committee
-
 {% endareaRaw %}
 {% collection collection="committee", type="grid-fluid", columns=8, itemPartial="person-card" %}{% endcollection %}
 {% areaRaw class="area prose" %}
 {% link url="a-propos", anchor="the-ethics-and-scientific-committee", type="internal", collection="pages", class="button" %}Learn more about the ethics and scientific committee{% endlink %}
 {% endareaRaw %}
 {% areaRaw class="prose" %}
-
 ### The Youth Committee
-
 {% endareaRaw %}
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft", class="prose items-center" %}
 {% twoColumnsItem  %}

@@ -8,6 +8,7 @@ eleventyNavigation:
   add: Nav
 metadata:
   description: Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain
+vars: {}
 localizationKey: fe784f9b8041
 uuid: 34d75906b733
 ---
@@ -19,9 +20,7 @@ uuid: 34d75906b733
 {% image src="/_images/rise-logo-options-v7-03-1.webp", width=300 %}
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-
 # Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain
-
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
@@ -37,9 +36,7 @@ uuid: 34d75906b733
 
 {% sectionTwoColumns class="width-prose" %}
 {% sectionHeader  %}
-
 ## L'initiative est basée sur les travaux de Mark Hunyadi, philosophe et auteur.
-
 {% endsectionHeader %}
 {% twoColumns type="fixedFluid", widthFixed="var(--width-card)", fixedSide="fixedLeft", class="prose" %}
 {% twoColumnsItem  %}
@@ -58,9 +55,7 @@ Le numérique et les métatechnologies sont en train de coloniser la part la plu
 
 {% sectionCollection class="palette-contrast-terracotta full-bleed-bg" %}
 {% sectionHeader  %}
-
 ## Actualités
-
 {% endsectionHeader %}
 {% collection collection="articles", filters=[{"value":3,"by":"first"}], sortCriterias=[{"direction":"desc","by":"date"}], type="switcher", itemPartial="news-card" %}{% endcollection %}
 
@@ -97,11 +92,11 @@ Mettons notre éthique commune à la hauteur des enjeux que nous impose notre é
 ## La Tribune
 
 > Il ne s’agit pas de rejeter le progrès, mais de l’orienter.
->
+> >
 > Il ne s’agit pas de freiner l’innovation, mais de lui donner un cap.
->
+> >
 > Il ne s’agit pas de nourrir la peur, mais d’affirmer une ambition : celle d’une cohabitation harmonieuse entre l’intelligence humaine et les technologies qu’elle a créées.
->
+> >
 > Nous croyons qu’une telle Déclaration constituerait un repère commun et un cap capable de fédérer les initiatives éducatives, juridiques, scientifiques et civiques, aujourd’hui dispersées. Elle serait un signal clair adressé aux institutions, aux entreprises technologiques et aux citoyens du monde : la souveraineté de l’esprit est un principe non négociable.
 
 [En savoir plus sur la tribune à signer]({{ "la-tribune" | locale_url }})
@@ -110,33 +105,26 @@ Mettons notre éthique commune à la hauteur des enjeux que nous impose notre é
 
 {% sectionBuilder class="palette-contrast-terracotta full-bleed-bg", id='who-section' %}
 {% sectionHeader class="prose" %}
-
 ## Qui sommes-nous?
 
 Nous sommes un collectif cherchant à promouvoir l’idée d’une Déclaration Universelle des Droits de l’Esprit Humain.
 {% endsectionHeader %}
 {% areaRaw class="area prose" %}
-
-### Le comité de pilotage
-
+### Le comité de pilotage, les administrateurs de Rise For The Mind asbl
 {% endareaRaw %}
 {% collection collection="founders", type="grid-fluid", itemPartial="person-card" %}{% endcollection %}
 {% areaRaw class="area prose" %}
 {% link url="a-propos", anchor="Le comité de pilotage", type="internal", collection="pages", class="button" %}En savoir plus sur le comité de pilotage{% endlink %}
 {% endareaRaw %}
 {% areaRaw class="area prose" %}
-
 ### Le comité éthique et scientifique
-
 {% endareaRaw %}
 {% collection collection="committee", type="grid-fluid", columns=8, itemPartial="person-card" %}{% endcollection %}
 {% areaRaw class="area prose" %}
 {% link url="a-propos", anchor="Le comité éthique et scientifique", type="internal", collection="pages", class="button" %}En savoir plus sur le comité éthique et scientifique{% endlink %}
 {% endareaRaw %}
 {% areaRaw class="prose" %}
-
 ### Le comité des jeunes
-
 {% endareaRaw %}
 {% twoColumns type="fixedFluid", fixedSide="fixedLeft", class="prose items-center" %}
 {% twoColumnsItem  %}
