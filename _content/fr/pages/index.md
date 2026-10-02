@@ -109,7 +109,7 @@ Mettons notre éthique commune à la hauteur des enjeux que nous impose notre é
 {% sectionHeader class="prose" %}
 ## Qui sommes-nous?
 
-Nous sommes un collectif cherchant à promouvoir l’idée d’une Déclaration Universelle des Droits de l’Esprit Humain.
+Nous sommes un collectif cherchant à promouvoir et diffuser le principe de la souveraineté de la personne à l'ère des technologies, notamment à travers de la mise en œuvre d'une Déclaration universelle des droits de l'esprit humain.  
 {% endsectionHeader %}
 {% areaRaw class="area prose" %}
 ### Le comité de pilotage, les administrateurs de Rise For The Mind asbl
