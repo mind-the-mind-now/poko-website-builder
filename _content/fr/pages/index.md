@@ -21,6 +21,8 @@ uuid: 34d75906b733
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
 # Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain
+
+#### Rise for the mind asbl
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
