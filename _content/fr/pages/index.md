@@ -8,7 +8,6 @@ eleventyNavigation:
   add: Nav
 metadata:
   description: Initiative pour une Déclaration Universelle des Droits de l’Esprit Humain
-vars: {}
 localizationKey: fe784f9b8041
 uuid: 34d75906b733
 ---
@@ -152,10 +151,25 @@ Auguste Nieuwenhuys
 
 ## Comment nous joindre ?
 
-Le projet de la Déclaration Universelle des Droits de l’Esprit Humain est ambitieux, et visionnaire.
+Le projet de la Déclaration Universelle des Droits de l’Esprit Humain est ambitieux, et visionnaire. 
 
 Soutenir le projet, c'est participer à la fondation d'un cadre éthique planétaire pour les générations actuelles et futures.
 
 [Contactez-nous]({{ "contact" | locale_url }}){.button} {.center .intrinsic}
+
+:::
+
+::: section
+
+## Comment nous soutenir ?
+
+ {% link url="la-tribune", type="internal", collection="pages" %}Partagez notre tribune à signer !{% endlink %}
+
+Nous soutenir financièrement : les dons sont les bienvenus sur le compte 
+
+BE93 3632 8496 9367 
+(sans attestation fiscale pour 2026).
+
+Merci d'avance !
 
 :::

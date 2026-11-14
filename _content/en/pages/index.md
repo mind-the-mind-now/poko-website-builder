@@ -8,7 +8,6 @@ eleventyNavigation:
   add: Nav
 metadata:
   description: Initiative for a Universal Declaration of the Rights of the Human Mind
-vars: {}
 localizationKey: fe784f9b8041
 uuid: 34d75906b733
 ---
