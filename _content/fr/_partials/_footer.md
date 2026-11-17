@@ -11,7 +11,7 @@
 
 {{ "contact@riseforthemind.org" | emailLink }}
 
-&copy; 2026-{{year}} <em>Rise for the Mind! asbl </em> - Tous droits réservés<br>
+&copy; 2026-{{year}} <em>Rise for the Mind! asbl </em> - Tous droits réservés
 BE 1042.263.713
 
 <p>Site web éco-conçu avec <a href="https://www.poko.eco/" target="_blank" rel="noopener">poko</a> par <a href="https://www.mookai.be/" target="_blank" rel="noopener">mookaï asbl</a><br>
