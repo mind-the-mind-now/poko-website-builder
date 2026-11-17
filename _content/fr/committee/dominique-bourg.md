@@ -6,7 +6,8 @@ createdAt: 2026-11-14T11:24:00.000Z
 ldType: WebPage
 name: Dominique Bourg
 preview:
-  description: '![](/_images/d-bourg-ue.webp)'
+  image:
+    src: /_images/d-bourg-ue.webp
 generatePage: previewOnly
 ---
 
