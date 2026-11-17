@@ -15,16 +15,16 @@ dataList:
     alt: Mark Hunyadi; Collège de France;
 ---
 
-# Cybernétique et vie de l’esprit démocratique - Collège de France
+# Cybernétique et vie de l’esprit démocratique
+
+Collège de France { .h4 }
 
 ::: prose { .section .layout }
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eC5rXIUONRo?si=ps8tY8HIqPgQRIv3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 :::
 
-Colloque : Démocratie ou dictature numérique : perspectives historiques et comparatives
+Colloque : {% link url="https://www.college-de-france.fr/fr/agenda/colloque/democratie-ou-dictature-numerique-perspectives-historiques-et-comparatives", type="external" %}Démocratie ou dictature numérique : perspectives historiques et comparatives{% endlink %}
 Conférence du 25 juin 2026 : Cybernétique et vie de l’esprit démocratique
-{% link url="https://www.college-de-france.fr/fr/agenda/colloque/democratie-ou-dictature-numerique-perspectives-historiques-et-comparatives", type="external" %}Démocratie ou dictature numérique : perspectives historiques et comparatives
-Conférence du 25 juin 2026 : Cybernétique et vie de l’esprit démocratique{% endlink %}
 
 ## Présentation du colloque
 
@@ -34,4 +34,4 @@ La révolution numérique pose à nouveaux frais la question de cette relation d
 
 Ce colloque aura pour objet de prendre la mesure de cet impact de la révolution numérique sur les institutions. À cette fin, il fera une large place à l’histoire, en revenant sur l’impact de précédentes révolutions techniques sur les institutions politiques ou économiques. Et il fera aussi une large place à la comparaison de la réglementation de l’usage des outils du numérique, notamment en Europe, aux États-Unis ou en Chine.
 
-{% image src="/_images/capture-d-ecran-2026-10-02-101918.webp", class='prose' %}
+{% image src="/_images/capture-d-ecran-2026-10-02-101918.webp", class="prose" %}
