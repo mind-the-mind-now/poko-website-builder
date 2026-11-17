@@ -4,8 +4,9 @@ order: 4
 lang: fr
 createdAt: 2026-10-02T08:27:00.000Z
 ldType: Article
-name: Le projet des GAFAM, c’est la mise sous tutelle de l’humanité par les machines - Emission TV5Monde
+name: Le projet des GAFAM, c’est la mise sous tutelle de l’humanité par les machines
 preview:
+  description: Emission TV5Monde - Vidéo
   image:
     src: https://img.youtube.com/vi/zJYHZ_gwyKM/maxresdefault.jpg
 ---
