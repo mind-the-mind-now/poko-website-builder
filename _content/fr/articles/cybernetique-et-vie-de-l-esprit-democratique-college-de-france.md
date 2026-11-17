@@ -15,7 +15,11 @@ dataList:
     alt: Mark Hunyadi; Collège de France;
 ---
 
+# Cybernétique et vie de l’esprit démocratique - Collège de France
+
+::: prose { .section .layout }
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eC5rXIUONRo?si=ps8tY8HIqPgQRIv3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+:::
 
 Colloque : Démocratie ou dictature numérique : perspectives historiques et comparatives
 Conférence du 25 juin 2026 : Cybernétique et vie de l’esprit démocratique
