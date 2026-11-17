@@ -10,6 +10,10 @@ preview:
     src: https://img.youtube.com/vi/zJYHZ_gwyKM/maxresdefault.jpg
 ---
 
+# Le projet des GAFAM, c’est la mise sous tutelle de l’humanité par les machines
+
+Émission TV5Monde { .h4 }
+
 Le philosophe Mark Hunyadi alerte sur l’influence grandissante des géants de la tech dans nos sociétés. Selon lui, le projet des GAFAM conduirait à une dépendance toujours plus forte aux technologies et aux machines, au point de transformer notre rapport à la liberté, au travail et aux décisions humaines. Une réflexion critique sur le pouvoir du numérique et l’avenir de nos démocraties.
 
 ::: prose { .section .layout }
