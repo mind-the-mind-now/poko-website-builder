@@ -7,7 +7,7 @@ ldType: Article
 name: Cybernétique et vie de l’esprit démocratique - Collège de France
 preview:
   image:
-    src: /_images/capture-d-ecran-2026-10-02-101918.webp
+    src: /_images/capture-d-ecran-2026-10-02-101629.webp
 dataList:
   - type: image
     key: Mark Hunyadi - Collège de France
@@ -34,4 +34,4 @@ La révolution numérique pose à nouveaux frais la question de cette relation d
 
 Ce colloque aura pour objet de prendre la mesure de cet impact de la révolution numérique sur les institutions. À cette fin, il fera une large place à l’histoire, en revenant sur l’impact de précédentes révolutions techniques sur les institutions politiques ou économiques. Et il fera aussi une large place à la comparaison de la réglementation de l’usage des outils du numérique, notamment en Europe, aux États-Unis ou en Chine.
 
-{% image src="/_images/capture-d-ecran-2026-10-02-101918.webp" %}
+{% image src="/_images/capture-d-ecran-2026-10-02-101918.webp", class='prose' %}
