@@ -4,8 +4,9 @@ order: 3
 lang: fr
 createdAt: 2026-10-02T07:46:00.000Z
 ldType: Article
-name: Cybernétique et vie de l’esprit démocratique - Collège de France
+name: Cybernétique et vie de l’esprit démocratique
 preview:
+  description: Collège de France - Vidéo de la conférence du 25 juin 2026
   image:
     src: /_images/capture-d-ecran-2026-10-02-101629.webp
 dataList:
